@@ -3,7 +3,7 @@ import imagesData from "../imgImports";
 const GameData = [
     {
         id: 1,  
-        img: imagesData.giri, 
+        img: imagesData.bima, 
         nama: "Giri",
         ig: "esagiri_",
         link: "https://www.instagram.com/esagiri_?igsh=MXJkNTgwYXlyd2VvcQ==",
@@ -11,7 +11,7 @@ const GameData = [
     },
     {
         id: 2,  
-        img: imagesData.indra, 
+        img: imagesData.galuh, 
         nama: "Indra",
         ig: "indrabguss",
         link: "https://www.instagram.com/indrabguss?igsh=MTFwNWpkdnB0OWtwcA==",
@@ -19,7 +19,7 @@ const GameData = [
     },
     {
         id: 3,  
-        img: imagesData.bima, 
+        img: imagesData.darma, 
         nama: "Bima",
         ig: "de_bimm",
         link: "https://www.instagram.com/de_bimm?igsh=MTdnOGN0NTBmbDZndg==",
@@ -27,7 +27,7 @@ const GameData = [
     },
     {
         id: 4,  
-        img: imagesData.galuh, 
+        img: imagesData.agik, 
         nama: "Gung Galuh",
         ig: "gung_galuh1",
         link: "https://www.instagram.com/gung_galuh1?igsh=NHVianh4bjQ5aXpv",

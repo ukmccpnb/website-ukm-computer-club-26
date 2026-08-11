@@ -3,7 +3,7 @@ import imagesData from "../imgImports";
 const WebData = [
     {
         id: 1,
-        img: imagesData.chesa, 
+        img: imagesData.ayu, 
         nama: "Chesa Sas",
         ig: "chesa_sas",
         link: "https://www.instagram.com/chesa_sas/",
@@ -11,7 +11,7 @@ const WebData = [
     },
     {
         id: 2,
-        img: imagesData.dimas, 
+        img: imagesData.santika, 
         nama: "GungDimas",
         ig: "gungdms_",
         link: "https://www.instagram.com/gungdms_",
@@ -19,7 +19,7 @@ const WebData = [
     },
     {
         id: 3,
-        img: imagesData.wahyuni, 
+        img: imagesData.pebrian, 
         nama: "Wahyuni",
         ig: "nl_wahyunii",
         link: "https://www.instagram.com/nl_wahyunii?igsh=MW9pZHZjMTQ0cjI3Ng==",
@@ -27,7 +27,7 @@ const WebData = [
     },
     {
         id: 4,
-        img: imagesData.santika,
+        img: imagesData.arya,
         nama: "Santika",
         ig: "santikakumara",
         link: "https://www.instagram.com/santikakumara?igsh=amgzZGlwbGhmcmFo&utm_source=qr",
@@ -35,7 +35,7 @@ const WebData = [
     },
     {
         id: 5,
-        img: imagesData.ayu, 
+        img: imagesData.danendra, 
         nama: "Ayu",
         ig: "ayuuwidyanii",
         link: "https://www.instagram.com/ayuuwidyanii?igsh=bXp4aHJ3MzVjMm9h",
@@ -43,7 +43,7 @@ const WebData = [
     },
     {
         id: 6,
-        img: imagesData.pebrian, 
+        img: imagesData.tio, 
         nama: "Pebrian",
         ig: "ikadekpebrian",
         link: "https://www.instagram.com/ikadekpebrian?igsh=N2t4anZmejQxNTVi",

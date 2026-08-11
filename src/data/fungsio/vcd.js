@@ -3,7 +3,7 @@ import imagesData from "../imgImports";
 const VcdData = [
     {
         id: 1,  
-        img: imagesData.radit, 
+        img: imagesData.nadwitya, 
         nama: "Raditya",
         ig: "radityadii_",
         link: "https://www.instagram.com/radityadii_",
@@ -11,7 +11,7 @@ const VcdData = [
     },
     {
         id: 2,  
-        img: imagesData.dekyan,
+        img: imagesData.sinta,
         nama: "Dek Yan",
         ig: "kadekryan_1",
         link: "https://www.instagram.com/kadekryan_1?igsh=ZGd5MWh2MjQyNXYz",
@@ -19,7 +19,7 @@ const VcdData = [
     },
     {
         id: 3,  
-        img: imagesData.ayunda,
+        img: imagesData.lia,
         nama: "Ayunda",
         ig: "ayundaastitiani",
         link: "https://www.instagram.com/ayundaastitiani",
@@ -27,7 +27,7 @@ const VcdData = [
     },
     {
         id: 4,  
-        img: imagesData.nadwitya,
+        img: imagesData.kaifa,
         nama: "Nadwitya",
         ig: "unnaturalits",
         link: "https://www.instagram.com/unnaturalits/profilecard/?igsh=MTZkdGI3NHQ3MXV3MA==",
@@ -35,7 +35,7 @@ const VcdData = [
     },
     {
         id: 5,  
-        img: imagesData.shinta, 
+        img: imagesData.pradnya, 
         nama: "Sinta",
         ig: "sinta0227",
         link: "https://www.instagram.com/sinta0227?igsh=MWl4amc0NWp4eHp3MA==",
@@ -43,7 +43,7 @@ const VcdData = [
     },
     {
         id: 6,  
-        img: imagesData.aulia, 
+        img: imagesData.dipta, 
         nama: "Aulia",
         ig: "akn_gbt01_",
         link: "https://www.instagram.com/akn_gbt01_?igsh=MWJwanM2dnlxNTlxNg%3D%3D&utm_source=qr",

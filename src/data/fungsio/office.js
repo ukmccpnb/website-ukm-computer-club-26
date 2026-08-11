@@ -3,7 +3,7 @@ import imagesData from "../imgImports";
 const OfficeData = [
     {
         id: 1,  
-        img: imagesData.iluh, 
+        img: imagesData.mitasari, 
         nama: "Iluh",
         ig: "iluhgedong_",
         link: "https://www.instagram.com/iluhgedong_?igsh=cTdndTM4MGFuMG40&utm_source=qr",
@@ -11,7 +11,7 @@ const OfficeData = [
     },
     {
         id: 2,  
-        img: imagesData.dhini, 
+        img: imagesData.erin, 
         nama: "Dhini",
         ig: "dhinimirayani",
         link: "https://www.instagram.com/dhinimirayani?igsh=MWIwMHkwcXBmZHV3bw==",
@@ -19,7 +19,7 @@ const OfficeData = [
     },
     {
         id: 3,  
-        img: imagesData.rani, 
+        img: imagesData.puji, 
         nama: "Rani",
         ig: "sriindrani_",
         link: "https://www.instagram.com/sriindrani_?igsh=Y21vanllbGlzNW9q",
@@ -27,7 +27,7 @@ const OfficeData = [
     },
     {
         id: 4,  
-        img: imagesData.anggreni, 
+        img: imagesData.mangsri, 
         nama: "Anggreni",
         ig: "xo.anggrenii",
         link: "https://www.instagram.com/xo.anggrenii",
@@ -43,7 +43,7 @@ const OfficeData = [
     },
     {
         id: 6,  
-        img: imagesData.sri, 
+        img: imagesData.diva, 
         nama: "Mang Sri",
         ig: "ksrmyy",
         link: "https://www.instagram.com/ksrmyy?igsh=anp3eWg0a3NsY2J4",
@@ -51,7 +51,7 @@ const OfficeData = [
     },
     {
         id: 7,  
-        img: imagesData.mita, 
+        img: imagesData.devita, 
         nama: "Mita",
         ig: "mitasari_106",
         link: "https://www.instagram.com/mitasari_106?igsh=NDY5NHhhcDc3eWY1",
@@ -59,7 +59,7 @@ const OfficeData = [
     },
     {
         id: 8,  
-        img: imagesData.puji, 
+        img: imagesData.tika, 
         nama: "Puji",
         ig: "pujiiastiti",
         link: " https://www.instagram.com/pujiiastiti/profilecard/?igsh=MWc3bTRnc2Q3c2dwcg==",
@@ -67,7 +67,15 @@ const OfficeData = [
     },
     {
         id: 9,  
-        img: imagesData.errin, 
+        img: imagesData.subawa, 
+        nama: "Errin",
+        ig: "errinsanistyya",
+        link: "https://www.instagram.com/errinsanistyya?igsh=MWo3azQ3N3NwcTh2Yg==",
+        moto: "Andrà tutto bene",
+    },
+    {
+        id: 10,  
+        img: imagesData.widnyana, 
         nama: "Errin",
         ig: "errinsanistyya",
         link: "https://www.instagram.com/errinsanistyya?igsh=MWo3azQ3N3NwcTh2Yg==",
