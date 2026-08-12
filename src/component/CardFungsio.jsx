@@ -47,9 +47,9 @@ function CardFungsio(props) {
                 {/* SISI DEPAN (FRONT FACE) */}
                 <div className="absolute inset-0 [backface-visibility:hidden] overflow-hidden rounded-xl">
                     <img 
-                        src={img} 
+                        src={card_backface} 
                         className="w-full h-full object-cover rounded-xl" 
-                        alt="Card Front" 
+                        alt="Card" 
                         loading="lazy"
                     />
                 </div>
@@ -57,8 +57,8 @@ function CardFungsio(props) {
                 {/* SISI BELAKANG (BACK FACE) */}
                 <div className="absolute inset-0 h-full w-full rounded-xl [transform:rotateY(180deg)] [backface-visibility:hidden] overflow-hidden">
                     <img 
-                        src={card_backface} 
-                        alt="Card Backface" 
+                        src={img} 
+                        alt="Card_img" 
                         className="w-full h-full object-cover rounded-xl" 
                         loading="lazy"
                     />
