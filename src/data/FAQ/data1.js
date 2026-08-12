@@ -1,35 +1,5 @@
 const data1 = [
     {
-        id: 15,
-        question: 'Apa itu UKM Computer Club?',
-        answer: 'UKM Computer Club merupakan salah satu Unit Kegiatan Mahasiswa di Politeknik Negeri Bali yang bertujuan untuk mewadahi mahasiswa yang memiliki minat dan bakat di bidang teknologi informasi.',
-    },
-    {
-        id: 1,
-        question: 'Dalam UKM Computer Club terdapat divisi apa saja?',
-        answer: 'Terdapat 4 divisi yang dapat dipilih yaitu, Office, Web Development, Visual Communication Design, dan Game Development.',
-    },
-    {
-        id: 2,
-        question: 'Divisi Office akan mempelajari apa saja?',
-        answer: 'Divisi Office berfokus pada pembelajaran seputar dunia perkantoran, dari aplikasi Microsoft Office seperti Excel, Word, Power Point dan Acces, selain itu kalian akan diajak untuk mengasah keterampilan komunikasi dalam presentasi, serta berbagai skill pendukung lainnya yang bermanfaat untuk perkuliahan maupun dunia kerja.',
-    },
-    {
-        id: 3,
-        question: 'Divisi Web Development akan mempelajari apa saja?',
-        answer: 'Divisi Web Development berfokus pada pembelajaran seputar pembuatan dan pengembangan tampilan website yang menggunakan baris kode dengan markup language seperti HTML, CSS, serta teknologi pendukung lainnya.',
-    },
-    {
-        id: 4,
-        question: 'Divisi Game Development mempelajari apa saja?',
-        answer: 'Divisi Game Development berfokus pada pembelajaran seputar pembuatan dan pengembangan game, dimulai dari tahap dasar hingga menghasilkan game yang benar-benar dapat dimainkan. Divisi ini juga mengadakan minggu mabar, yang merupakan kegiatan dimana para anggota Divisi Game Development dapat bermain game bersama.',
-    },
-    {
-        id: 5,
-        question: 'Divisi Visual Communication Design mempelajari apa saja?',
-        answer: 'Divisi Visual Communication Design (VCD) berfokus pada pembelajaran desain, mulai dari pembuatan secara digital hingga penerapannya pada berbagai media cetak. Aplikasi yang digunakan sebagai media pembelajaran meliputi Adobe Photoshop hingga Figma.',
-    },
-    {
         id: 6,
         question: 'Apakah harus mengikuti 4 divisi yang ada di UKM Computer Club?',
         answer: 'Tidak, cukup memilih dan mengikuti satu divisi yang paling sesuai dengan minat dan keahlian kalian.'
@@ -38,6 +8,46 @@ const data1 = [
         id: 7,
         question: 'Apakah kita diperbolehkan untuk berpindah-pindah divisi?',
         answer: 'Anggota tidak diperbolehkan untuk berpindah-pindah divisi. Oleh karena itu, penting untuk memilih divisi yang benar-benar sesuai dengan minat dan keinginan sejak awal bergabung.',
+    },
+    {
+        id: 8,
+        question: 'Bagaimana cara agar dapat bergabung dengan UKM Computer Club?',
+        answer: `Cukup mudah untuk bergabung dengan UKM Computer Club<br>
+        <ul>
+            <li><b>Tahap 1 =</b> Pastikan mengikuti panduan pendaftaran UKM yang akan diumumkan oleh panitia PKKMB
+            <li><b>Tahap 2 =</b> = Penuhi ketentuan dan persyaratan sesuai dengan alur pendaftaran yang UKM Computer Club berikan, pastikan tidak ada ketentuan yang terlewati!<br>
+            <br>
+            Jika terdapat kendala atau pertanyaan terkait alur pendaftaran dapat menghubungi :
+            <ul>
+                <li>Artani : +62 857-3745-0341
+                <li>Efanie : +62 895-4014-49925
+            <ul>
+        </ul>`,
+    },
+    {
+        id: 9,
+        question: 'Apa saja sarana pendukung untuk mengikuti UKM Computer Club?',
+        answer: 'Sarana pendukung yang digunakan saat UKM rutinan adalah laptop pribadi untuk keperluan pembelajaran, dan jika terdapat keperluan lain tentunya akan diinformasikan terlebih dahulu.',
+    },
+    {
+        id: 10,
+        question: 'Berapa lama kita harus tergabung sebagai anggota di UKM Computer Club?',
+        answer: 'UKM Computer Club cukup diikuti selama 1 tahun saja.',
+    },
+    {
+        id: 11,
+        question: 'Apakah kita sebagai anggota harus ahli untuk bisa bergabung ke dalam UKM Computer Club?',
+        answer: 'Tidak, untuk bergabung di UKM Computer Club tidak harus sudah ahli atau memiliki pengalaman sebelumnya. Justru di sinilah tempat yang tepat untuk belajar bersama, mengembangkan keterampilan, serta menambah pengalaman. UKM ini terbuka bagi siapa saja, mulai dari pemula hingga yang sudah mahir.',
+    },
+    {
+        id: 13,
+        question: 'Apakah untuk mengikuti UKM Computer Club harus melewati sesi wawancara?',
+        answer: 'Untuk mengikuti UKM Computer Club tidak ada sesi wawancara. Cukup dengan melakukan pendaftaran sesuai syarat dan ketentuan yang berlaku.',
+    },
+    {
+        id: 14,
+        question: 'Bagaimana bentuk pelaksanaan UKM rutinan?',
+        answer: 'Pertemuan rutinan UKM Computer Club berbentuk pelatihan sesuai dengan divisi masing-masing, yang dilaksanakan secara offline di Gedung Lab Math DP Politeknik Negeri Bali pada hari Minggu.',
     },
 ];
 

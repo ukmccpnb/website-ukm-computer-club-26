@@ -4,7 +4,6 @@ import CardProker from "../component/CardProker";
 import divisiData from '../data/divisi/data';
 import prokerData from '../data/proker/data';
 import data1 from '../data/FAQ/data1';
-import data2 from '../data/FAQ/data2';
 import homepage from '../data/homepage/data';
 import YouTube from "react-youtube";
 import { useState } from 'react';
@@ -60,10 +59,10 @@ function HomePage() {
                             </div> */}
                             <div className="flex flex-col w-full lg:w-[70%] justify-center items-center text-center">
                                 <h1 className="uppercase text-sm md:text-4xl lg:text-6xl font-semibold" data-aos="fade-up" data-aos-delay="300">unit kegiatan mahasiswa</h1>
-                                <h1 className="uppercase text-sm md:text-4xl lg:text-6xl font-semibold" data-aos="fade-up" data-aos-delay="300">computer club</h1>
+                                <h1 className="uppercase text-sm md:text-4xl lg:text-6xl font-semibold pb-5" data-aos="fade-up" data-aos-delay="300">computer club</h1>
                                 <div className="mb-2 lg:mb-5 text-xs md:text-lg" data-aos="fade-up" data-aos-delay="400">
-                                    <h3>Selamat Datang di Dunia Penuh Inovasi dan Kerja Sama</h3>
-                                    <h3>Inspirasi Mahasiswa di Politeknik Negeri Bali</h3>
+                                    <h3>Temukan divisi yang sesuai dengan minatmu</h3>
+                                    <h3>dan kembangkan potensimu bersama UKM Computer Club</h3>
                                 </div>
                                 <a href="https://docs.google.com/forms/d/e/1FAIpQLSfoupO5ST_r2kXdSq9W7658ZO8XkFGbw1WnLydVOieJLlKiGA/viewform" className="font-medium bg-secondary hover:bg-primary text-sm md:text-lg py-2 px-3 rounded-lg text-white ease-in-out transition-all" target='_blank' data-aos="fade-up" data-aos-delay="600">Daftar Sekarang</a>
                                 <h2 className="text-white font-semibold italic text-sm md:text-2xl mt-2 lg:mt-5" data-aos="fade-up" data-aos-duration="2000" data-aos-easing="linear" data-aos-delay="600">
@@ -93,8 +92,8 @@ function HomePage() {
                 <p className="italic font-semibold text-xl hidden lg:block">#MakeItHappen</p>
             </section>
 
-            <section className="px-2 py-16 md:pt-40 relative" data-aos="md:fade-up">
-                <div className="flex justify-evenly items-center">
+            <section className="px-5 py-16 md:pt-40 relative" data-aos="md:fade-up">
+                <div className="flex flex-col lg:flex-row justify-between items-center gap-8">
                     {/* <div className="w-[30%] hidden lg:block" data-aos="zoom-in">
                         <div className="w-full my-5 ml-5">
                             <img src={imagesData.bersama} className="w-full rounded-md -rotate-3" alt="Foto 1"></img>
@@ -103,22 +102,23 @@ function HomePage() {
                             <img src={imagesData.bersama2} className="w-full rounded-md rotate-3" alt="Foto 2"></img>
                         </div>
                     </div> */}
-                    <div className="w-[20%] hidden lg:block" data-aos="zoom-in">
-                        <div className="w-full my-5 ml-5">
-                            <img src={imagesData.LOGO_UKM_BERWARNA} className="w-full" alt="Foto 1"></img>
+                    <div className="w-full lg:w-[55%] ht-1idden lg:block" data-aos="zoom-in">
+                        <div className="pt-10 pl-10 md:pt-15 w-full flex aspect-video justify-center">
+                            <YouTube videoId={homepage.videoYoutube} className="aspect-video" opts={opts} onReady={onPlayerReady} iframeClassName="w-full md:w-konten mx-auto h-full lg:rounded-2xl"/>
+                            {/* <img src={imagesData.LOGO_UKM_BERWARNA} className="w-full" alt="Foto 1"></img> */}
                         </div>
                     </div>
-                    <div className="w-full lg:w-[50%] flex-col items-center" data-aos="fade-up">
-                        <h1 className="text-center text-xl md:text-4xl lg:text-left lg:text-6xl font-semibold mb-">Tentang Kami</h1>
+                    <div className="w-full lg:w-[45%] pr-20 flex-col items-center" data-aos="fade-up">
+                        <h1 className="text-center text-xl md:text-4xl lg:text-left lg:text-6xl font-semibold mb-5">Tentang Kami</h1>
                         <div className="mb-2 lg:mb-5 md:text-lg"> 
-                            <h3 className="lg:text-justify text-center">Unit Kegiatan Mahasiswa Computer Club merupakan salah satu Unit Kegiatan Mahasiswa yang berada di lingkungan Politeknik Negeri Bali. Berfokus pada pengembangan keterampilan dan pengetahuan di bidang teknologi informasi, UKM Computer Club berperan sebagai wadah bagi mahasiswa untuk mengasah pengetahuan dan keterampilan yang relevan di era digital. Dengan tujuan utama memberdayakan mahasiswa, kami menyediakan berbagai kesempatan bagi anggota untuk mengembangkan diri melalui berbagai program seperti pelatihan, kompetisi hingga project-project yang relevan dengan dunia digital.</h3>
+                            <h3 className="lg:text-justify text-center">Unit Kegiatan Mahasiswa Computer Club merupakan wadah bagi mahasiswa Politeknik Negeri Bali untuk <b>mengeksplorasi dan mengembangkan kemampuan di dunia teknologi.</b> Dengan berbagai <b>kegiatan dan proyek digital</b>, kami membangun lingkungan yang mendorong anggota untuk <b>belajar, berkolaborasi, dan berinovasi.</b></h3>
                         </div>
                     </div>
                 </div>
                 
-                <div className="pt-16 md:pt-32 w-full flex aspect-video justify-center">
+                {/* <div className="pt-16 md:pt-32 w-full flex aspect-video justify-center">
                     <YouTube videoId={homepage.videoYoutube} className="aspect-video" opts={opts} onReady={onPlayerReady} iframeClassName="w-full md:w-konten mx-auto h-full lg:rounded-2xl"/>
-                </div>
+                </div> */}
 
                 {/* <div className="w-full md:w-2/3 md:mx-auto rounded-2xl px-2 py-5 border-8 border-double border-putih bg-secondary relative">
                     <div className="mx-auto w-20 my-5">
@@ -177,7 +177,7 @@ function HomePage() {
                         <div className="w-full lg:w-[60%] p-1" data-aos="fade-up">
                             <h1 className="uppercase text-center text-xl md:text-2xl lg:text-left lg:text-4xl font-semibold mb-2">Fungsionaris UKM Computer Club</h1>
                             <div className="mb-6 md:text-lg"> 
-                                <h3 className="lg:text-justify text-center">Yuk kenalan dengan fungsionaris kami 😁</h3> 
+                                <h3 className="lg:text-justify text-center">Yuk kenalan dengan fungsionaris kami</h3> 
                             </div>
                             <Button divClass="flex justify-center lg:inline" href="/fungsionaris" text="Lihat Selengkapnya"></Button>
                         </div>
@@ -199,12 +199,12 @@ function HomePage() {
             <section className="py-20 md:pt-32 md:pb-20" id="faq">
                 <div className="px-4 mx-auto sm:px-6 lg:px-8 w-konten" data-aos="fade-up">
                     <div className="mx-auto text-center">
-                        <h1 className="text-center font-semibold text-xl md:text-4xl lg:text-6xl mt-10 mb-2">Pertanyaan yang Sering Ditanyakan</h1>
+                        <h1 className="text-center font-semibold text-xl md:text-4xl lg:text-6xl mt-10 mb-5">Pertanyaan yang Sering Ditanyakan</h1>
                         <p className="text-center font-normal text-sm md:text-base mb-10 w-full md:mx-auto">Yuk cek, siapa tau pertanyaan kamu ada disini 😊</p>
                     </div>
     
-                    <div className="w-full lg:w-konten mx-auto lg:flex justify-between">    
-                        <div className="lg:w-[48%]">
+                    <div className="w-full max-w-2xl mx-auto">    
+                        {/* <div className="lg:w-[50%]"> */}
                             {data1.map((Data) => (
                                 <div key={Data.id} className="transition-all m-3 duration-200 bg-white border border-gray-200 shadow-lg cursor-pointer hover:bg-gray-50">
                                     <button type="button" className="flex items-center justify-between w-full px-4 py-5 sm:p-6" onClick={() => toggleAnswer(Data.id)}>
@@ -219,9 +219,9 @@ function HomePage() {
                                     </div>
                                 </div>
                             ))}
-                        </div>
+                        {/* </div> */}
     
-                        <div className="lg:w-[48%]">
+                        {/* <div className="lg:w-[48%]">
                             {data2.map((Data) => (
                                 <div key={Data.id} className="transition-all m-3 duration-200 bg-white border border-gray-200 shadow-lg cursor-pointer hover:bg-gray-50">
                                     <button type="button" className="flex items-center justify-between w-full px-4 py-5 sm:p-6" onClick={() => toggleAnswer(Data.id)}>
@@ -236,7 +236,7 @@ function HomePage() {
                                     </div>
                                 </div>
                             ))}
-                        </div>
+                        </div> */}
                     </div>
     
     

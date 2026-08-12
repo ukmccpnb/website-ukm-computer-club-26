@@ -17,8 +17,8 @@ const divisiData = [
             • Manajemen`,
         href: "/divisi/office",
         imgCover: imagesData.cover_divisi_office,
-        deskripsiKegiatan: "Divisi Office merupakan divisi yang berfokus pada pengembangan keterampilan penggunaan aplikasi perkantoran, baik berbasis desktop maupun cloud. Divisi ini menjadi wadah bagi anggota yang ingin menguasai tools digital yang sangat dibutuhkan di dunia kerja dan akademik.",
-        deskripsiMateri: "Berfokus dalam mempelajari berbagai fitur dan fungsi pada aplikasi Microsoft Office dan Google Workspace yang bertujuan untuk membentuk soft skill dan hard skill anggota sebagai bekal untuk bekerja di dunia perkantoran.",
+        deskripsiKegiatan: "Divisi Office pada pembelajaran aplikasi perkantoran yang sering digunakan dalam dunia akademik maupun dunia kerja. Anggota akan belajar menggunakan berbagai tools seperti Microsoft Word, Excel, PowerPoint, serta aplikasi berbasis cloud untuk membantu pekerjaan menjadi lebih mudah, rapi, dan efisien.",
+        deskripsiMateri: "Berfokus pada pembelajaran berbagai fitur dan fungsi dalam Microsoft Office dan Google Workspace untuk membantu meningkatkan keterampilan digital yang dapat menjadi bekal dalam dunia perkantoran.",
         itemsKegiatan: [
             {
                 id: 1,
@@ -63,12 +63,12 @@ const divisiData = [
             {
                 icon: faMicrosoft,
                 judul: "Microsoft Office",
-                deskripsi: "Divisi office akan mengajarkan bagaimana menggunakan Microsoft Office seperti Word, Excel, PowerPoint, dan Access.",
+                deskripsi: "Mempelajari penggunaan Microsoft Word, Excel, PowerPoint, dan Access, mulai dari fungsi dasar hingga fitur yang umum digunakan dalam kebutuhan perkantoran.",
             },
             {
                 icon: faGoogle,
                 judul: "Google Workspace",
-                deskripsi: "Divisi office akan mengajarkan bagaimana menggunakan Google Workspace seperti Google Docs, Google Sheets, dan Google Slides.",
+                deskripsi: "Mempelajari penggunaan Google Docs, Google Sheets, dan Google Slides untuk membuat, mengelola, serta berkolaborasi dalam berbagai dokumen secara online.",
             },
         ],
     },
@@ -87,7 +87,7 @@ const divisiData = [
         href: "/divisi/vcd",
         imgCover: imagesData.cover_divisi_vcd,
         deskripsiKegiatan: "Divisi ini berfokus pada pengembangan keterampilan desain visual menggunakan software desain populer, baik untuk kebutuhan kreatif maupun profesional. Di sini, anggota akan belajar mengolah gambar, mengatur komposisi, hingga membuat desain UI/UX yang siap digunakan untuk website atau aplikasi.",
-        deskripsiMateri: "Berfokus dalam editing foto dan membuat desain tampilan antarmuka aplikasi atau website dengan tujuan menjadi designer yang bisa mengkomunikasikan ide - ide melalui media visual dan media cetak.",
+        deskripsiMateri: "Berfokus pada editing foto dan pembuatan desain tampilan antarmuka aplikasi untuk mengembangkan kemampuan dalam menyampaikan ide melalui media visual.",
         itemsKegiatan: [
             {
                 id: 1,
@@ -128,13 +128,13 @@ const divisiData = [
         itemsMateri: [
             {
                 icon: faFontAwesome,
-                judul: "Adobe Photoshop",
-                deskripsi: "Adobe Photoshop merupakan software grafis berbasis raster (Bitmap), untuk mengedit, membuat gambar dan menyimpannya dengan berbagai format.",
+                judul: "Affinity",
+                deskripsi: "Mempelajari penggunaan Affinity untuk mengedit foto, membuat desain grafis, dan mengolah berbagai elemen visual untuk kebutuhan desain.",
             },
             {
                 icon: faFigma,
                 judul: "Figma",
-                deskripsi: "Figma merupakan tools desain berbasis cloud yang memungkinkan tim untuk bekerja bersama secara kolaboratif dalam satu lingkungan desain.",
+                deskripsi: "FMempelajari penggunaan Figma untuk membuat desain antarmuka aplikasi, serta berkolaborasi dalam proses perancangan desain.",
             },
         ],
     },
@@ -153,7 +153,7 @@ const divisiData = [
         href: "/divisi/web",
         imgCover: imagesData.cover_divisi_web,
         deskripsiKegiatan: "Divisi Web Development merupakan divisi yang berfokus pada pembelajaran dan pengembangan keterampilan dalam membangun tampilan serta struktur website. Kegiatan dalam divisi ini mencakup pemahaman dasar HTML dan CSS, hingga penerapan framework modern untuk menciptakan website yang rapi, responsif, dan estetis. Divisi ini dirancang untuk memberikan bekal keterampilan yang relevan di era digital, sekaligus membuka peluang dalam dunia teknologi dan industri kreatif.",
-        deskripsiMateri: "Berfokus pada pengembangan website, terutama Front End Developer dan bertujuan mengajarkan keterampilan untuk merancang, mengembangkan, dan memelihara antarmuka pengguna (UI).",
+        deskripsiMateri: "Berfokus pada pengembangan website, khususnya Front-End Development, dengan mempelajari cara merancang, membangun, dan mengembangkan tampilan antarmuka pengguna (UI).",
         itemsKegiatan: [
             {
                 id: 1,
@@ -195,17 +195,17 @@ const divisiData = [
             {
                 icon: faHtml5,
                 judul: "HTML",
-                deskripsi: "HTML (Hypertext Markup Language) adalah bahasa standar yang digunakan untuk membuat dan menyusun halaman web. Dapat dikatakan bahwa HTML merupakan kerangka dari sebuah web.",
+                deskripsi: "Mempelajari HTML sebagai dasar dalam membangun struktur halaman web, seperti menyusun teks, gambar, tautan, tombol, dan berbagai elemen yang terdapat pada sebuah website.",
             },
             {
                 icon: faCss,
                 judul: "CSS",
-                deskripsi: "CSS (Cascading Style Sheets) adalah bahasa yang digunakan untuk menentukan tampilan dan gaya elemen-elemen pada halaman web yang dibuat dengan HTML.",
+                deskripsi: "Mempelajari CSS untuk mengatur tampilan dan tata letak halaman web, seperti warna, ukuran, posisi, jarak, serta gaya visual dari berbagai elemen website.",
             },
             {
                 icon: faScrewdriverWrench,
                 judul: "Framework",
-                deskripsi: "Framework adalah kerangka kerja yang membantu dalam mempermudah membuat sebuah tampilan web. Framework yang diajarkan adalah framework CSS.",
+                deskripsi: "Mempelajari penggunaan framework CSS untuk mempermudah proses pengembangan tampilan website yang responsif dan terstruktur.",
             },
         ],
     },
@@ -224,7 +224,7 @@ const divisiData = [
         href: "/divisi/game",
         imgCover: imagesData.cover_divisi_game,
         deskripsiKegiatan: "Divisi Game Development merupakan divisi yang berfokus pada pembuatan game platformer 2D, yang juga mewadahi minat anggota dalam memainkan berbagai game mobile seperti Mobile Legends, PUBG Mobile, dan lainnya.",
-        deskripsiMateri: "Berfokus pada pembuatan dan pengembangan game platformer 2D dengan menggunakan game engine berbasis website yang bertujuan mengembangkan suatu game hingga menjadi game developer.",
+        deskripsiMateri: "Berfokus pada pembuatan dan pengembangan game menggunakan game engine untuk mengembangkan kemampuan dalam merancang dan membangun game.",
         itemsKegiatan: [
             {
                 id: 1,
@@ -264,14 +264,9 @@ const divisiData = [
         ],
         itemsMateri: [
             {
-                icon: faGamepad,
-                judul: "Platformer",
-                deskripsi: "Genre game dimana karakter yang dimainkan akan melewati berbagai platform, melewati berbagai rintangan dan mengumpulkan item sampai ke tujuan akhir. Contoh game platformer adalah Super Mario Bros.",
-            },
-            {
                 icon: faGears,
-                judul: "Construct 3",
-                deskripsi: "Construct 3 merupakan software game engine berbasis visual yang digunakan untuk membuat game 2D tanpa perlu menulis kode secara langsung.",
+                judul: "Roblox Studio",
+                deskripsi: "Mempelajari penggunaan Roblox Studio untuk membuat dan mengembangkan game 3D, mulai dari membangun environment, mengatur objek, hingga menerapkan berbagai mekanisme dan interaksi dalam game.",
             },
         ],
     },
