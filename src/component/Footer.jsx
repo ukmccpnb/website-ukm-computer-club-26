@@ -64,16 +64,16 @@ function Footer(){
                 <div>
                     <h2 className="mb-6 text-sm font-semibold text-white uppercase">Contact Us</h2>
                     <ul className="text-white font-light">
-                        <a href="https://wa.me/+6285737450341" className="group" target="_blank">
+                        <a href="https://wa.me/628814667057" className="group" target="_blank">
                             <li className="mb-4 flex items-center">
                                 <i className="fa-brands fa-whatsapp me-2"></i>
-                                <p className="group-hover:underline">Artani</p>
+                                <p className="group-hover:underline">Ria</p>
                             </li>
                         </a>
-                        <a href="https://wa.me/+6281228699598" className="group" target="_blank">
+                        <a href="https://wa.me/6281339415314" className="group" target="_blank">
                             <li className="flex items-center">
                                 <i className="fa-brands fa-whatsapp me-2"></i>
-                                <p className="group-hover:underline">Oka Setyawati</p>
+                                <p className="group-hover:underline">Ayuhmi</p>
                             </li>
                         </a>
                     </ul>
