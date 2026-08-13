@@ -1,5 +1,5 @@
 import Button from "./Button";
-import logo from '../../src/assets/img/logo/LOGO UKM PUTIH.png';
+import logo from '../assets/img/logo/LOGO UKM PUTIH.png';
 
 function Card(props) {
     const {img, divisi, href, singkatan} = props;

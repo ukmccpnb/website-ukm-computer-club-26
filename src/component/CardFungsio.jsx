@@ -1,5 +1,5 @@
-// import logo from '../../src/assets/img/logo/LOGO UKM PUTIH.png';
-// import tagline from '../../src/assets/img/ornamen/tagline.png';
+// import logo from '../assets/img/logo/LOGO UKM PUTIH.png';
+// import tagline from '../assets/img/ornamen/tagline.png';
 
 // function CardFungsio(props){
 //     const {img, nama, ig, kata, link} = props;
@@ -35,7 +35,7 @@
 // export default CardFungsio
 
 // KODE BARU
-import card_backface from '../../src/assets/img/logo/CARD BACK FACE.png';
+import card_backface from '../assets/img/logo/CARD BACK FACE.png';
 
 function CardFungsio(props) {
     const { img } = props;

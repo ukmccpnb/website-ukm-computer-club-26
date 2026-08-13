@@ -2,9 +2,9 @@ import { useEffect, useState } from 'react';
 import imagesDatas from '../data/imgImports';
 import { useLocation } from 'react-router-dom';
 import { NavLink } from "react-router-dom";
-import logo_ccdt from '../../src/assets/img/logo/Logo ccdt.png';
-import logo_eagles from '../../src/assets/img/logo/Logo_Eagles warna.png';
-import logo_intech from '../../src/assets/img/logo/Logo intech.png';
+import logo_ccdt from '../assets/img/logo/Logo ccdt.png';
+import logo_eagles from '../assets/img/logo/Logo_Eagles warna.png';
+import logo_intech from '../assets/img/logo/logo intech.png';
 
 function Navbar(){
     const { hash } = useLocation();
