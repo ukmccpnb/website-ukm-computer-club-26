@@ -7,10 +7,10 @@ export default {
   ],
   theme: {
     colors: {
-      'primary': '#3838E3',
-      'secondary': '#8787FF',
-      'tetiary': '#C8C8FE',
-      'hover-blue': '#16165B',
+      'primary': '#003BB5',    /* Darker shade for hover (formerly #0D48A1) */
+      'secondary': '#0053FA',  /* Main blue color (formerly #1576FF) */
+      'tetiary': '#80A9FD',    /* Lighter shade (formerly #99C5FF) */
+      'hover-blue': '#002470', /* Darkest shade (formerly #062A66) */
       'hitam': '#1F2227',
       'putih': "#FFFFFF",
     },
