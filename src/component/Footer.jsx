@@ -11,10 +11,10 @@ function Footer(){
             <div className="mb-6 md:mb-0 md:w-[45%] flex flex-col justify-start me-5">
                 <div className="flex">
                     <div>
-                        <img src={imagesData.LOGO_PNB_PUTIH} className="h-12 me-3" alt="Logo PNB" loading="lazy"/>
+                        <img src={imagesData.LOGO_PNB_PUTIH} className="h-12 me-3" alt="Logo PNB" loading="lazy" decoding="async" />
                     </div>
                     <div>
-                        <img src={imagesData.LOGO_UKM_PUTIH} className="h-12 me-3" alt="Logo UKM" loading="lazy"/>
+                        <img src={imagesData.LOGO_UKM_PUTIH} className="h-12 me-3" alt="Logo UKM" loading="lazy" decoding="async" />
                     </div>
                 </div>
 

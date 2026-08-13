@@ -26,7 +26,7 @@ function DivisiPage() {
                                 <Button variant="secondary" href="#materi" text="Pelajari Lebih Lanjut"/>
                             </div>
                             {/* <div className="kanan m-auto h-3/6 aspect-video relative hidden lg:block" data-aos="fade-up">
-                                <img src={divisiDetail.img} className="absolute top-1/2 -translate-y-1/2 left-10 border-2 w-full rounded-ss-3xl rounded-es-3xl" loading="lazy"/>
+                                <img src={divisiDetail.img} className="absolute top-1/2 -translate-y-1/2 left-10 border-2 w-full rounded-ss-3xl rounded-es-3xl" loading="lazy" decoding="async" />
                             </div> */}
                         </div>
                     </div>

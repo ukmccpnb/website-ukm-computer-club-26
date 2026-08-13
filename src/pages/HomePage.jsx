@@ -49,7 +49,7 @@ function HomePage() {
 
                         {/* <div className="w-full md:w-3/4 mx-auto lg:hidden" data-aos="fade-down">
                                 <div className="w-full mb-5">
-                                    <img src={imagesData.bersama2} className="w-full rounded-md" alt="Foto 2" loading="lazy"></img>
+                                    <img src={imagesData.bersama2} className="w-full rounded-md" alt="Foto 2" loading="lazy" decoding="async"></img>
                                 </div>
                             </div> */}
 
@@ -76,10 +76,10 @@ function HomePage() {
 
                         {/* <div className="w-[35%] hidden lg:block" data-aos="zoom-in">
                                 <div className="w-full my-5 ml-5">
-                                    <img src={imagesData.bersama} className="w-full rounded-md -rotate-3" alt="Foto 1"></img>
+                                    <img src={imagesData.bersama} className="w-full rounded-md -rotate-3" alt="Foto 1" loading="lazy" decoding="async"></img>
                                 </div>
                                 <div className="w-full relative -left-12 top-3 mb-5">
-                                    <img src={imagesData.bersama2} className="w-full rounded-md rotate-3" alt="Foto 2"></img>
+                                    <img src={imagesData.bersama2} className="w-full rounded-md rotate-3" alt="Foto 2" loading="lazy" decoding="async"></img>
                                 </div>
                             </div> */}
                     </div>
@@ -90,16 +90,16 @@ function HomePage() {
                 <div className="flex flex-col lg:flex-row justify-between items-center gap-8">
                     {/* <div className="w-[30%] hidden lg:block" data-aos="zoom-in">
                         <div className="w-full my-5 ml-5">
-                            <img src={imagesData.bersama} className="w-full rounded-md -rotate-3" alt="Foto 1"></img>
+                            <img src={imagesData.bersama} className="w-full rounded-md -rotate-3" alt="Foto 1" loading="lazy" decoding="async"></img>
                         </div>
                         <div className="w-full relative top-3 mb-5">
-                            <img src={imagesData.bersama2} className="w-full rounded-md rotate-3" alt="Foto 2"></img>
+                            <img src={imagesData.bersama2} className="w-full rounded-md rotate-3" alt="Foto 2" loading="lazy" decoding="async"></img>
                         </div>
                     </div> */}
                     <div className="w-full lg:w-[55%]" data-aos="zoom-in">
                         <div className="px-4 lg:px-0 lg:pl-10 w-full flex aspect-video justify-center">
                             <YouTube videoId={homepage.videoYoutube} className="w-full aspect-video" opts={opts} onReady={onPlayerReady} iframeClassName="w-full h-full rounded-lg lg:rounded-2xl" />
-                            {/* <img src={imagesData.LOGO_UKM_BERWARNA} className="w-full" alt="Foto 1"></img> */}
+                            {/* <img src={imagesData.LOGO_UKM_BERWARNA} className="w-full" alt="Foto 1" loading="lazy" decoding="async"></img> */}
                         </div>
                     </div>
                     <div className="w-full lg:w-[45%] px-4 lg:px-0 lg:pr-20 flex-col items-center" data-aos="fade-up">
@@ -116,7 +116,7 @@ function HomePage() {
 
                 {/* <div className="w-full md:w-2/3 md:mx-auto rounded-2xl px-2 py-5 border-8 border-double border-putih bg-secondary relative">
                     <div className="mx-auto w-20 my-5">
-                        <img src={imagesData.LOGO_UKM_PUTIH} className="w-full" loading="lazy"></img>
+                        <img src={imagesData.LOGO_UKM_PUTIH} className="w-full" loading="lazy" decoding="async"></img>
                     </div>
 
                     <div className="my-5 text-white">
@@ -167,7 +167,7 @@ function HomePage() {
 
                                     {/* Content */}
                                     <div className="relative z-10 flex flex-col items-center justify-center max-w-4xl mx-auto h-full">
-                                        <img src={Data.logo} alt={Data.name} className="h-20 w-20 sm:h-24 sm:w-24 md:h-32 md:w-32 bg-white rounded-full p-2 mb-4 md:mb-6 shadow-lg object-contain" />
+                                        <img src={Data.logo} alt={Data.name} className="h-20 w-20 sm:h-24 sm:w-24 md:h-32 md:w-32 bg-white rounded-full p-2 mb-4 md:mb-6 shadow-lg object-contain" loading="lazy" decoding="async" />
                                         <h2 className="text-2xl sm:text-3xl md:text-5xl font-bold text-white mb-2 md:mb-4 drop-shadow-md">{Data.name}</h2>
                                         <p className="text-sm md:text-lg text-gray-200 mb-6 md:mb-8 line-clamp-3 md:line-clamp-none leading-relaxed px-4 md:px-0">{Data.deskripsi}</p>
                                         <Button href={Data.href} text="Baca Selengkapnya" />
@@ -208,7 +208,7 @@ function HomePage() {
                     <div className="lg:flex lg:justify-between items-center">
                         <div className="w-full lg:hidden block">
                             <div className="w-full my-5" data-aos="zoom-in">
-                                <img src={imagesData.bersama2} className="w-full rounded-md" alt="Foto 1" loading="lazy"></img>
+                                <img src={imagesData.bersama2} className="w-full rounded-md" alt="Foto 1" loading="lazy" decoding="async"></img>
                             </div>
                         </div>
 
@@ -223,10 +223,10 @@ function HomePage() {
                         <div className="w-[30%] mr-16 hidden lg:block">
                             <div className="w-full my-5 ml-5" data-aos="zoom-in">
                                 <div className="w-full my-5 ml-5">
-                                    <img src={imagesData.bersama} className="w-full rounded-md -rotate-3" alt="Foto 1"></img>
+                                    <img src={imagesData.bersama} className="w-full rounded-md -rotate-3" alt="Foto 1" loading="lazy" decoding="async"></img>
                                 </div>
                                 <div className="w-full relative -left-12 top-3 mb-5">
-                                    <img src={imagesData.bersama2} className="w-full rounded-md rotate-3" alt="Foto 2"></img>
+                                    <img src={imagesData.bersama2} className="w-full rounded-md rotate-3" alt="Foto 2" loading="lazy" decoding="async"></img>
                                 </div>
                             </div>
                         </div>

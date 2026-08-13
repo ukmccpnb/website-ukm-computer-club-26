@@ -32,7 +32,7 @@ function CardCarousel({ data }) {
                     
                     {/* Gambar utama */}
                     <div className="aspect-video rounded-3xl overflow-hidden shadow-lg">
-                        <img src={item.gambar} alt={item.altGambar} className="w-full h-full object-cover rounded-3xl transition-transform duration-500 hover:scale-110" loading="lazy"/>
+                        <img src={item.gambar} alt={item.altGambar} className="w-full h-full object-cover rounded-3xl transition-transform duration-500 hover:scale-110" loading="lazy" decoding="async" />
                     </div>
 
                     {/* Overlay gradien + teks */}

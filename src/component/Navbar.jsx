@@ -43,7 +43,7 @@ function Navbar(){
             <div className="w-navfot flex flex-wrap items-center justify-between mx-auto p-3">
             <a href="/">    
                 <div className="flex items-center space-x-3 rtl:space-x-reverse">
-                    <img src={imagesDatas.LOGO_UKM_PUTIH} className="md:h-10 h-8" alt="Logo UKM" loading="lazy"/>
+                    <img src={imagesDatas.LOGO_UKM_PUTIH} className="md:h-10 h-8" alt="Logo UKM" loading="lazy" decoding="async" />
                     <span className="self-center md:text-xl text-lg font-semibold whitespace-nowrap">Computer Club</span>
                 </div>
             </a>
@@ -113,7 +113,7 @@ function Navbar(){
                                 <NavLink to="/programkerja/ccdt" onClick={() => window.location.href = "/programkerja/ccdt"} className={({ isActive }) => `flex px-4 py-2 rounded-lg cursor-pointer ${
                                     isActive ? "bg-secondary font-semibold" : "hover:bg-secondary"}`}>
                                     <div className="bg-putih rounded-full z-30 w-6 h-6 mr-2 flex justify-center items-center overflow-hidden">
-                                        <img src={`${logo_ccdt}`} className="w-[70%] mx-auto" loading="lazy"></img>
+                                        <img src={`${logo_ccdt}`} className="w-[70%] mx-auto" loading="lazy" decoding="async"></img>
                                     </div>
                                     CCDT
                                 </NavLink>
@@ -122,7 +122,7 @@ function Navbar(){
                                 <NavLink to="/programkerja/eagles" onClick={() => window.location.href = "/programkerja/eagles"} className={({ isActive }) => `flex px-4 py-2 rounded-lg cursor-pointer ${
                                     isActive ? "bg-secondary font-semibold" : "hover:bg-secondary"}`}>
                                     <div className="bg-putih rounded-full z-30 w-6 h-6 mr-2 flex justify-center items-center overflow-hidden">
-                                        <img src={`${logo_eagles}`} className="w-[70%] mx-auto" loading="lazy"></img>
+                                        <img src={`${logo_eagles}`} className="w-[70%] mx-auto" loading="lazy" decoding="async"></img>
                                     </div>
                                     EAGLES
                                 </NavLink>
@@ -131,7 +131,7 @@ function Navbar(){
                                 <NavLink to="/programkerja/intechfest" onClick={() => window.location.href = "/programkerja/intechfest"} className={({ isActive }) => `flex px-4 py-2 rounded-lg cursor-pointer ${
                                     isActive ? "bg-secondary font-semibold" : "hover:bg-secondary"}`}>
                                     <div className="bg-putih rounded-full z-30 w-6 h-6 mr-2 flex justify-center items-center overflow-hidden">
-                                        <img src={`${logo_intech}`} className="w-[70%] mx-auto" loading="lazy"></img>
+                                        <img src={`${logo_intech}`} className="w-[70%] mx-auto" loading="lazy" decoding="async"></img>
                                     </div>
                                     IntechFest
                                 </NavLink>

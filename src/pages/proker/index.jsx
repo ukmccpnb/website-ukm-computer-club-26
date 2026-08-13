@@ -38,7 +38,7 @@ function ProkerPage() {
                     <div className="p-2 w-konten mx-auto" data-aos="fade-down">
                         <h1 className="text-center font-semibold text-lg md:text-2xl text-hitam m-auto mt-10 mb-8">Program Kerja</h1>
                         <div className="w-2/5 md:w-1/5 lg:w-1/12 m-auto relative z-10 mb-4">
-                            <img src={prokerDetail.logo} className="w-full rounded-ss-lg rounded-se-lg" loading="lazy"></img>
+                            <img src={prokerDetail.logo} className="w-full rounded-ss-lg rounded-se-lg" loading="lazy" decoding="async"></img>
                         </div>
                         <h1 className="text-center font-bold text-xl md:text-4xl md:w-3/5 mx-auto">{prokerDetail.name}</h1>
                         {/* <p className="text-justify font-normal text-sm md:text-base mb-10 w-full md:w-3/5 md:mx-auto">{prokerDetail.deskripsi}</p> */}
@@ -95,7 +95,7 @@ function ProkerPage() {
                         {
                             prokerDetail.dokumentasi.map((item, index) => (
                                 <div key={index} className="w-96 m-1" data-aos="fade-up">
-                                    <img src={item.path} alt={item.alt} className="w-full h-full object-cover rounded-md" loading="lazy"/>
+                                    <img src={item.path} alt={item.alt} className="w-full h-full object-cover rounded-md" loading="lazy" decoding="async" />
                                 </div>
                             ))
                         }
