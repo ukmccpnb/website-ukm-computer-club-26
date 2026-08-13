@@ -11,10 +11,10 @@ function Footer(){
             <div className="mb-6 md:mb-0 md:w-[45%] flex flex-col justify-start me-5">
                 <div className="flex">
                     <div>
-                        <img src={imagesData.LOGO_PNB_PUTIH} className="h-12 me-3" alt="Logo PNB" loading="lazy"/>
+                        <img src={imagesData.LOGO_PNB_PUTIH} className="h-12 me-3" alt="Logo PNB" loading="lazy" decoding="async" />
                     </div>
                     <div>
-                        <img src={imagesData.LOGO_UKM_PUTIH} className="h-12 me-3" alt="Logo UKM" loading="lazy"/>
+                        <img src={imagesData.LOGO_UKM_PUTIH} className="h-12 me-3" alt="Logo UKM" loading="lazy" decoding="async" />
                     </div>
                 </div>
 
@@ -64,16 +64,16 @@ function Footer(){
                 <div>
                     <h2 className="mb-6 text-sm font-semibold text-white uppercase">Contact Us</h2>
                     <ul className="text-white font-light">
-                        <a href="https://wa.me/+6285737450341" className="group" target="_blank">
+                        <a href="https://wa.me/628814667057" className="group" target="_blank">
                             <li className="mb-4 flex items-center">
                                 <i className="fa-brands fa-whatsapp me-2"></i>
-                                <p className="group-hover:underline">Artani</p>
+                                <p className="group-hover:underline">Ria</p>
                             </li>
                         </a>
-                        <a href="https://wa.me/+6281228699598" className="group" target="_blank">
+                        <a href="https://wa.me/6281339415314" className="group" target="_blank">
                             <li className="flex items-center">
                                 <i className="fa-brands fa-whatsapp me-2"></i>
-                                <p className="group-hover:underline">Oka Setyawati</p>
+                                <p className="group-hover:underline">Ayuhmi</p>
                             </li>
                         </a>
                     </ul>

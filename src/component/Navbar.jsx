@@ -2,9 +2,9 @@ import { useEffect, useState } from 'react';
 import imagesDatas from '../data/imgImports';
 import { useLocation } from 'react-router-dom';
 import { NavLink } from "react-router-dom";
-import logo_ccdt from '../../src/assets/img/logo/Logo ccdt.png';
-import logo_eagles from '../../src/assets/img/logo/Logo_Eagles warna.png';
-import logo_intech from '../../src/assets/img/logo/Logo intech.png';
+import logo_ccdt from '../assets/img/logo/Logo ccdt.png';
+import logo_eagles from '../assets/img/logo/Logo_Eagles warna.png';
+import logo_intech from '../assets/img/logo/logo intech.png';
 
 function Navbar(){
     const { hash } = useLocation();
@@ -43,7 +43,7 @@ function Navbar(){
             <div className="w-navfot flex flex-wrap items-center justify-between mx-auto p-3">
             <a href="/">    
                 <div className="flex items-center space-x-3 rtl:space-x-reverse">
-                    <img src={imagesDatas.LOGO_UKM_PUTIH} className="md:h-10 h-8" alt="Logo UKM" loading="lazy"/>
+                    <img src={imagesDatas.LOGO_UKM_PUTIH} className="md:h-10 h-8" alt="Logo UKM" loading="lazy" decoding="async" />
                     <span className="self-center md:text-xl text-lg font-semibold whitespace-nowrap">Computer Club</span>
                 </div>
             </a>
@@ -66,11 +66,11 @@ function Navbar(){
                             {/* kalau diklik, ke #divisi */}
                             <a href="/#divisi" className="NavbarLink">
                                 Divisi
-                                <i class="ml-1 fa-solid fa-angle-down"></i>
+                                <i className="ml-1 fa-solid fa-angle-down transition-transform duration-300 group-hover:-rotate-180"></i>
                             </a>
 
                             {/* Dropdown Divisi */}
-                            <ul className="absolute z-10 -left-3 pt-2 hidden group-hover:block bg-hitam text-putih rounded-lg shadow-lg w-48">
+                            <ul className="absolute z-10 -left-3 pt-2 invisible opacity-0 translate-y-2 group-hover:visible group-hover:opacity-100 group-hover:translate-y-0 transition-all duration-300 ease-in-out bg-hitam text-putih rounded-lg shadow-lg w-48">
                                 <li>
                                 <NavLink to="/divisi/office" onClick={() => window.location.href = "/divisi/office"} className={({ isActive }) => `block px-4 py-2 rounded-lg cursor-pointer ${
                                     isActive ? "bg-secondary font-semibold" : "hover:bg-secondary"}`}>
@@ -104,16 +104,16 @@ function Navbar(){
                             {/* kalau diklik, ke #divisi */}
                             <a href="/#proker" className="NavbarLink">
                                 Program Kerja
-                                <i class="ml-1 fa-solid fa-angle-down"></i>
+                                <i className="ml-1 fa-solid fa-angle-down transition-transform duration-300 group-hover:-rotate-180"></i>
                             </a>
 
                             {/* Dropdown Proker */}
-                            <ul className="absolute z-10 -left-3 pt-2 hidden group-hover:block bg-hitam text-putih rounded-lg shadow-lg w-48">
+                            <ul className="absolute z-10 -left-3 pt-2 invisible opacity-0 translate-y-2 group-hover:visible group-hover:opacity-100 group-hover:translate-y-0 transition-all duration-300 ease-in-out bg-hitam text-putih rounded-lg shadow-lg w-48">
                                 <li>
                                 <NavLink to="/programkerja/ccdt" onClick={() => window.location.href = "/programkerja/ccdt"} className={({ isActive }) => `flex px-4 py-2 rounded-lg cursor-pointer ${
                                     isActive ? "bg-secondary font-semibold" : "hover:bg-secondary"}`}>
                                     <div className="bg-putih rounded-full z-30 w-6 h-6 mr-2 flex justify-center items-center overflow-hidden">
-                                        <img src={`${logo_ccdt}`} className="w-[70%] mx-auto" loading="lazy"></img>
+                                        <img src={`${logo_ccdt}`} className="w-[70%] mx-auto" loading="lazy" decoding="async"></img>
                                     </div>
                                     CCDT
                                 </NavLink>
@@ -122,7 +122,7 @@ function Navbar(){
                                 <NavLink to="/programkerja/eagles" onClick={() => window.location.href = "/programkerja/eagles"} className={({ isActive }) => `flex px-4 py-2 rounded-lg cursor-pointer ${
                                     isActive ? "bg-secondary font-semibold" : "hover:bg-secondary"}`}>
                                     <div className="bg-putih rounded-full z-30 w-6 h-6 mr-2 flex justify-center items-center overflow-hidden">
-                                        <img src={`${logo_eagles}`} className="w-[70%] mx-auto" loading="lazy"></img>
+                                        <img src={`${logo_eagles}`} className="w-[70%] mx-auto" loading="lazy" decoding="async"></img>
                                     </div>
                                     EAGLES
                                 </NavLink>
@@ -131,7 +131,7 @@ function Navbar(){
                                 <NavLink to="/programkerja/intechfest" onClick={() => window.location.href = "/programkerja/intechfest"} className={({ isActive }) => `flex px-4 py-2 rounded-lg cursor-pointer ${
                                     isActive ? "bg-secondary font-semibold" : "hover:bg-secondary"}`}>
                                     <div className="bg-putih rounded-full z-30 w-6 h-6 mr-2 flex justify-center items-center overflow-hidden">
-                                        <img src={`${logo_intech}`} className="w-[70%] mx-auto" loading="lazy"></img>
+                                        <img src={`${logo_intech}`} className="w-[70%] mx-auto" loading="lazy" decoding="async"></img>
                                     </div>
                                     IntechFest
                                 </NavLink>
@@ -145,7 +145,7 @@ function Navbar(){
                             <a href="/#faq" className="NavbarLink">FAQ</a>
                         </li>
                         <li className='m-1 p-1'>
-                            <a href="https://docs.google.com/forms/d/e/1FAIpQLSfoupO5ST_r2kXdSq9W7658ZO8XkFGbw1WnLydVOieJLlKiGA/viewform" className="bg-secondary hover:bg-primary py-2 px-3 rounded-lg text-white ease-in-out transition-all" target='_blank'>Daftar Sekarang</a>
+                            <NavLink to="/quiz" onClick={() => window.location.href = "/quiz"} className="bg-secondary hover:bg-primary py-2 px-3 rounded-lg text-white ease-in-out transition-all">Daftar Sekarang</NavLink>
                         </li>
                     </ul>
                 </div>

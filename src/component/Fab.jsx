@@ -15,7 +15,7 @@ function Fab(){
             {/* Muncul di Desktop */}
             <div className="hidden md:block z-30">
                 <a
-                href="https://wa.me/6285737450341"
+                href="https://wa.me/628814667057"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="fixed bottom-6 right-6 bg-secondary text-white w-14 h-14 flex items-center justify-center rounded-full shadow-lg hover:bg-primary transition-all duration-300">

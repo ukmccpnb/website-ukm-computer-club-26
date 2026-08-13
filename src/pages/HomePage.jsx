@@ -11,6 +11,10 @@ import imagesData from "../data/imgImports";
 
 function HomePage() {
     const [openQuestion, setOpenQuestion] = useState(null);
+    const [currentProkerSlide, setCurrentProkerSlide] = useState(0);
+
+    const nextProkerSlide = () => setCurrentProkerSlide((prev) => (prev === prokerData.length - 1 ? 0 : prev + 1));
+    const prevProkerSlide = () => setCurrentProkerSlide((prev) => (prev === 0 ? prokerData.length - 1 : prev - 1));
 
     const toggleAnswer = (id) => {
         setOpenQuestion(openQuestion === id ? null : id);
@@ -18,38 +22,38 @@ function HomePage() {
     const onPlayerReady = (event) => {
         event.target.playVideo();
     }
-    
-    const opts= {
-    playerVars: {
-        controls: 1,
-        autoplay: 0,
-        iv_load_policy:3,
-        playsinline:1,
-        fs: 1,
-        rel:0,
-        disablekb: 0,
-        showinfo: 0,
-        mute: 0,
-        loop: 1,
-        playlist: "kWpNlGmop0c",
-    },
+
+    const opts = {
+        playerVars: {
+            controls: 1,
+            autoplay: 0,
+            iv_load_policy: 3,
+            playsinline: 1,
+            fs: 1,
+            rel: 0,
+            disablekb: 0,
+            showinfo: 0,
+            mute: 0,
+            loop: 1,
+            playlist: "kWpNlGmop0c",
+        },
     };
 
     return (
         <div>
-            <div className="absolute inset-0 -z-10 bg-ornamen bg-fixed"/>
+            <div className="absolute inset-0 -z-10 bg-ornamen bg-fixed" />
 
             <section className="relative" id="beranda">
-                    <div className="py-8 mt-16 md:mt-0 w-full md:w-screen h-full xl:h-screen bg-center justify-center items-center bg-fixed overflow-hidden bg-[length:100%] lg:bg-[length:120%] sm:bg-no-repeat" style={{ backgroundImage: `linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url(${imagesData.foto_bersama})`, }}>
-                        <div className="h-full xl:h-screen flex text-white justify-center items-center">
+                <div className="py-8 mt-16 md:mt-0 w-full md:w-screen h-full xl:h-screen bg-[position:55%_center] justify-center items-center bg-fixed overflow-hidden bg-[length:200%] md:bg-[length:180%] lg:bg-[length:150%] bg-no-repeat" style={{ backgroundImage: `linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url(${imagesData.foto_bersama})`, }}>
+                    <div className="h-full xl:h-screen flex text-white justify-center items-center">
 
-                            {/* <div className="w-full md:w-3/4 mx-auto lg:hidden" data-aos="fade-down">
+                        {/* <div className="w-full md:w-3/4 mx-auto lg:hidden" data-aos="fade-down">
                                 <div className="w-full mb-5">
-                                    <img src={imagesData.bersama2} className="w-full rounded-md" alt="Foto 2" loading="lazy"></img>
+                                    <img src={imagesData.bersama2} className="w-full rounded-md" alt="Foto 2" loading="lazy" decoding="async"></img>
                                 </div>
                             </div> */}
 
-                            {/* <div className="w-full lg:w-[60%] flex-col items-center" data-aos="fade-up">
+                        {/* <div className="w-full lg:w-[60%] flex-col items-center" data-aos="fade-up">
                                 <h1 className="uppercase text-center text-xl md:text-4xl lg:text-left lg:text-6xl font-semibold mb-">unit kegiatan mahasiswa computer club</h1>
                                 <div className="mb-2 lg:mb-5 md:text-lg"> 
                                     <h3 className="lg:text-justify text-center">Selamat Datang di dunia penuh inovasi dan kerjasama:</h3> 
@@ -57,72 +61,62 @@ function HomePage() {
                                 </div>
                                 <h2 className="text-primary font-semibold italic text-lg lg:text-left text-center mt-2 lg:mt-5">#MakeItHappen</h2>
                             </div> */}
-                            <div className="flex flex-col w-full lg:w-[70%] justify-center items-center text-center">
-                                <h1 className="uppercase text-sm md:text-4xl lg:text-6xl font-semibold" data-aos="fade-up" data-aos-delay="300">unit kegiatan mahasiswa</h1>
-                                <h1 className="uppercase text-sm md:text-4xl lg:text-6xl font-semibold pb-5" data-aos="fade-up" data-aos-delay="300">computer club</h1>
-                                <div className="mb-2 lg:mb-5 text-xs md:text-lg" data-aos="fade-up" data-aos-delay="400">
-                                    <h3>Temukan divisi yang sesuai dengan minatmu</h3>
-                                    <h3>dan kembangkan potensimu bersama UKM Computer Club</h3>
-                                </div>
-                                <a href="https://docs.google.com/forms/d/e/1FAIpQLSfoupO5ST_r2kXdSq9W7658ZO8XkFGbw1WnLydVOieJLlKiGA/viewform" className="font-medium bg-secondary hover:bg-primary text-sm md:text-lg py-2 px-3 rounded-lg text-white ease-in-out transition-all" target='_blank' data-aos="fade-up" data-aos-delay="600">Daftar Sekarang</a>
-                                <h2 className="text-white font-semibold italic text-sm md:text-2xl mt-2 lg:mt-5" data-aos="fade-up" data-aos-duration="2000" data-aos-easing="linear" data-aos-delay="600">
-                                #MakeItHappen
-                                </h2>
+                        <div className="flex flex-col w-full lg:w-[70%] justify-center items-center text-center">
+                            <h1 className="uppercase text-sm md:text-4xl lg:text-6xl font-semibold" data-aos="fade-up" data-aos-delay="300">unit kegiatan mahasiswa</h1>
+                            <h1 className="uppercase text-sm md:text-4xl lg:text-6xl font-semibold pb-5" data-aos="fade-up" data-aos-delay="300">computer club</h1>
+                            <div className="mb-2 lg:mb-5 text-xs md:text-lg" data-aos="fade-up" data-aos-delay="400">
+                                <h3>Temukan divisi yang sesuai dengan minatmu</h3>
+                                <h3>dan kembangkan potensimu bersama UKM Computer Club</h3>
                             </div>
+                            <a href="https://docs.google.com/forms/d/e/1FAIpQLSfoupO5ST_r2kXdSq9W7658ZO8XkFGbw1WnLydVOieJLlKiGA/viewform" className="font-medium bg-secondary hover:bg-primary text-sm md:text-lg py-2 px-3 rounded-lg text-white ease-in-out transition-all" target='_blank' data-aos="fade-up" data-aos-delay="600">Daftar Sekarang</a>
+                            <h2 className="text-white font-semibold italic text-sm md:text-2xl mt-2 lg:mt-5" data-aos="fade-up" data-aos-duration="2000" data-aos-easing="linear" data-aos-delay="600">
+                                #MakeItHappen
+                            </h2>
+                        </div>
 
-                            {/* <div className="w-[35%] hidden lg:block" data-aos="zoom-in">
+                        {/* <div className="w-[35%] hidden lg:block" data-aos="zoom-in">
                                 <div className="w-full my-5 ml-5">
-                                    <img src={imagesData.bersama} className="w-full rounded-md -rotate-3" alt="Foto 1"></img>
+                                    <img src={imagesData.bersama} className="w-full rounded-md -rotate-3" alt="Foto 1" loading="lazy" decoding="async"></img>
                                 </div>
                                 <div className="w-full relative -left-12 top-3 mb-5">
-                                    <img src={imagesData.bersama2} className="w-full rounded-md rotate-3" alt="Foto 2"></img>
+                                    <img src={imagesData.bersama2} className="w-full rounded-md rotate-3" alt="Foto 2" loading="lazy" decoding="async"></img>
                                 </div>
                             </div> */}
-                        </div>
                     </div>
+                </div>
             </section>
 
-            <section className="bg-hitam w-full flex justify-evenly py-2 p-2 text-white" id="tentang">
-                <p className="italic font-semibold text-xl">#MakeItHappen</p>
-                <p className="italic font-semibold text-xl">#MakeItHappen</p>
-                <p className="italic font-semibold text-xl hidden md:block">#MakeItHappen</p>
-                <p className="italic font-semibold text-xl hidden md:block">#MakeItHappen</p>
-                <p className="italic font-semibold text-xl hidden lg:block">#MakeItHappen</p>
-                <p className="italic font-semibold text-xl hidden lg:block">#MakeItHappen</p>
-                <p className="italic font-semibold text-xl hidden lg:block">#MakeItHappen</p>
-            </section>
-
-            <section className="px-5 py-16 md:pt-40 relative" data-aos="md:fade-up">
+            <section className="px-5 py-16 md:pt-40 relative" id="tentang" data-aos="md:fade-up">
                 <div className="flex flex-col lg:flex-row justify-between items-center gap-8">
                     {/* <div className="w-[30%] hidden lg:block" data-aos="zoom-in">
                         <div className="w-full my-5 ml-5">
-                            <img src={imagesData.bersama} className="w-full rounded-md -rotate-3" alt="Foto 1"></img>
+                            <img src={imagesData.bersama} className="w-full rounded-md -rotate-3" alt="Foto 1" loading="lazy" decoding="async"></img>
                         </div>
                         <div className="w-full relative top-3 mb-5">
-                            <img src={imagesData.bersama2} className="w-full rounded-md rotate-3" alt="Foto 2"></img>
+                            <img src={imagesData.bersama2} className="w-full rounded-md rotate-3" alt="Foto 2" loading="lazy" decoding="async"></img>
                         </div>
                     </div> */}
-                    <div className="w-full lg:w-[55%] ht-1idden lg:block" data-aos="zoom-in">
-                        <div className="pt-10 pl-10 md:pt-15 w-full flex aspect-video justify-center">
-                            <YouTube videoId={homepage.videoYoutube} className="aspect-video" opts={opts} onReady={onPlayerReady} iframeClassName="w-full md:w-konten mx-auto h-full lg:rounded-2xl"/>
-                            {/* <img src={imagesData.LOGO_UKM_BERWARNA} className="w-full" alt="Foto 1"></img> */}
+                    <div className="w-full lg:w-[55%]" data-aos="zoom-in">
+                        <div className="px-4 lg:px-0 lg:pl-10 w-full flex aspect-video justify-center">
+                            <YouTube videoId={homepage.videoYoutube} className="w-full aspect-video" opts={opts} onReady={onPlayerReady} iframeClassName="w-full h-full rounded-lg lg:rounded-2xl" />
+                            {/* <img src={imagesData.LOGO_UKM_BERWARNA} className="w-full" alt="Foto 1" loading="lazy" decoding="async"></img> */}
                         </div>
                     </div>
-                    <div className="w-full lg:w-[45%] pr-20 flex-col items-center" data-aos="fade-up">
-                        <h1 className="text-center text-xl md:text-4xl lg:text-left lg:text-6xl font-semibold mb-5">Tentang Kami</h1>
-                        <div className="mb-2 lg:mb-5 md:text-lg"> 
+                    <div className="w-full lg:w-[45%] px-4 lg:px-0 lg:pr-20 flex-col items-center" data-aos="fade-up">
+                        <h1 className="text-center text-xl md:text-4xl lg:text-left lg:text-6xl font-semibold mb-5 mt-5 lg:mt-0">Tentang Kami</h1>
+                        <div className="mb-2 lg:mb-5 md:text-lg">
                             <h3 className="lg:text-justify text-center">Unit Kegiatan Mahasiswa Computer Club merupakan wadah bagi mahasiswa Politeknik Negeri Bali untuk <b>mengeksplorasi dan mengembangkan kemampuan di dunia teknologi.</b> Dengan berbagai <b>kegiatan dan proyek digital</b>, kami membangun lingkungan yang mendorong anggota untuk <b>belajar, berkolaborasi, dan berinovasi.</b></h3>
                         </div>
                     </div>
                 </div>
-                
+
                 {/* <div className="pt-16 md:pt-32 w-full flex aspect-video justify-center">
                     <YouTube videoId={homepage.videoYoutube} className="aspect-video" opts={opts} onReady={onPlayerReady} iframeClassName="w-full md:w-konten mx-auto h-full lg:rounded-2xl"/>
                 </div> */}
 
                 {/* <div className="w-full md:w-2/3 md:mx-auto rounded-2xl px-2 py-5 border-8 border-double border-putih bg-secondary relative">
                     <div className="mx-auto w-20 my-5">
-                        <img src={imagesData.LOGO_UKM_PUTIH} className="w-full" loading="lazy"></img>
+                        <img src={imagesData.LOGO_UKM_PUTIH} className="w-full" loading="lazy" decoding="async"></img>
                     </div>
 
                     <div className="my-5 text-white">
@@ -138,29 +132,75 @@ function HomePage() {
             <section className="pt-10 relative" id="divisi">
                 <div className="w-konten mx-auto" data-aos="fade-up">
                     <h1 className="text-center font-semibold text-xl md:text-4xl lg:text-6xl mt-10 mb-2">Divisi UKM Computer Club</h1>
-                    <p className="text-center font-normal text-sm md:text-base mb-10 w-full md:w-1/2 md:mx-auto">Ada 4 divisi di Unit Kegitan Mahasiswa Computer Club yang merupakan pendalaman lebih khusus mengenai ketertarikan dan minat para mahasiswa.</p>
+                    <p className="text-center font-normal text-sm md:text-base mb-10 w-full md:w-1/2 md:mx-auto">Kenali 4 divisi yang ada di UKM Computer Club dan temukan pilihan yang paling sesuai dengan minat dan ketertarikanmu.</p>
 
-                    <div className="lg:w-full">
-                        {divisiData.map((Data) =>(
-                            <Card key={Data.id} img={Data.img} divisi ={Data.divisi} deskripsi={Data.deskripsi} href={Data.href} singkatan={Data.singkatan} rekomendasi={Data.rekomendasi }
-                            />
+                    <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6 lg:w-full mt-10">
+                        {divisiData.map((Data) => (
+                            <Card key={Data.id} img={Data.img} divisi={Data.divisi} href={Data.href} singkatan={Data.singkatan} />
                         ))}
                     </div>
                 </div>
             </section>
 
-            <section className="md:pt-10 mt-10 realtive" id="proker">
+            <section className="md:pt-10 mt-10 relative" id="proker">
                 <div className="p-2 bg-hitam py-10">
                     <div className="text-putih" data-aos="fade-up">
                         <h1 className="text-center font-semibold text-xl md:text-4xl lg:text-6xl mb-2">Program Kerja</h1>
                         <p className="text-center font-normal text-sm md:text-base mb-10 w-full md:mx-auto">Ada 3 program kerja di Unit Kegitan Mahasiswa Computer Club yang bergerak dalam bidang IT.</p>
                     </div>
 
-                    <div className="flex p-2 justify-center items-stretch mx-auto flex-wrap" data-aos="zoom-in">
-                        {prokerData.map((Data) =>(
-                            <CardProker key={Data.id} logo={Data.logo} img={Data.img} divisi ={Data.name} deskripsi={Data.deskripsi} href={Data.href}
-                            />
-                        ))}
+                    <div className="w-full lg:w-konten mx-auto h-[400px] md:h-[500px] lg:h-[600px] rounded-2xl overflow-hidden shadow-2xl relative group" data-aos="zoom-in">
+
+                        {/* Carousel Track */}
+                        <div
+                            className="flex h-full w-full transition-transform duration-700 ease-in-out"
+                            style={{ transform: `translateX(-${currentProkerSlide * 100}%)` }}
+                        >
+                            {prokerData.map((Data) => (
+                                <div key={Data.id} className="min-w-full h-full relative flex flex-col items-center justify-center text-center p-6">
+                                    {/* Background Image & Overlay */}
+                                    <div
+                                        className="absolute inset-0 bg-cover bg-center scale-105 brightness-50"
+                                        style={{ backgroundImage: `url(${Data.img})` }}
+                                    ></div>
+                                    <div className="absolute inset-0 bg-gradient-to-t from-black/90 via-black/70 to-black/40"></div>
+
+                                    {/* Content */}
+                                    <div className="relative z-10 flex flex-col items-center justify-center max-w-4xl mx-auto h-full">
+                                        <div className="h-20 w-20 sm:h-24 sm:w-24 md:h-32 md:w-32 bg-white rounded-full mb-4 md:mb-6 shadow-lg flex justify-center items-center overflow-hidden">
+                                            <img src={Data.logo} alt={Data.name} className="w-[75%] h-[75%] object-contain" loading="lazy" decoding="async" />
+                                        </div>
+                                        <h2 className="text-2xl sm:text-3xl md:text-5xl font-bold text-white mb-2 md:mb-4 drop-shadow-md">{Data.name}</h2>
+                                        <p className="text-sm md:text-lg text-gray-200 mb-6 md:mb-8 line-clamp-3 md:line-clamp-none leading-relaxed px-4 md:px-0">{Data.deskripsi}</p>
+                                        <Button href={Data.href} text="Baca Selengkapnya" />
+                                    </div>
+                                </div>
+                            ))}
+                        </div>
+
+                        {/* Navigation Controls */}
+                        <div className="absolute top-1/2 left-4 md:left-8 -translate-y-1/2 z-20">
+                            <button onClick={prevProkerSlide} className="flex h-10 w-10 md:h-12 md:w-12 items-center justify-center rounded-full bg-white/20 hover:bg-white/40 text-white backdrop-blur-sm transition-all duration-300 active:scale-75 shadow-lg outline-none">
+                                <svg className="w-6 h-6 md:w-8 md:h-8 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth="3" d="M15 19l-7-7 7-7"></path></svg>
+                            </button>
+                        </div>
+                        <div className="absolute top-1/2 right-4 md:right-8 -translate-y-1/2 z-20">
+                            <button onClick={nextProkerSlide} className="flex h-10 w-10 md:h-12 md:w-12 items-center justify-center rounded-full bg-white/20 hover:bg-white/40 text-white backdrop-blur-sm transition-all duration-300 active:scale-75 shadow-lg outline-none">
+                                <svg className="w-6 h-6 md:w-8 md:h-8 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth="3" d="M9 5l7 7-7 7"></path></svg>
+                            </button>
+                        </div>
+
+                        {/* Indicators */}
+                        <div className="absolute bottom-6 left-1/2 -translate-x-1/2 z-20 flex gap-2">
+                            {prokerData.map((_, index) => (
+                                <button
+                                    key={index}
+                                    onClick={() => setCurrentProkerSlide(index)}
+                                    className={`w-3 h-3 rounded-full transition-all duration-300 ${currentProkerSlide === index ? 'bg-white scale-125' : 'bg-white/50 hover:bg-white/80'}`}
+                                    aria-label={`Go to slide ${index + 1}`}
+                                ></button>
+                            ))}
+                        </div>
                     </div>
                 </div>
             </section>
@@ -170,25 +210,25 @@ function HomePage() {
                     <div className="lg:flex lg:justify-between items-center">
                         <div className="w-full lg:hidden block">
                             <div className="w-full my-5" data-aos="zoom-in">
-                                <img src={imagesData.bersama2} className="w-full rounded-md" alt="Foto 1" loading="lazy"></img>
+                                <img src={imagesData.bersama2} className="w-full rounded-md" alt="Foto 1" loading="lazy" decoding="async"></img>
                             </div>
                         </div>
 
                         <div className="w-full lg:w-[60%] p-1" data-aos="fade-up">
                             <h1 className="uppercase text-center text-xl md:text-2xl lg:text-left lg:text-4xl font-semibold mb-2">Fungsionaris UKM Computer Club</h1>
-                            <div className="mb-6 md:text-lg"> 
-                                <h3 className="lg:text-justify text-center">Yuk kenalan dengan fungsionaris kami</h3> 
+                            <div className="mb-6 md:text-lg">
+                                <h3 className="lg:text-justify text-center">Yuk kenalan dengan fungsionaris kami</h3>
                             </div>
                             <Button divClass="flex justify-center lg:inline" href="/fungsionaris" text="Lihat Selengkapnya"></Button>
                         </div>
 
                         <div className="w-[30%] mr-16 hidden lg:block">
-                            <div className="w-full my-5 ml-5"  data-aos="zoom-in">
+                            <div className="w-full my-5 ml-5" data-aos="zoom-in">
                                 <div className="w-full my-5 ml-5">
-                                    <img src={imagesData.bersama} className="w-full rounded-md -rotate-3" alt="Foto 1"></img>
+                                    <img src={imagesData.bersama} className="w-full rounded-md -rotate-3" alt="Foto 1" loading="lazy" decoding="async"></img>
                                 </div>
                                 <div className="w-full relative -left-12 top-3 mb-5">
-                                    <img src={imagesData.bersama2} className="w-full rounded-md rotate-3" alt="Foto 2"></img>
+                                    <img src={imagesData.bersama2} className="w-full rounded-md rotate-3" alt="Foto 2" loading="lazy" decoding="async"></img>
                                 </div>
                             </div>
                         </div>
@@ -202,25 +242,25 @@ function HomePage() {
                         <h1 className="text-center font-semibold text-xl md:text-4xl lg:text-6xl mt-10 mb-5">Pertanyaan yang Sering Ditanyakan</h1>
                         <p className="text-center font-normal text-sm md:text-base mb-10 w-full md:mx-auto">Yuk cek, siapa tau pertanyaan kamu ada disini 😊</p>
                     </div>
-    
-                    <div className="w-full max-w-2xl mx-auto">    
+
+                    <div className="w-full max-w-2xl mx-auto">
                         {/* <div className="lg:w-[50%]"> */}
-                            {data1.map((Data) => (
-                                <div key={Data.id} className="transition-all m-3 duration-200 bg-white border border-gray-200 shadow-lg cursor-pointer hover:bg-gray-50">
-                                    <button type="button" className="flex items-center justify-between w-full px-4 py-5 sm:p-6" onClick={() => toggleAnswer(Data.id)}>
-                                        <span className="flex text-sm lg:text-base font-semibold text-black text-left w-[28rem]">{Data.question}</span>
-                                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" className={`w-6 h-6 text-gray-400 transition-transform duration-200 ${openQuestion === Data.id ? 'rotate-0' : 'rotate-180'}`}>
-                                            <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M19 9l-7 7-7-7" />
-                                        </svg>
-                                    </button>
-    
-                                    <div className={`px-4 pb-5 sm:px-6 sm:pb-6 ${openQuestion === Data.id ? 'block' : 'hidden'}`}>
-                                        <div className="text-sm lg:text-base" dangerouslySetInnerHTML={{ __html: Data.answer }} />
-                                    </div>
+                        {data1.map((Data) => (
+                            <div key={Data.id} className="transition-all m-3 duration-200 bg-white border border-gray-200 shadow-lg cursor-pointer hover:bg-gray-50">
+                                <button type="button" className="flex items-center justify-between w-full px-4 py-5 sm:p-6" onClick={() => toggleAnswer(Data.id)}>
+                                    <span className="flex text-sm lg:text-base font-semibold text-black text-left w-[28rem]">{Data.question}</span>
+                                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" className={`w-6 h-6 text-gray-400 transition-transform duration-200 ${openQuestion === Data.id ? 'rotate-0' : 'rotate-180'}`}>
+                                        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M19 9l-7 7-7-7" />
+                                    </svg>
+                                </button>
+
+                                <div className={`px-4 pb-5 sm:px-6 sm:pb-6 ${openQuestion === Data.id ? 'block' : 'hidden'}`}>
+                                    <div className="text-sm lg:text-base" dangerouslySetInnerHTML={{ __html: Data.answer }} />
                                 </div>
-                            ))}
+                            </div>
+                        ))}
                         {/* </div> */}
-    
+
                         {/* <div className="lg:w-[48%]">
                             {data2.map((Data) => (
                                 <div key={Data.id} className="transition-all m-3 duration-200 bg-white border border-gray-200 shadow-lg cursor-pointer hover:bg-gray-50">
@@ -238,10 +278,10 @@ function HomePage() {
                             ))}
                         </div> */}
                     </div>
-    
-    
+
+
                     <p className="text-center text-gray-600 textbase mt-9">
-                        Punya pertanyaan lainya? Bisa sampaikan pada 
+                        Punya pertanyaan lainya? Bisa sampaikan pada
                         <span className="cursor-pointer font-medium text-primary transition-all duration-200 hover:text-secondary focus:text-tertiary"> <b><a href="https://www.instagram.com/ukmcomputerclub?igsh=cWRwcmYzZjUyOHgw" className="underline" target="_blank">Instagram Kami</a></b> </span>
                     </p>
                 </div>

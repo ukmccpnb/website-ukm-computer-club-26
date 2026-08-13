@@ -1,116 +1,116 @@
-import _cover_divisi_web from '../../src/assets/img/divisi/web/cover-divisi-web.png'
-import _cover_divisi_office from '../../src/assets/img/divisi/office/cover_divisi_office.jpg'
-import _cover_divisi_game from '../../src/assets/img/divisi/game/cover_divisi_game.jpg'
-import _cover_divisi_vcd from '../../src/assets/img/divisi/vcd/cover_divisi_vcd.jpg'
-import _Inti from '../../src/assets/img/fungsionaris/bersama/Inti.png'
-import _game from '../../src/assets/img/fungsionaris/bersama/game.png'
-import _game_dokumen1 from '../../src/assets/img/divisi/game/dokumen1.jpg'
-import _game_dokumen2 from '../../src/assets/img/divisi/game/dokumen2.jpg'
-import _game_dokumen3 from '../../src/assets/img/divisi/game/dokumen3.jpg'
-import _game_dokumen4 from '../../src/assets/img/divisi/game/dokumen4.jpg'
-import _office from '../../src/assets/img/fungsionaris/bersama/office.png'
-import _office_dokumen1 from '../../src/assets/img/divisi/office/dokumen1.jpg'
-import _office_dokumen2 from '../../src/assets/img/divisi/office/dokumen2.jpg'
-import _office_dokumen3 from '../../src/assets/img/divisi/office/dokumen3.jpg'
-import _office_dokumen4 from '../../src/assets/img/divisi/office/dokumen4.jpg'
-import _vcd from '../../src/assets/img/fungsionaris/bersama/vcd.png'
-import _vcd_dokumen1 from '../../src/assets/img/divisi/vcd/dokumen1.jpg'
-import _vcd_dokumen2 from '../../src/assets/img/divisi/vcd/dokumen2.jpg'
-import _vcd_dokumen3 from '../../src/assets/img/divisi/vcd/dokumen3.jpg'
-import _vcd_dokumen4 from '../../src/assets/img/divisi/vcd/dokumen4.jpg'
-import _web from '../../src/assets/img/fungsionaris/bersama/web.png'
-import _web_dokumen1 from '../../src/assets/img/divisi/web/dokumen1.jpg'
-import _web_dokumen2 from '../../src/assets/img/divisi/web/dokumen2.jpg'
-import _web_dokumen3 from '../../src/assets/img/divisi/web/dokumen3.jpg'
-import _web_dokumen4 from '../../src/assets/img/divisi/web/dokumen4.jpg'
-import _bersama from '../../src/assets/img/hero/bersama.png'
-import _bersama2 from '../../src/assets/img/hero/bersama2.png'
-import _foto_bersama from '../../src/assets/img/hero/foto bersama.png'
-import _Logo_ccdt from '../../src/assets/img/logo/Logo ccdt.png'
-import _logo_intech from '../../src/assets/img/logo/logo intech.png'
-import _LOGO_PNB from '../../src/assets/img/logo/logo_pnb.png'
-import _LOGO_PNB_PUTIH from '../../src/assets/img/logo/logo_pnb_putih.png'
-import _LOGO_UKM_BERWARNA from '../../src/assets/img/logo/LOGO UKM BERWARNA.png'
-import _LOGO_UKM_HITAM from '../../src/assets/img/logo/LOGO UKM HITAM.png'
-import _LOGO_UKM_PUTIH from '../../src/assets/img/logo/LOGO UKM PUTIH.png'
-import _Logo_Eagles_hitam from '../../src/assets/img/logo/Logo_Eagles hitam.png'
-import _Logo_Eagles_warna from '../../src/assets/img/logo/Logo_Eagles warna.png'
+import _cover_divisi_web from '../assets/img/divisi/web/cover-divisi-web.png'
+import _cover_divisi_office from '../assets/img/divisi/office/cover_divisi_office.jpg'
+import _cover_divisi_game from '../assets/img/divisi/game/cover_divisi_game.jpg'
+import _cover_divisi_vcd from '../assets/img/divisi/vcd/cover_divisi_vcd.jpg'
+import _Inti from '../assets/img/fungsionaris/bersama/Inti.png'
+import _game from '../assets/img/fungsionaris/bersama/game.png'
+import _game_dokumen1 from '../assets/img/divisi/game/dokumen1.jpg'
+import _game_dokumen2 from '../assets/img/divisi/game/dokumen2.jpg'
+import _game_dokumen3 from '../assets/img/divisi/game/dokumen3.jpg'
+import _game_dokumen4 from '../assets/img/divisi/game/dokumen4.jpg'
+import _office from '../assets/img/fungsionaris/bersama/office.png'
+import _office_dokumen1 from '../assets/img/divisi/office/dokumen1.jpg'
+import _office_dokumen2 from '../assets/img/divisi/office/dokumen2.jpg'
+import _office_dokumen3 from '../assets/img/divisi/office/dokumen3.jpg'
+import _office_dokumen4 from '../assets/img/divisi/office/dokumen4.JPG'
+import _vcd from '../assets/img/fungsionaris/bersama/vcd.png'
+import _vcd_dokumen1 from '../assets/img/divisi/vcd/dokumen1.jpg'
+import _vcd_dokumen2 from '../assets/img/divisi/vcd/dokumen2.jpg'
+import _vcd_dokumen3 from '../assets/img/divisi/vcd/dokumen3.JPG'
+import _vcd_dokumen4 from '../assets/img/divisi/vcd/dokumen4.jpg'
+import _web from '../assets/img/fungsionaris/bersama/web.png'
+import _web_dokumen1 from '../assets/img/divisi/web/dokumen1.jpg'
+import _web_dokumen2 from '../assets/img/divisi/web/dokumen2.JPG'
+import _web_dokumen3 from '../assets/img/divisi/web/dokumen3.JPG'
+import _web_dokumen4 from '../assets/img/divisi/web/dokumen4.JPG'
+import _bersama from '../assets/img/hero/bersama.png'
+import _bersama2 from '../assets/img/hero/bersama2.png'
+import _foto_bersama from '../assets/img/hero/foto_bersama_fix.jpeg'
+import _Logo_ccdt from '../assets/img/logo/Logo ccdt.png'
+import _logo_intech from '../assets/img/logo/logo intech.png'
+import _LOGO_PNB from '../assets/img/logo/logo_pnb.png'
+import _LOGO_PNB_PUTIH from '../assets/img/logo/logo_pnb_putih.png'
+import _LOGO_UKM_BERWARNA from '../assets/img/logo/LOGO UKM BERWARNA.png'
+import _LOGO_UKM_HITAM from '../assets/img/logo/LOGO UKM HITAM.png'
+import _LOGO_UKM_PUTIH from '../assets/img/logo/LOGO UKM PUTIH.png'
+import _Logo_Eagles_hitam from '../assets/img/logo/Logo_Eagles hitam.png'
+import _Logo_Eagles_warna from '../assets/img/logo/Logo_Eagles warna.png'
 
-import _card_backface from '../../src/assets/img/logo/CARD BACK FACE.png'
+import _card_backface from '../assets/img/logo/CARD BACK FACE.png'
 
-import _gelombang_biru from '../../src/assets/img/ornamen/gelombang biru.png'
-import _gelombang_ungu from '../../src/assets/img/ornamen/gelombang ungu.png'
-import _icon_texture from '../../src/assets/img/ornamen/icon texture.png'
-import _teksture_1 from '../../src/assets/img/ornamen/teksture 1.png'
-import _tagline from '../../src/assets/img/ornamen/tagline.png'
-import _ccdt_foto from '../../src/assets/img/proker/ccdt/ccdt_foto.jpg'
-import _ccdt_foto_dokum1 from '../../src/assets/img/proker/ccdt/dokumen1.jpg'
-import _ccdt_foto_dokum2 from '../../src/assets/img/proker/ccdt/dokumen2.jpg'
-import _ccdt_foto_dokum3 from '../../src/assets/img/proker/ccdt/dokumen3.jpg'
-import _ccdt_foto_dokum4 from '../../src/assets/img/proker/ccdt/dokumen4.jpg'
-import _ccdt_foto_dokum5 from '../../src/assets/img/proker/ccdt/dokumen5.jpg'
-import _ccdt_foto_dokum6 from '../../src/assets/img/proker/ccdt/dokumen6.jpg'
-import _ccdt_foto_dokum7 from '../../src/assets/img/proker/ccdt/dokumen7.jpg'
-import _ccdt_foto_dokum8 from '../../src/assets/img/proker/ccdt/dokumen8.jpg'
-import _ccdt_foto_dokum9 from '../../src/assets/img/proker/ccdt/dokumen9.jpg'
-import _eagles_foto from '../../src/assets/img/proker/eagles/eagles_foto.jpg'
-import _eagles_foto_dokum1 from '../../src/assets/img/proker/eagles/dokumen1.jpg'
-import _eagles_foto_dokum2 from '../../src/assets/img/proker/eagles/dokumen2.jpg'
-import _eagles_foto_dokum3 from '../../src/assets/img/proker/eagles/dokumen3.jpg'
-import _eagles_foto_dokum4 from '../../src/assets/img/proker/eagles/dokumen4.jpg'
-import _eagles_foto_dokum5 from '../../src/assets/img/proker/eagles/dokumen5.jpg'
-import _eagles_foto_dokum6 from '../../src/assets/img/proker/eagles/dokumen6.jpg'
-import _eagles_foto_dokum7 from '../../src/assets/img/proker/eagles/dokumen7.jpg'
-import _eagles_foto_dokum8 from '../../src/assets/img/proker/eagles/dokumen8.jpg'
-import _eagles_foto_dokum9 from '../../src/assets/img/proker/eagles/dokumen9.jpg'
-import _intech_foto from '../../src/assets/img/proker/intech/intech_foto.jpg'
-import _intech_foto_dokum1 from '../../src/assets/img/proker/intech/dokumen1.jpg'
-import _intech_foto_dokum2 from '../../src/assets/img/proker/intech/dokumen2.jpg'
-import _intech_foto_dokum3 from '../../src/assets/img/proker/intech/dokumen3.jpg'
-import _intech_foto_dokum4 from '../../src/assets/img/proker/intech/dokumen4.jpg'
-import _intech_foto_dokum5 from '../../src/assets/img/proker/intech/dokumen5.jpg'
-import _intech_foto_dokum6 from '../../src/assets/img/proker/intech/dokumen6.jpg'
-import _intech_foto_dokum7 from '../../src/assets/img/proker/intech/dokumen7.jpg'
-import _intech_foto_dokum8 from '../../src/assets/img/proker/intech/dokumen8.jpg'
-import _intech_foto_dokum9 from '../../src/assets/img/proker/intech/dokumen9.jpg'
+import _gelombang_biru from '../assets/img/ornamen/gelombang biru.png'
+import _gelombang_ungu from '../assets/img/ornamen/gelombang ungu.png'
+import _icon_texture from '../assets/img/ornamen/icon texture.png'
+import _teksture_1 from '../assets/img/ornamen/teksture 1.png'
+import _tagline from '../assets/img/ornamen/tagline.png'
+import _ccdt_foto from '../assets/img/proker/ccdt/ccdt_foto.JPG'
+import _ccdt_foto_dokum1 from '../assets/img/proker/ccdt/dokumen1.jpg'
+import _ccdt_foto_dokum2 from '../assets/img/proker/ccdt/dokumen2.jpg'
+import _ccdt_foto_dokum3 from '../assets/img/proker/ccdt/dokumen3.jpg'
+import _ccdt_foto_dokum4 from '../assets/img/proker/ccdt/dokumen4.jpg'
+import _ccdt_foto_dokum5 from '../assets/img/proker/ccdt/dokumen5.jpg'
+import _ccdt_foto_dokum6 from '../assets/img/proker/ccdt/dokumen6.jpg'
+import _ccdt_foto_dokum7 from '../assets/img/proker/ccdt/dokumen7.jpg'
+import _ccdt_foto_dokum8 from '../assets/img/proker/ccdt/dokumen8.jpg'
+import _ccdt_foto_dokum9 from '../assets/img/proker/ccdt/dokumen9.jpg'
+import _eagles_foto from '../assets/img/proker/eagles/eagles_foto.JPG'
+import _eagles_foto_dokum1 from '../assets/img/proker/eagles/dokumen1.jpg'
+import _eagles_foto_dokum2 from '../assets/img/proker/eagles/dokumen2.jpg'
+import _eagles_foto_dokum3 from '../assets/img/proker/eagles/dokumen3.jpg'
+import _eagles_foto_dokum4 from '../assets/img/proker/eagles/dokumen4.jpg'
+import _eagles_foto_dokum5 from '../assets/img/proker/eagles/dokumen5.jpg'
+import _eagles_foto_dokum6 from '../assets/img/proker/eagles/dokumen6.jpg'
+import _eagles_foto_dokum7 from '../assets/img/proker/eagles/dokumen7.jpg'
+import _eagles_foto_dokum8 from '../assets/img/proker/eagles/dokumen8.jpg'
+import _eagles_foto_dokum9 from '../assets/img/proker/eagles/dokumen9.jpg'
+import _intech_foto from '../assets/img/proker/intech/intech_foto.JPG'
+import _intech_foto_dokum1 from '../assets/img/proker/intech/dokumen1.jpg'
+import _intech_foto_dokum2 from '../assets/img/proker/intech/dokumen2.jpg'
+import _intech_foto_dokum3 from '../assets/img/proker/intech/dokumen3.jpg'
+import _intech_foto_dokum4 from '../assets/img/proker/intech/dokumen4.jpg'
+import _intech_foto_dokum5 from '../assets/img/proker/intech/dokumen5.jpg'
+import _intech_foto_dokum6 from '../assets/img/proker/intech/dokumen6.jpg'
+import _intech_foto_dokum7 from '../assets/img/proker/intech/dokumen7.jpg'
+import _intech_foto_dokum8 from '../assets/img/proker/intech/dokumen8.jpg'
+import _intech_foto_dokum9 from '../assets/img/proker/intech/dokumen9.jpg'
 
 // fungsionaris
-import _ria from "../../src/assets/img/fungsionaris/perorang/INTI/RIA.png"
-import _efanie from "../../src/assets/img/fungsionaris/perorang/INTI/EFANIE.png"
-import _ajus from "../../src/assets/img/fungsionaris/perorang/INTI/AJUS.png"
-import _citra from "../../src/assets/img/fungsionaris/perorang/INTI/CITRA.png"
-import _tasya from "../../src/assets/img/fungsionaris/perorang/INTI/TASYA.png"
-import _ayuhmi from "../../src/assets/img/fungsionaris/perorang/INTI/AYUHMI.png"
+import _ria from "../assets/img/fungsionaris/perorang/INTI/RIA.png"
+import _efanie from "../assets/img/fungsionaris/perorang/INTI/EFANIE.png"
+import _ajus from "../assets/img/fungsionaris/perorang/INTI/AJUS.png"
+import _citra from "../assets/img/fungsionaris/perorang/INTI/CITRA.png"
+import _tasya from "../assets/img/fungsionaris/perorang/INTI/TASYA.png"
+import _ayuhmi from "../assets/img/fungsionaris/perorang/INTI/AYUHMI.png"
 
-import _bima from "../../src/assets/img/fungsionaris/perorang/Game/BIMA.png"
-import _galuh from "../../src/assets/img/fungsionaris/perorang/Game/GALUH.png"
-import _darma from "../../src/assets/img/fungsionaris/perorang/Game/DARMA.png"
-import _agik from "../../src/assets/img/fungsionaris/perorang/Game/AGIK.png"
+import _bima from "../assets/img/fungsionaris/perorang/Game/BIMA.png"
+import _galuh from "../assets/img/fungsionaris/perorang/Game/GALUH.png"
+import _darma from "../assets/img/fungsionaris/perorang/Game/DARMA.png"
+import _agik from "../assets/img/fungsionaris/perorang/Game/AGIK.png"
 
-import _mitasari from "../../src/assets/img/fungsionaris/perorang/office/MITASARI.png"
-import _mangsri from "../../src/assets/img/fungsionaris/perorang/office/MANGSRI.png"
-import _erin from "../../src/assets/img/fungsionaris/perorang/office/ERRIN.png"
-import _puji from "../../src/assets/img/fungsionaris/perorang/office/PUJI.png"
-import _dewi from "../../src/assets/img/fungsionaris/perorang/office/DEWI.png"
-import _devita from "../../src/assets/img/fungsionaris/perorang/office/DEVITA.png"
-import _diva from "../../src/assets/img/fungsionaris/perorang/office/DIVA.png"
-import _subawa from "../../src/assets/img/fungsionaris/perorang/office/SUBAWA.png"
-import _tika from "../../src/assets/img/fungsionaris/perorang/office/TIKA.png"
-import _widnyana from "../../src/assets/img/fungsionaris/perorang/office/WIDNYANA.png"
+import _mitasari from "../assets/img/fungsionaris/perorang/office/MITASARI.png"
+import _mangsri from "../assets/img/fungsionaris/perorang/office/MANGSRI.png"
+import _erin from "../assets/img/fungsionaris/perorang/office/ERRIN.png"
+import _puji from "../assets/img/fungsionaris/perorang/office/PUJI.png"
+import _dewi from "../assets/img/fungsionaris/perorang/office/DEWI.png"
+import _devita from "../assets/img/fungsionaris/perorang/office/DEVITA.png"
+import _diva from "../assets/img/fungsionaris/perorang/office/DIVA.png"
+import _subawa from "../assets/img/fungsionaris/perorang/office/SUBAWA.png"
+import _tika from "../assets/img/fungsionaris/perorang/office/TIKA.png"
+import _widnyana from "../assets/img/fungsionaris/perorang/office/WIDNYANA.png"
 
-import _nadwitya from "../../src/assets/img/fungsionaris/perorang/vcd/NADWITYA.png"
-import _sinta from "../../src/assets/img/fungsionaris/perorang/vcd/SINTA.png"
-import _lia from "../../src/assets/img/fungsionaris/perorang/vcd/LIA.png"
-import _kaifa from "../../src/assets/img/fungsionaris/perorang/vcd/KAIFA.png"
-import _pradnya from "../../src/assets/img/fungsionaris/perorang/vcd/PRADNYA.png"
-import _dipta from "../../src/assets/img/fungsionaris/perorang/vcd/DIPTA.png"
+import _nadwitya from "../assets/img/fungsionaris/perorang/vcd/NADWITYA.png"
+import _sinta from "../assets/img/fungsionaris/perorang/vcd/SINTA.png"
+import _lia from "../assets/img/fungsionaris/perorang/vcd/LIA.png"
+import _kaifa from "../assets/img/fungsionaris/perorang/vcd/KAIFA.png"
+import _pradnya from "../assets/img/fungsionaris/perorang/vcd/PRADNYA.png"
+import _dipta from "../assets/img/fungsionaris/perorang/vcd/DIPTA.png"
 
-import _ayu from "../../src/assets/img/fungsionaris/perorang/web/AYU.png"
-import _santika from "../../src/assets/img/fungsionaris/perorang/web/SANTIKA.png"
-import _pebrian from "../../src/assets/img/fungsionaris/perorang/web/PEBRIAN.png"
-import _arya from "../../src/assets/img/fungsionaris/perorang/web/ARYA.png"
-import _danendra from "../../src/assets/img/fungsionaris/perorang/web/DANENDRA.png"
-import _tio from "../../src/assets/img/fungsionaris/perorang/web/SEAN.png"
+import _ayu from "../assets/img/fungsionaris/perorang/web/AYU.png"
+import _santika from "../assets/img/fungsionaris/perorang/web/SANTIKA.png"
+import _pebrian from "../assets/img/fungsionaris/perorang/web/PEBRIAN.png"
+import _arya from "../assets/img/fungsionaris/perorang/web/ARYA.png"
+import _danendra from "../assets/img/fungsionaris/perorang/web/DANENDRA.png"
+import _tio from "../assets/img/fungsionaris/perorang/web/SEAN.png"
 
 const imagesData = 
 {
