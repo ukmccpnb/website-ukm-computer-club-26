@@ -1,71 +1,49 @@
 import Button from "./Button";
 import logo from '../../src/assets/img/logo/LOGO UKM PUTIH.png';
 
-
 function Card(props) {
-    const {img, divisi, deskripsi, rekomendasi, href, singkatan} = props;
+    const {img, divisi, href, singkatan} = props;
     return(
-        // Versi 1
-        // <div data-aos="zoom-in">
-        //     <div className="relative md:w-[20rem] lg:w-[25rem] md:mx-5 md:my-2 hover:scale-105 transition-all">
-        //         <div className="w-full h-60 relative z-10">
-        //             <img src={`${img}`} className="w-full rounded-ss-lg rounded-se-lg" loading="lazy"></img>
-        //         </div>
+        <div data-aos="zoom-in" className="w-full">
+            <div className="group relative w-full h-[28rem] sm:h-[32rem] rounded-3xl overflow-hidden cursor-pointer transition-all duration-300 border-2 border-transparent hover:border-secondary bg-[#0a0a0a] shadow-lg shadow-black/50">
+                {/* Background Image */}
+                <div 
+                    className="absolute inset-0 bg-cover bg-center bg-no-repeat transition-all duration-500 grayscale opacity-40 group-hover:grayscale-0 group-hover:opacity-100 group-hover:scale-105"
+                    style={{ backgroundImage: `url(${img})` }}
+                ></div>
 
-        //         <div className="bg-white p-1 w-full relative rounded-lg z-20 -top-20 lg:-top-5 shadow-lg shadow-gray-300">
-        //             <h3 className="font-semibold text-center my-3 text-lg">{divisi}</h3>
-        //             <p className="text-center text-sm w-konten mx-auto mb-5">{deskripsi}</p>
-        //             <Button divClass="flex justify-center" href={`${href}`} text="Baca Selengkapnya"/>
-        //         </div>
-        //     </div>
-        // </div>
+                {/* Gradient Overlay for text readability at bottom */}
+                <div className="absolute inset-0 bg-gradient-to-t from-[#0a0a0a] via-[#0a0a0a]/80 to-transparent opacity-90 group-hover:opacity-100 transition-opacity duration-300"></div>
 
-        // Versi 2
-        <div data-aos="zoom-in">
-            {/* Versi 1 */}
-            {/* <div className="w-full sm:w-3/5 hover:scale-105 transition-all my-10 mx-auto" id={`${singkatan}`}>
-                <div className="w-full sm:h-96 flex flex-col justify-between z-10 bg-center bg-cover p-4 sm:p-8 rounded-xl text-putih" style={{ backgroundImage: `linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url(${img})` }}>
-                    <div>
-                        <div className="flex justify-between">
-                            <div className="w-full flex flex-col justify-center">
-                                <h3 className="font-semibold text-xl sm:text-4xl">{divisi}</h3>
-                                <hr className="w-1/2"/>
-                            </div>
-                            <img src={`${logo}`} className="sm:h-14 h-12 ml-[2%] items-end" alt="logo UKM CC"/>
-                        </div>
-                        <p className="text-sm w-full sm:w-3/5 my-5">{deskripsi}</p>
-                    </div>
-                    <div>
-                        <p className="text-sm w-full sm:w-1/2 mb-5" dangerouslySetInnerHTML={{ __html: rekomendasi }}></p>
-                        <Button divClass="flex justify-end" href={`${href}`} text="Baca Selengkapnya"/>
-                    </div>
-                </div>
-            </div> */}
-
-            {/* Versi 3 */}
-            <div className="w-full sm:w-4/5 hover:scale-105 transition-all my-10 mx-auto" id={`${singkatan}`}>
-                <div className="w-full sm:h-auto lg:h-96 block lg:flex justify-between bg-putih shadow-xl shadow-hitam/20 rounded-xl overflow-hidden">
+                {/* Content Container (Bottom Aligned) */}
+                <div className="absolute bottom-0 left-0 right-0 p-6 flex flex-col justify-end z-10">
                     
-                    {/* Bagian Kiri (Image Background) */}
-                    <div className="w-full lg:w-1/2 h-64 lg:h-full">
-                    <div className="w-full h-full flex flex-col justify-between z-10 bg-center bg-cover p-4 sm:p-8 rounded-xl" style={{ backgroundImage: `linear-gradient(rgba(0,0,0,0.2), rgba(0,0,0,0.2)), url(${img})` }}></div>
+                    {/* Texts */}
+                    <div className="transform transition-transform duration-300 group-hover:-translate-y-16">
+                        <p className="text-secondary text-xs sm:text-sm font-bold tracking-widest uppercase mb-1 drop-shadow-md">
+                            DIVISI • {singkatan}
+                        </p>
+                        <h3 className={`text-putih font-semibold transition-colors duration-300 group-hover:text-secondary drop-shadow-lg leading-snug ${
+                            divisi === 'Visual Communication Design' 
+                                ? 'text-lg sm:text-xl lg:text-lg xl:text-xl' 
+                                : 'text-xl sm:text-2xl lg:text-xl xl:text-2xl whitespace-nowrap'
+                        }`}>
+                            {divisi === 'Visual Communication Design' ? (
+                                <>Visual Communication<br/>Design</>
+                            ) : (
+                                divisi
+                            )}
+                        </h3>
                     </div>
-
-                    {/* Bagian Kanan (Content) */}
-                    <div className="w-full lg:w-1/2 flex flex-col justify-between p-4">
-                    <div>
-                        <div className="flex justify-between items-center flex-wrap gap-2">
-                            <div className="w-auto flex flex-col justify-center">
-                                <h3 className="font-semibold text-xl sm:text-3xl">{divisi}</h3>
-                                <hr className="w-1/2" />
-                            </div>
-                        </div>
-                        <p className="text-sm w-full sm:w-4/5 my-5">{deskripsi}</p>
-                        <p className="text-sm w-full sm:w-4/5 mb-5" dangerouslySetInnerHTML={{ __html: rekomendasi }}></p>
-                    </div>
-                    <div className="mt-4 lg:mt-0">
-                        <Button divClass="flex justify-end" href={`${href}`} text="Baca Selengkapnya"/>
-                    </div>
+                    
+                    {/* Hover Button - Only "Lihat Selengkapnya" */}
+                    <div className="absolute bottom-6 left-6 right-6 translate-y-10 opacity-0 group-hover:translate-y-0 group-hover:opacity-100 transition-all duration-300">
+                        <a 
+                            href={href} 
+                            className="block w-full py-3 sm:py-4 px-4 bg-[#2b2b2b] hover:bg-[#3b3b3b] text-putih text-xs sm:text-sm font-bold tracking-widest text-center rounded-xl transition-colors border border-gray-600 shadow-md"
+                        >
+                            LIHAT SELENGKAPNYA
+                        </a>
                     </div>
                 </div>
             </div>
