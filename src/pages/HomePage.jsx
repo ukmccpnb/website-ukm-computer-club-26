@@ -167,7 +167,9 @@ function HomePage() {
 
                                     {/* Content */}
                                     <div className="relative z-10 flex flex-col items-center justify-center max-w-4xl mx-auto h-full">
-                                        <img src={Data.logo} alt={Data.name} className="h-20 w-20 sm:h-24 sm:w-24 md:h-32 md:w-32 bg-white rounded-full p-2 mb-4 md:mb-6 shadow-lg object-contain" loading="lazy" decoding="async" />
+                                        <div className="h-20 w-20 sm:h-24 sm:w-24 md:h-32 md:w-32 bg-white rounded-full mb-4 md:mb-6 shadow-lg flex justify-center items-center overflow-hidden">
+                                            <img src={Data.logo} alt={Data.name} className="w-[75%] h-[75%] object-contain" loading="lazy" decoding="async" />
+                                        </div>
                                         <h2 className="text-2xl sm:text-3xl md:text-5xl font-bold text-white mb-2 md:mb-4 drop-shadow-md">{Data.name}</h2>
                                         <p className="text-sm md:text-lg text-gray-200 mb-6 md:mb-8 line-clamp-3 md:line-clamp-none leading-relaxed px-4 md:px-0">{Data.deskripsi}</p>
                                         <Button href={Data.href} text="Baca Selengkapnya" />
