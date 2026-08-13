@@ -49,7 +49,7 @@ function CardFungsio(props) {
                     <img 
                         src={card_backface} 
                         className="w-full h-full object-cover rounded-xl" 
-                        alt="Card" 
+                        alt="Card1" 
                         loading="lazy"
                     />
                 </div>
@@ -58,7 +58,7 @@ function CardFungsio(props) {
                 <div className="absolute inset-0 h-full w-full rounded-xl [transform:rotateY(180deg)] [backface-visibility:hidden] overflow-hidden">
                     <img 
                         src={img} 
-                        alt="Card_img" 
+                        alt="Card2" 
                         className="w-full h-full object-cover rounded-xl" 
                         loading="lazy"
                     />

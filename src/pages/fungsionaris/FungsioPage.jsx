@@ -110,11 +110,43 @@ import VcdData from '../../data/fungsio/vcd';
 function FungsioPage() {
     const divisiList = [
         { code: "01", title: "Fungsionaris Inti", data: intiData },
-        { code: "02", title: "Divisi Office", data: OfficeData },
+        { code: "02", title: "Divisi Office", data: OfficeData, pattern: [3, 3, 2, 2] },
         { code: "03", title: "Divisi Visual Communication Design", data: VcdData },
         { code: "04", title: "Divisi Web Development", data: WebData },
-        { code: "05", title: "Divisi Game Development", data: GameData },
+        { code: "05", title: "Divisi Game Development", data: GameData, pattern: [2, 2] },
     ];
+
+    // Helper untuk membagi kartu berdasarkan susunan baris (pattern)
+    const renderCardGrid = (data, pattern) => {
+        if (!pattern) {
+            return (
+                <div className="flex justify-center items-center flex-wrap gap-8 sm:gap-10">
+                    {data.map((item) => (
+                        <CardFungsio key={item.id} img={item.img} />
+                    ))}
+                </div>
+            );
+        }
+
+        let currentIndex = 0;
+        const rows = pattern.map((count) => {
+            const rowData = data.slice(currentIndex, currentIndex + count);
+            currentIndex += count;
+            return rowData;
+        });
+
+        return (
+            <div className="flex flex-col items-center gap-8 sm:gap-10">
+                {rows.map((rowItems, rowIndex) => (
+                    <div key={rowIndex} className="flex justify-center items-center flex-wrap gap-8 sm:gap-10 w-full">
+                        {rowItems.map((item) => (
+                            <CardFungsio key={item.id} img={item.img} />
+                        ))}
+                    </div>
+                ))}
+            </div>
+        );
+    };
 
     return (
         <div className="relative min-h-screen text-slate-900 font-sans selection:bg-[#96C0FF] selection:text-[#0053FA]">
@@ -143,7 +175,7 @@ function FungsioPage() {
                     {divisiList.map((divisi) => (
                         <section key={divisi.code} className="w-full" data-aos="fade-up">
                             
-                            {/* Header Divisi: Rata Tengah di Mobile, Rata Kiri di Desktop */}
+                            {/* Header Divisi */}
                             <div className="flex items-center justify-center sm:justify-start gap-2 sm:gap-4 mb-10 pb-3 border-b-2 border-[#96C0FF] text-center sm:text-left">
                                 <span className="text-lg sm:text-xl font-mono font-bold text-[#1576FF]">
                                     {divisi.code} /
@@ -157,15 +189,8 @@ function FungsioPage() {
                                 </span>
                             </div>
 
-                            {/* Grid Kartu */}
-                            <div className="flex justify-center items-center flex-wrap gap-8 sm:gap-10">
-                                {divisi.data.map((item) => (
-                                    <CardFungsio 
-                                        key={item.id} 
-                                        img={item.img}
-                                    />
-                                ))}
-                            </div>
+                            {/* Render Layout Grid Berdasarkan Pattern */}
+                            {renderCardGrid(divisi.data, divisi.pattern)}
 
                         </section>
                     ))}

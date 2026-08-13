@@ -7,19 +7,19 @@ const intiData = [
     },
     {
         id: 2,  
-        img: imagesData.citra, 
-    },
-    {
-        id: 3,  
         img: imagesData.efanie, 
     },
     {
+        id: 3,  
+        img: imagesData.ajus, 
+    },
+    {
         id: 4,  
-        img: imagesData.tasya, 
+        img: imagesData.citra, 
     },
     {
         id: 5,  
-        img: imagesData.ajus, 
+        img: imagesData.tasya, 
     },
     {
         id: 6,  
