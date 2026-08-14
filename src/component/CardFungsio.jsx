@@ -41,25 +41,33 @@ function CardFungsio(props) {
     const { img } = props;
 
     return (
-        <div className="group h-[380px] w-72 m-3 [perspective:1000px]" data-aos="zoom-in">
-            <div className="relative h-full w-full rounded-xl transition-all duration-500 [transform-style:preserve-3d] group-hover:[transform:rotateY(180deg)]">
-                
+        // Mobile: lebar penuh (diatur parent grid 2-kolom), rasio portrait 3/4
+        // Desktop (sm ke atas): lebar tetap w-72, tinggi tetap h-[380px]
+        <div
+            className="group w-full sm:w-72 sm:h-[380px] m-0 sm:m-3 [perspective:1000px]"
+            style={{ aspectRatio: '3/4' }}
+            data-aos="zoom-in"
+        >
+            <div className="relative h-full w-full rounded-xl transition-all duration-500 [transform-style:preserve-3d] group-hover:[transform:rotateY(180deg)] active:[transform:rotateY(180deg)]">
+
                 {/* SISI DEPAN (FRONT FACE) */}
                 <div className="absolute inset-0 [backface-visibility:hidden] overflow-hidden rounded-xl">
-                    <img src={card_backface} 
-                        className="w-full h-full object-cover rounded-xl" 
-                        alt="Card1" 
+                    <img
+                        src={card_backface}
+                        className="w-full h-full object-cover rounded-xl"
+                        alt="Card1"
                         loading="lazy"
                     />
                 </div>
 
                 {/* SISI BELAKANG (BACK FACE) */}
                 <div className="absolute inset-0 h-full w-full rounded-xl [transform:rotateY(180deg)] [backface-visibility:hidden] overflow-hidden">
-                    <img 
-                        src={img} 
-                        alt="Card2" 
-                        className="w-full h-full object-cover rounded-xl" 
-                        loading="lazy" decoding="async" />
+                    <img
+                        src={img}
+                        alt="Card2"
+                        className="w-full h-full object-cover rounded-xl"
+                        loading="lazy" decoding="async"
+                    />
                 </div>
 
             </div>

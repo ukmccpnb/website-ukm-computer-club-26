@@ -118,15 +118,14 @@ function FungsioPage() {
 
     // Helper untuk membagi kartu berdasarkan susunan baris (pattern)
     const renderCardGrid = (data, pattern) => {
-        if (!pattern) {
-            return (
-                <div className="flex justify-center items-center flex-wrap gap-8 sm:gap-10">
-                    {data.map((item) => (
-                        <CardFungsio key={item.id} img={item.img} />
-                    ))}
-                </div>
-            );
-        }
+        // Tanpa pattern: grid 2-kolom di mobile, flex-wrap di sm+
+        return (
+            <div className="grid grid-cols-2 gap-3 sm:flex sm:flex-wrap sm:justify-center sm:items-center sm:gap-8 sm:gap-10">
+                {data.map((item) => (
+                    <CardFungsio key={item.id} img={item.img} />
+                ))}
+            </div>
+        );
 
         let currentIndex = 0;
         const rows = pattern.map((count) => {
@@ -136,15 +135,25 @@ function FungsioPage() {
         });
 
         return (
-            <div className="flex flex-col items-center gap-8 sm:gap-10">
-                {rows.map((rowItems, rowIndex) => (
-                    <div key={rowIndex} className="flex justify-center items-center flex-wrap gap-8 sm:gap-10 w-full">
-                        {rowItems.map((item) => (
-                            <CardFungsio key={item.id} img={item.img} />
-                        ))}
-                    </div>
-                ))}
-            </div>
+            // Mobile: grid 2-kolom, Desktop: susunan baris per-pattern
+            <>
+                {/* Mobile: tampil grid 2-kolom biasa */}
+                <div className="grid grid-cols-2 gap-3 sm:hidden">
+                    {data.map((item) => (
+                        <CardFungsio key={item.id} img={item.img} />
+                    ))}
+                </div>
+                {/* Desktop: tampil dengan pattern baris */}
+                <div className="hidden sm:flex flex-col items-center gap-8 sm:gap-10">
+                    {rows.map((rowItems, rowIndex) => (
+                        <div key={rowIndex} className="flex justify-center items-center flex-wrap gap-8 sm:gap-10 w-full">
+                            {rowItems.map((item) => (
+                                <CardFungsio key={item.id} img={item.img} />
+                            ))}
+                        </div>
+                    ))}
+                </div>
+            </>
         );
     };
 
@@ -155,7 +164,7 @@ function FungsioPage() {
 
             <Navbar />
 
-            <main className="pt-32 pb-24 px-6 max-w-7xl mx-auto">
+            <main className="pt-32 pb-24 px-3 sm:px-6 max-w-7xl mx-auto">
                 
                 {/* HERO HEADER */}
                 <header className="mb-20 flex flex-col items-center justify-center text-center" data-aos="fade-up">
