@@ -1,4 +1,4 @@
-import { faGears, faGamepad, faFontAwesome, faScrewdriverWrench } from "@fortawesome/free-solid-svg-icons";
+import { faGears, faGamepad, faFontAwesome, faScrewdriverWrench, faChartBar, faDatabase, faPenNib, faFilm, faLayerGroup, faCode, faBriefcase, faPalette, faRocket } from "@fortawesome/free-solid-svg-icons";
 import { faFigma, faCss,  faHtml5, faMicrosoft, faGoogle } from '@fortawesome/free-brands-svg-icons';
 import imagesData from "../imgImports";
 
@@ -17,6 +17,7 @@ const divisiData = [
             • Manajemen`,
         href: "/divisi/office",
         imgCover: imagesData.cover_divisi_office,
+        accentColor: "#1576FF",
         deskripsiKegiatan: "Divisi Office pada pembelajaran aplikasi perkantoran yang sering digunakan dalam dunia akademik maupun dunia kerja. Anggota akan belajar menggunakan berbagai tools seperti Microsoft Word, Excel, PowerPoint, serta aplikasi berbasis cloud untuk membantu pekerjaan menjadi lebih mudah, rapi, dan efisien.",
         deskripsiMateri: "Berfokus pada pembelajaran berbagai fitur dan fungsi dalam Microsoft Office dan Google Workspace untuk membantu meningkatkan keterampilan digital yang dapat menjadi bekal dalam dunia perkantoran.",
         itemsKegiatan: [
@@ -40,7 +41,6 @@ const divisiData = [
                 altGambar: "Dokumentasi Divisi Office",
                 judul: "Dokumentasi Divisi Office",
                 deskripsi: "Dokumentasi Pelatihan UKM Computer Club Divisi Office",
-
             },
             {
                 id: 4,
@@ -48,7 +48,6 @@ const divisiData = [
                 altGambar: "Dokumentasi Divisi Office",
                 judul: "Dokumentasi Divisi Office",
                 deskripsi: "Dokumentasi Pelatihan UKM Computer Club Divisi Office",
-
             },
             {
                 id: 5,
@@ -56,7 +55,6 @@ const divisiData = [
                 altGambar: "Dokumentasi Divisi Office",
                 judul: "Dokumentasi Divisi Office",
                 deskripsi: "Dokumentasi Pelatihan UKM Computer Club Divisi Office",
-
             },
         ],
         itemsMateri: [
@@ -69,6 +67,43 @@ const divisiData = [
                 icon: faGoogle,
                 judul: "Google Workspace",
                 deskripsi: "Mempelajari penggunaan Google Docs, Google Sheets, dan Google Slides untuk membuat, mengelola, serta berkolaborasi dalam berbagai dokumen secara online.",
+            },
+        ],
+        karya: [
+            {
+                gambar: imagesData.office_dokumen1,
+                judul: "Laporan Keuangan Digital",
+                deskripsi: "Pembuatan laporan keuangan interaktif menggunakan Microsoft Excel dengan visualisasi grafik dan dashboard.",
+                tag: "Microsoft Excel",
+            },
+            {
+                gambar: imagesData.office_dokumen2,
+                judul: "Presentasi Bisnis",
+                deskripsi: "Pembuatan presentasi profesional dengan template custom menggunakan Microsoft PowerPoint.",
+                tag: "Microsoft PowerPoint",
+            },
+            {
+                gambar: imagesData.office_dokumen3,
+                judul: "Dokumen Kolaboratif",
+                deskripsi: "Pengelolaan dokumen bersama menggunakan Google Workspace untuk efisiensi kerja tim.",
+                tag: "Google Workspace",
+            },
+        ],
+        prospekKarir: [
+            {
+                icon: faChartBar,
+                judul: "Data Analyst",
+                deskripsi: "Menganalisis data bisnis menggunakan spreadsheet dan tools visualisasi untuk menghasilkan insight yang berharga.",
+            },
+            {
+                icon: faBriefcase,
+                judul: "Administrative Staff",
+                deskripsi: "Mengelola dokumen, membuat laporan, dan mengkoordinasikan pekerjaan kantor secara efisien.",
+            },
+            {
+                icon: faDatabase,
+                judul: "Office Manager",
+                deskripsi: "Memimpin operasional kantor dan memastikan alur kerja berjalan efektif menggunakan tools digital.",
             },
         ],
     },
@@ -86,6 +121,7 @@ const divisiData = [
             • DKV`,
         href: "/divisi/vcd",
         imgCover: imagesData.cover_divisi_vcd,
+        accentColor: "#a855f7",
         deskripsiKegiatan: "Divisi ini berfokus pada pengembangan keterampilan desain visual menggunakan software desain populer, baik untuk kebutuhan kreatif maupun profesional. Di sini, anggota akan belajar mengolah gambar, mengatur komposisi, hingga membuat desain UI/UX yang siap digunakan untuk website atau aplikasi.",
         deskripsiMateri: "Berfokus pada editing foto dan pembuatan desain tampilan antarmuka aplikasi untuk mengembangkan kemampuan dalam menyampaikan ide melalui media visual.",
         itemsKegiatan: [
@@ -137,6 +173,43 @@ const divisiData = [
                 deskripsi: "FMempelajari penggunaan Figma untuk membuat desain antarmuka aplikasi, serta berkolaborasi dalam proses perancangan desain.",
             },
         ],
+        karya: [
+            {
+                gambar: imagesData.vcd_dokumen1,
+                judul: "Desain Poster Event",
+                deskripsi: "Pembuatan poster dan materi visual untuk acara IntechFest dengan identitas visual yang kuat.",
+                tag: "Affinity Designer",
+            },
+            {
+                gambar: imagesData.vcd_dokumen2,
+                judul: "UI/UX Prototype",
+                deskripsi: "Perancangan prototype antarmuka aplikasi mobile menggunakan Figma dengan prinsip user-centered design.",
+                tag: "Figma",
+            },
+            {
+                gambar: imagesData.vcd_dokumen3,
+                judul: "Brand Identity",
+                deskripsi: "Pengembangan identitas visual lengkap termasuk logo, palet warna, dan panduan brand untuk UKM Computer Club.",
+                tag: "Affinity & Figma",
+            },
+        ],
+        prospekKarir: [
+            {
+                icon: faPenNib,
+                judul: "UI/UX Designer",
+                deskripsi: "Merancang pengalaman dan antarmuka pengguna yang intuitif dan menarik untuk aplikasi digital.",
+            },
+            {
+                icon: faPalette,
+                judul: "Graphic Designer",
+                deskripsi: "Membuat materi visual untuk kebutuhan branding, marketing, dan komunikasi perusahaan.",
+            },
+            {
+                icon: faFilm,
+                judul: "Content Creator",
+                deskripsi: "Menghasilkan konten visual berkualitas tinggi untuk platform digital dan media sosial.",
+            },
+        ],
     },
     {
         id: 3,
@@ -152,6 +225,7 @@ const divisiData = [
             • Manajemen Informasi`,
         href: "/divisi/web",
         imgCover: imagesData.cover_divisi_web,
+        accentColor: "#22c55e",
         deskripsiKegiatan: "Divisi Web Development merupakan divisi yang berfokus pada pembelajaran dan pengembangan keterampilan dalam membangun tampilan serta struktur website. Kegiatan dalam divisi ini mencakup pemahaman dasar HTML dan CSS, hingga penerapan framework modern untuk menciptakan website yang rapi, responsif, dan estetis. Divisi ini dirancang untuk memberikan bekal keterampilan yang relevan di era digital, sekaligus membuka peluang dalam dunia teknologi dan industri kreatif.",
         deskripsiMateri: "Berfokus pada pengembangan website, khususnya Front-End Development, dengan mempelajari cara merancang, membangun, dan mengembangkan tampilan antarmuka pengguna (UI).",
         itemsKegiatan: [
@@ -208,6 +282,43 @@ const divisiData = [
                 deskripsi: "Mempelajari penggunaan framework CSS untuk mempermudah proses pengembangan tampilan website yang responsif dan terstruktur.",
             },
         ],
+        karya: [
+            {
+                gambar: imagesData.web_dokumen1,
+                judul: "Website UKM Computer Club",
+                deskripsi: "Pengembangan website resmi UKM Computer Club menggunakan React.js dan Tailwind CSS yang responsif.",
+                tag: "React.js",
+            },
+            {
+                gambar: imagesData.web_dokumen2,
+                judul: "Landing Page Event",
+                deskripsi: "Pembuatan landing page untuk acara IntechFest dengan animasi modern dan desain yang menarik.",
+                tag: "HTML & CSS",
+            },
+            {
+                gambar: imagesData.web_dokumen3,
+                judul: "Portfolio Website",
+                deskripsi: "Pengembangan website portfolio anggota divisi sebagai hasil akhir pelatihan web development.",
+                tag: "HTML, CSS & Framework",
+            },
+        ],
+        prospekKarir: [
+            {
+                icon: faCode,
+                judul: "Front-End Developer",
+                deskripsi: "Membangun tampilan website yang interaktif dan responsif menggunakan teknologi web modern.",
+            },
+            {
+                icon: faLayerGroup,
+                judul: "Full-Stack Developer",
+                deskripsi: "Mengembangkan aplikasi web secara menyeluruh mulai dari antarmuka hingga logika server.",
+            },
+            {
+                icon: faRocket,
+                judul: "Web Designer",
+                deskripsi: "Merancang tampilan dan pengalaman website yang estetis dan fungsional untuk berbagai kebutuhan.",
+            },
+        ],
     },
     {
         id: 4,
@@ -223,6 +334,7 @@ const divisiData = [
             • Tech Enthusiast`,
         href: "/divisi/game",
         imgCover: imagesData.cover_divisi_game,
+        accentColor: "#f59e0b",
         deskripsiKegiatan: "Divisi Game Development merupakan divisi yang berfokus pada pembuatan game platformer 2D, yang juga mewadahi minat anggota dalam memainkan berbagai game mobile seperti Mobile Legends, PUBG Mobile, dan lainnya.",
         deskripsiMateri: "Berfokus pada pembuatan dan pengembangan game menggunakan game engine untuk mengembangkan kemampuan dalam merancang dan membangun game.",
         itemsKegiatan: [
@@ -269,8 +381,45 @@ const divisiData = [
                 deskripsi: "Mempelajari penggunaan Roblox Studio untuk membuat dan mengembangkan game 3D, mulai dari membangun environment, mengatur objek, hingga menerapkan berbagai mekanisme dan interaksi dalam game.",
             },
         ],
+        karya: [
+            {
+                gambar: imagesData.game_dokumen1,
+                judul: "Platformer 2D Game",
+                deskripsi: "Pengembangan game platformer 2D lengkap dengan mekanika lompat, musuh, dan level design menggunakan Construct 3.",
+                tag: "Construct 3",
+            },
+            {
+                gambar: imagesData.game_dokumen2,
+                judul: "Game 3D di Roblox",
+                deskripsi: "Pembuatan world dan game interaktif di platform Roblox Studio dengan scripting Lua dasar.",
+                tag: "Roblox Studio",
+            },
+            {
+                gambar: imagesData.game_dokumen3,
+                judul: "Desain Level & Assets",
+                deskripsi: "Perancangan level game dan pembuatan assets visual untuk mendukung pengembangan game.",
+                tag: "Game Design",
+            },
+        ],
+        prospekKarir: [
+            {
+                icon: faGamepad,
+                judul: "Game Developer",
+                deskripsi: "Membuat dan mengembangkan game dari konsep hingga produk jadi menggunakan berbagai game engine.",
+            },
+            {
+                icon: faRocket,
+                judul: "Indie Developer",
+                deskripsi: "Mengembangkan game secara mandiri atau dalam tim kecil dan memasarkannya ke platform distribusi game.",
+            },
+            {
+                icon: faPalette,
+                judul: "Game Designer",
+                deskripsi: "Merancang mekanik gameplay, level, dan pengalaman bermain yang menarik dan menyenangkan.",
+            },
+        ],
     },
 ]
 
 
-export default divisiData;
+export default divisiData;

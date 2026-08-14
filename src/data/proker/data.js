@@ -89,7 +89,7 @@ const prokerData = [
     {
         id: 2,
         logo: imagesData.logo_intech, 
-        img: imagesData.intech_foto, 
+        img: imagesData.intech_foto_dokum7, 
         name: "IntechFest",
         deskripsi: "Information and Technology Festival (IntechFest) merupakan program kerja utama UKM Computer Club yang menghadirkan lomba dan seminar nasional sebagai wadah edukatif dan kompetitif di bidang teknologi informasi.",
         href: "/programkerja/intechfest",
