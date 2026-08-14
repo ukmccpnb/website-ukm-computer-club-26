@@ -44,8 +44,7 @@ function CardFungsio(props) {
         // Mobile: lebar penuh (diatur parent grid 2-kolom), rasio portrait 3/4
         // Desktop (sm ke atas): lebar tetap w-72, tinggi tetap h-[380px]
         <div
-            className="group w-full sm:w-72 sm:h-[380px] m-0 sm:m-3 [perspective:1000px]"
-            style={{ aspectRatio: '3/4' }}
+            className="group w-full sm:w-72 sm:h-[380px] m-0 sm:m-3 [perspective:1000px] aspect-[3/4] sm:aspect-auto"
             data-aos="zoom-in"
         >
             <div className="relative h-full w-full rounded-xl transition-all duration-500 [transform-style:preserve-3d] group-hover:[transform:rotateY(180deg)] active:[transform:rotateY(180deg)]">

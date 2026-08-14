@@ -99,8 +99,7 @@ function DivisiPage() {
                                     <img
                                         src={divisiDetail.itemsKegiatan[0].gambar}
                                         alt={divisiDetail.itemsKegiatan[0].altGambar}
-                                        className="w-full object-cover transition-transform duration-700 group-hover:scale-105"
-                                        style={{ aspectRatio: '3/4' }}
+                                        className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105 aspect-[3/4]"
                                         loading="lazy"
                                     />
                                     {/* Overlay glow */}
