@@ -44,7 +44,7 @@ function HomePage() {
             <div className="absolute inset-0 -z-10 bg-ornamen bg-fixed" />
 
             <section className="relative" id="beranda">
-                <div className="py-8 mt-16 md:mt-0 w-full md:w-screen h-full xl:h-screen bg-[position:55%_center] justify-center items-center bg-fixed overflow-hidden bg-[length:200%] md:bg-[length:180%] lg:bg-[length:150%] bg-no-repeat" style={{ backgroundImage: `linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url(${imagesData.foto_bersama})`, }}>
+                <div className="py-8 mt-16 md:mt-0 w-full md:w-screen h-full xl:h-screen bg-[position:55%_center] justify-center items-center overflow-hidden bg-[length:200%] md:bg-[length:180%] lg:bg-[length:150%] bg-no-repeat" style={{ backgroundImage: `linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url(${imagesData.foto_bersama})`, backgroundAttachment: 'scroll', backgroundSize: 'cover', }}>
                     <div className="h-full xl:h-screen flex text-white justify-center items-center">
 
                         {/* <div className="w-full md:w-3/4 mx-auto lg:hidden" data-aos="fade-down">
