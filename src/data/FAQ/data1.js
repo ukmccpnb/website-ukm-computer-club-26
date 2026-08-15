@@ -15,12 +15,12 @@ const data1 = [
         answer: `Cukup mudah untuk bergabung dengan UKM Computer Club<br>
         <ul>
             <li><b>Tahap 1 =</b> Pastikan mengikuti panduan pendaftaran UKM yang akan diumumkan oleh panitia PKKMB
-            <li><b>Tahap 2 =</b> = Penuhi ketentuan dan persyaratan sesuai dengan alur pendaftaran yang UKM Computer Club berikan, pastikan tidak ada ketentuan yang terlewati!<br>
+            <li><b>Tahap 2 =</b> Penuhi ketentuan dan persyaratan sesuai dengan alur pendaftaran yang UKM Computer Club berikan, pastikan tidak ada ketentuan yang terlewati!<br>
             <br>
             Jika terdapat kendala atau pertanyaan terkait alur pendaftaran dapat menghubungi :
             <ul>
-                <li>Artani : +62 857-3745-0341
-                <li>Efanie : +62 895-4014-49925
+                <li>Ria : +62 881-4667-057
+                <li>Ayuhmi : +62 813-3941-5314
             <ul>
         </ul>`,
     },

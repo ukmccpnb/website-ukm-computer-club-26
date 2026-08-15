@@ -19,7 +19,7 @@ const divisiData = [
         imgCover: imagesData.cover_divisi_office,
         accentColor: "#1576FF",
         deskripsiKegiatan: "Divisi Office pada pembelajaran aplikasi perkantoran yang sering digunakan dalam dunia akademik maupun dunia kerja. Anggota akan belajar menggunakan berbagai tools seperti Microsoft Word, Excel, PowerPoint, serta aplikasi berbasis cloud untuk membantu pekerjaan menjadi lebih mudah, rapi, dan efisien.",
-        deskripsiMateri: "Berfokus pada pembelajaran berbagai fitur dan fungsi dalam Microsoft Office dan Google Workspace untuk membantu meningkatkan keterampilan digital yang dapat menjadi bekal dalam dunia perkantoran.",
+        deskripsiMateri: "Berfokus pada pembelajaran fitur dan Microsoft Office serta Google Workspace untuk meningkatkan keterampilan digital di dunia perkantoran.",
         itemsKegiatan: [
             {
                 id: 1,
@@ -325,7 +325,7 @@ const divisiData = [
         img: imagesData.cover_divisi_game, 
         singkatan: "game",
         divisi: "Game Development",
-        deskripsi: "Mempelajari tentang membuat game platformer 2D dengan menggunakan game engine berbasis website yaitu Construct 3.",
+        deskripsi: "Mempelajari pembuatan game platformer 3D menggunakan Roblox Studio.",
         rekomendasi: `<b>
             Rekomendasi :</b><br>
             • Pecinta E-Sports <br>
@@ -335,7 +335,7 @@ const divisiData = [
         href: "/divisi/game",
         imgCover: imagesData.cover_divisi_game,
         accentColor: "#f59e0b",
-        deskripsiKegiatan: "Divisi Game Development merupakan divisi yang berfokus pada pembuatan game platformer 2D, yang juga mewadahi minat anggota dalam memainkan berbagai game mobile seperti Mobile Legends, PUBG Mobile, dan lainnya.",
+        deskripsiKegiatan: "Divisi Game Development merupakan divisi yang berfokus pada pembuatan game platformer 3D menggunakan Roblox Studio serta menjadi wadah bagi anggota untuk mengembangkan minat dan keterampilan di bidang game development.",
         deskripsiMateri: "Berfokus pada pembuatan dan pengembangan game menggunakan game engine untuk mengembangkan kemampuan dalam merancang dan membangun game.",
         itemsKegiatan: [
             {
@@ -366,13 +366,6 @@ const divisiData = [
                 judul: "Dokumentasi Divisi Game Development",
                 deskripsi: "Dokumentasi Pelatihan UKM Computer Club Divisi Game Development",
             },
-            {
-                id: 5,
-                gambar: imagesData.game_dokumen4,
-                altGambar: "Dokumentasi Divisi Game Development",
-                judul: "Dokumentasi Divisi Game Development",
-                deskripsi: "Dokumentasi Pelatihan UKM Computer Club Divisi Game Development",
-            },
         ],
         itemsMateri: [
             {
@@ -382,12 +375,6 @@ const divisiData = [
             },
         ],
         karya: [
-            {
-                gambar: imagesData.game_dokumen1,
-                judul: "Platformer 2D Game",
-                deskripsi: "Pengembangan game platformer 2D lengkap dengan mekanika lompat, musuh, dan level design menggunakan Construct 3.",
-                tag: "Construct 3",
-            },
             {
                 gambar: imagesData.game_dokumen2,
                 judul: "Game 3D di Roblox",
