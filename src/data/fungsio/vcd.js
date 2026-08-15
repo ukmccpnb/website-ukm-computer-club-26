@@ -19,11 +19,11 @@ const VcdData = [
     },
     {
         id: 5,  
-        img: imagesData.pradnya, 
+        img: imagesData.dipta, 
     },
     {
         id: 6,  
-        img: imagesData.dipta, 
+        img: imagesData.pradnya, 
     },
 ]
 

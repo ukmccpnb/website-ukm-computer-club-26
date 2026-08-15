@@ -10,8 +10,8 @@ const prokerData = [
         deskripsi: "Computer Club Digital Talent (CCDT) merupakan program kerja internal UKM Computer Club yang mengkolaborasikan pelatihan dan perlombaan untuk membekali anggota divisi dengan keterampilan aplikatif agar siap bersaing di dunia digital.",
         href: "/programkerja/ccdt",
         singkatan: "ccdt",
-        periode: "Tahun 2025",
-        videoYoutube: "8YmVQhvxhs8",  // id video youtube aja ex: https://youtu.be/{{{{{{aKnbYeBE6ug}}}}}}?si=aipoH73HByviFGUA
+        periode: "Tahun 2026",
+        videoYoutube: "-T9nG6NLFk8",  // id video youtube aja ex: https://youtu.be/{{{{{{aKnbYeBE6ug}}}}}}?si=aipoH73HByviFGUA
         deskripsiDetail: `
         <b> Computer Club Digital Talent (CCDT) </b>merupakan program kerja internal UKM Computer Club yang dirancang khusus sebagai ruang pembinaan dan akselerasi kemampuan bagi seluruh anggota. Melalui pendekatan yang menggabungkan pelatihan dan kompetisi karya internal, program ini memfasilitasi setiap divisi mulai dari Office, Web Development, Visual Communication Design, hingga Game Development untuk mengasah keahlian serta memperlombakan hasil proyek terbaik mereka. <br>
         <br>
@@ -36,19 +36,19 @@ const prokerData = [
         ],
         facts: [
             {
-                head: "260+",
+                head: "277+",
                 text: "Total Participants",
             },
             {
-                head: "55+",
+                head: "52+",
                 text: "Total Committee",
             },
             {
-                head: "16+",
+                head: "10+",
                 text: "Total Sponsorship",
             },
         ],
-        deskripsiDokumentasi: "Berikut merupakan beberapa dokumentasi baik dari POV panitia dan peserta.",
+        deskripsiDokumentasi: "Berikut merupakan beberapa dokumentasi baik dari POV panitia maupun peserta.",
         dokumentasi1: {
                 path: imagesData.ccdt_foto_dokum1,
                 alt: "Dokumentasi",
@@ -94,8 +94,8 @@ const prokerData = [
         deskripsi: "Information and Technology Festival (IntechFest) merupakan program kerja utama UKM Computer Club yang menghadirkan lomba dan seminar nasional sebagai wadah edukatif dan kompetitif di bidang teknologi informasi.",
         href: "/programkerja/intechfest",
         singkatan: "intechfest",
-        periode: "Tahun 2024",
-        videoYoutube: "_wKZlxsPXiE",  // id video youtube aja ex: https://youtu.be/{{{{{{aKnbYeBE6ug}}}}}}?si=aipoH73HByviFGUA
+        periode: "Tahun 2025",
+        videoYoutube: "CFSmF8iFQTY",  // id video youtube aja ex: https://youtu.be/{{{{{{aKnbYeBE6ug}}}}}}?si=aipoH73HByviFGUA
         deskripsiDetail: `
         <b> Information and Technology Festival (IntechFest)</b> merupakan program kerja utama UKM Computer Club yang diselenggarakan sebagai wujud dedikasi dalam mendorong kemajuan dan literasi teknologi informasi di tingkat nasional. Dikemas secara hybrid, IntechFest dirancang sebagai wadah yang edukatif, kompetitif, dan adaptif bagi pelajar serta mahasiswa untuk mengeksplorasi gagasan inovatif dan menguji kemampuan teknis mereka. <br>
         <br>
@@ -120,19 +120,19 @@ const prokerData = [
         ],
         facts: [
             {
-                head: "1.304+",
+                head: "1.292+",
                 text: "Total Participants",
             },
             {
-                head: "72+",
+                head: "70+",
                 text: "Total Committee",
             },
             {
-                head: "86+",
+                head: "24+",
                 text: "Total Partners",
             },
         ],
-        deskripsiDokumentasi: "Berikut merupakan beberapa dokumentasi baik dari POV panitia atau dari peserta.",
+        deskripsiDokumentasi: "Berikut merupakan beberapa dokumentasi baik dari POV panitia maupun peserta.",
         dokumentasi1: {
                 path: imagesData.intech_foto_dokum1,
                 alt: "Dokumentasi",
@@ -178,8 +178,8 @@ const prokerData = [
         deskripsi: "PNB E-Sport Arena Gaming League Series (EAGLES) merupakan program kerja UKM Computer Club yang mewadahi minat dan bakat mahasiswa di bidang E-Sport melalui turnamen dan seminar nasional bertema E-Sport.",
         href: "/programkerja/eagles",
         singkatan: "eagles",
-        periode: "Tahun 2025",
-        videoYoutube: "HrMq26U6Erk",  // id video youtube aja ex: https://youtu.be/{{{{{{aKnbYeBE6ug}}}}}}?si=aipoH73HByviFGUA
+        periode: "Tahun 2026",
+        videoYoutube: "bIX4rUrmlMQ",  // id video youtube aja ex: https://youtu.be/{{{{{{aKnbYeBE6ug}}}}}}?si=aipoH73HByviFGUA
         deskripsiDetail: `
         Melihat pesatnya perkembangan industri game dan e-sports di kalangan generasi muda, <b> PNB E-Sport Arena Gaming League Series (EAGLES) </b> hadir sebagai program kerja unggulan UKM Computer Club yang berfokus memfasilitasi potensi serta minat mahasiswa di bidang e-sports. Program ini menyediakan panggung kompetitif yang sportif bagi para atlet muda untuk menguji ketangkasan dan strategi mereka <b> melalui berbagai cabang game populer </b>, seperti Mobile Legends, PUBG Mobile, hingga eFootball. <br>
         <br>
@@ -191,25 +191,29 @@ const prokerData = [
                 text: "E-Sport Mobile (Mobile Legend dan PUBGM)",
             },
             {
+                icon: faBookmark, // fontawesomeicon
+                text: "E-Sport Console (Tekken 8 dan eFootball)",
+            },
+            {
                 icon: faBookmark,
                 text: "Seminar Game (Beyond Limits)",
             },
         ],
         facts: [
             {
-                head: "625+",
+                head: "738+",
                 text: "Total Participants",
             },
             {
-                head: "63+",
+                head: "61+",
                 text: "Total Committee",
             },
             {
-                head: "55+",
+                head: "14+",
                 text: "Total Partners",
             },
         ],
-        deskripsiDokumentasi: "Berikut merupakan beberapa dokumentasi baik dari POV panitia atau dari peserta.",
+        deskripsiDokumentasi: "Berikut merupakan beberapa dokumentasi baik dari POV panitia maupun peserta.",
         dokumentasi1: {
                 path: imagesData.eagles_foto_dokum1,
                 alt: "Dokumentasi",
