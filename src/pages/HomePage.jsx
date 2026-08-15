@@ -8,6 +8,7 @@ import homepage from '../data/homepage/data';
 import YouTube from "react-youtube";
 import { useState } from 'react';
 import imagesData from "../data/imgImports";
+import { Link } from "react-router-dom";
 
 function HomePage() {
     const [openQuestion, setOpenQuestion] = useState(null);
@@ -41,7 +42,7 @@ function HomePage() {
 
     return (
         <div>
-            <div className="absolute inset-0 -z-10 bg-ornamen bg-fixed" />
+            <div className="absolute inset-0 bg-cover scale-105 brightness-50" />
 
             <section className="relative" id="beranda">
                 <div className="py-8 mt-16 md:mt-0 w-full md:w-screen h-full xl:h-screen bg-[position:55%_center] justify-center items-center overflow-hidden bg-[length:200%] md:bg-[length:180%] lg:bg-[length:150%] bg-no-repeat" style={{ backgroundImage: `linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url(${imagesData.foto_bersama})`, backgroundAttachment: 'scroll', backgroundSize: 'cover', }}>
@@ -68,7 +69,7 @@ function HomePage() {
                                 <h3>Temukan divisi yang sesuai dengan minatmu</h3>
                                 <h3>dan kembangkan potensimu bersama UKM Computer Club</h3>
                             </div>
-                            <a href="https://docs.google.com/forms/d/e/1FAIpQLSfoupO5ST_r2kXdSq9W7658ZO8XkFGbw1WnLydVOieJLlKiGA/viewform" className="font-medium bg-secondary hover:bg-primary text-sm md:text-lg py-2 px-3 rounded-lg text-white ease-in-out transition-all" target='_blank' data-aos="fade-up" data-aos-delay="600">Daftar Sekarang</a>
+                            <Link to="/quiz" className="font-medium bg-secondary hover:bg-primary text-sm md:text-lg py-2 px-3 rounded-lg text-white ease-in-out transition-all" data-aos="fade-up" data-aos-delay="600">Find Your Division</Link>
                             <h2 className="text-white font-semibold italic text-sm md:text-2xl mt-2 lg:mt-5" data-aos="fade-up" data-aos-duration="2000" data-aos-easing="linear" data-aos-delay="600">
                                 #MakeItHappen
                             </h2>

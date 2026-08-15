@@ -145,7 +145,7 @@ function Navbar(){
                             <a href="/#faq" className="NavbarLink">FAQ</a>
                         </li>
                         <li className='m-1 p-1'>
-                            <NavLink to="/quiz" onClick={() => window.location.href = "/quiz"} className="bg-secondary hover:bg-primary py-2 px-3 rounded-lg text-white ease-in-out transition-all">Daftar Sekarang</NavLink>
+                            <a href="https://bit.ly/Pendaftaran_Anggota_Baru_UKM_Computer_Club_2027" target="_blank" rel="noopener noreferrer" className="bg-secondary hover:bg-primary py-2 px-3 rounded-lg text-white ease-in-out transition-all">Daftar Sekarang</a>
                         </li>
                     </ul>
                 </div>
