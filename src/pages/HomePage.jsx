@@ -206,36 +206,71 @@ function HomePage() {
                 </div>
             </section>
 
-            <section className="py-16 md:py-32" id="fungsio">
-                <div className="w-konten mx-auto relative z-10">
-                    <div className="lg:flex lg:justify-between items-center">
-                        <div className="w-full lg:hidden block">
-                            <div className="w-full my-5" data-aos="zoom-in">
-                                <img src={imagesData.bersama2} className="w-full rounded-md" alt="Foto 1" loading="lazy" decoding="async"></img>
-                            </div>
-                        </div>
+<section className="py-16 md:py-32" id="fungsio">
+    <div className="w-konten mx-auto relative z-10">
+        <div className="flex flex-col lg:flex-row items-center gap-12 lg:gap-16">
 
-                        <div className="w-full lg:w-[60%] p-1" data-aos="fade-up">
-                            <h1 className="uppercase text-center text-xl md:text-2xl lg:text-left lg:text-4xl font-semibold mb-2">Fungsionaris UKM Computer Club</h1>
-                            <div className="mb-6 md:text-lg">
-                                <h3 className="lg:text-justify text-center">Yuk kenalan dengan fungsionaris kami</h3>
-                            </div>
-                            <Button divClass="flex justify-center lg:inline" href="/fungsionaris" text="Lihat Selengkapnya"></Button>
-                        </div>
+            {/* Foto bulat + badge melayang */}
+            {/* <div className="w-full lg:w-1/2 flex justify-center relative" data-aos="zoom-in">
+                <div className="relative w-64 h-64 md:w-80 md:h-80">
+                    {/* Foto bulat */}
+                    {/* <div className="w-full h-full rounded-full overflow-hidden shadow-xl border-4 border-secondary/20">
+                        <img src={imagesData.bersama} className="w-full h-full object-cover object-[55%_center]" alt="Fungsionaris UKM Computer Club" loading="lazy" decoding="async" />
+                    </div> */} 
 
-                        <div className="w-[30%] mr-16 hidden lg:block">
-                            <div className="w-full my-5 ml-5" data-aos="zoom-in">
-                                <div className="w-full my-5 ml-5">
-                                    <img src={imagesData.bersama} className="w-full rounded-md -rotate-3" alt="Foto 1" loading="lazy" decoding="async"></img>
-                                </div>
-                                <div className="w-full relative -left-12 top-3 mb-5">
-                                    <img src={imagesData.bersama2} className="w-full rounded-md rotate-3" alt="Foto 2" loading="lazy" decoding="async"></img>
-                                </div>
-                            </div>
-                        </div>
+                    {/* Badge melayang */}
+                    {/* <span className="absolute -top-2 left-4 bg-white shadow-lg rounded-full px-4 py-2 text-xs md:text-sm font-semibold text-secondary">Inti</span>
+                    <span className="absolute top-16 -left-10 bg-secondary shadow-lg rounded-full px-4 py-2 text-xs md:text-sm font-semibold text-white">Office</span>
+                    <span className="absolute top-1/4 -right-8 bg-white shadow-lg rounded-full px-4 py-2 text-xs md:text-sm font-semibold text-secondary">Web Dev</span>
+                    <span className="absolute bottom-10 -left-6 bg-secondary shadow-lg rounded-full px-4 py-2 text-xs md:text-sm font-semibold text-white">VCD</span>
+                    <span className="absolute -bottom-4 right-6 bg-white shadow-lg rounded-full px-4 py-2 text-xs md:text-sm font-semibold text-secondary">Game Dev</span>
+                </div>
+            </div> */}
+
+            <div className="w-full lg:w-1/2" data-aos="zoom-in">
+    <div className="rounded-2xl overflow-hidden shadow-xl">
+        <img src={imagesData.bersama} className="w-full aspect-[4/3] object-cover" alt="Fungsionaris UKM Computer Club" loading="lazy" decoding="async" />
+    </div>
+    <div className="flex flex-wrap gap-2 mt-4 justify-center lg:justify-start">
+<span className="bg-secondary text-white text-xs md:text-sm font-semibold px-3 py-1.5 rounded-full">Inti</span>
+<span className="bg-secondary text-white text-xs md:text-sm font-semibold px-3 py-1.5 rounded-full">Office</span>
+<span className="bg-secondary text-white text-xs md:text-sm font-semibold px-3 py-1.5 rounded-full">Web Dev</span>
+<span className="bg-secondary text-white text-xs md:text-sm font-semibold px-3 py-1.5 rounded-full">VCD</span>
+<span className="bg-secondary text-white text-xs md:text-sm font-semibold px-3 py-1.5 rounded-full">Game Dev</span>
+    </div>
+</div>
+
+            {/* Teks kanan */}
+            <div className="w-full lg:w-1/2" data-aos="fade-up">
+                <p className="text-secondary font-semibold text-xs md:text-sm uppercase tracking-widest mb-2">Tentang Kami</p>
+                <h1 className="text-2xl md:text-4xl font-bold mb-4 text-center lg:text-left">
+                    Kenalan dengan <span className="text-secondary">Fungsionaris</span> Kami
+                </h1>
+                <p className="text-sm md:text-base text-gray-600 mb-8 text-center lg:text-left">
+                    Yuk kenalan lebih dekat dengan para fungsionaris yang menjalankan roda organisasi UKM Computer Club.
+                </p>
+
+                {/* Statistik */}
+                <div className="flex justify-center lg:justify-start gap-8 md:gap-12 mb-8">
+                    <div className="text-center lg:text-left">
+                        <h2 className="text-2xl md:text-3xl font-extrabold text-secondary">4</h2>
+                        <p className="text-xs md:text-sm text-gray-600">Divisi</p>
+                    </div>
+                    <div className="text-center lg:text-left">
+                        <h2 className="text-2xl md:text-3xl font-extrabold text-secondary">30+</h2>
+                        <p className="text-xs md:text-sm text-gray-600">Fungsionaris</p>
+                    </div>
+                    <div className="text-center lg:text-left">
+                        <h2 className="text-2xl md:text-3xl font-extrabold text-secondary">1990</h2>
+                        <p className="text-xs md:text-sm text-gray-600">Periode Aktif</p>
                     </div>
                 </div>
-            </section>
+
+                <Button divClass="flex justify-center lg:inline" href="/fungsionaris" text="Lihat Selengkapnya"></Button>
+            </div>
+        </div>
+    </div>
+</section>
 
             <section className="py-20 md:pt-32 md:pb-20" id="faq">
                 <div className="px-4 mx-auto sm:px-6 lg:px-8 w-konten" data-aos="fade-up">
