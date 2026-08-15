@@ -110,7 +110,7 @@ import VcdData from '../../data/fungsio/vcd';
 function FungsioPage() {
     const divisiList = [
         { code: "01", title: "Fungsionaris Inti", data: intiData },
-        { code: "02", title: "Divisi Office", data: OfficeData, pattern: [3, 3, 2, 2] },
+        { code: "02", title: "Divisi Office", data: OfficeData, pattern: [3, 2, 3, 2] },
         { code: "03", title: "Divisi Visual Communication Design", data: VcdData },
         { code: "04", title: "Divisi Web Development", data: WebData },
         { code: "05", title: "Divisi Game Development", data: GameData, pattern: [2, 2] },
@@ -118,15 +118,7 @@ function FungsioPage() {
 
     // Helper untuk membagi kartu berdasarkan susunan baris (pattern)
     const renderCardGrid = (data, pattern) => {
-        // Tanpa pattern: grid 2-kolom di mobile, flex-wrap di sm+
-        return (
-            <div className="grid grid-cols-2 gap-3 sm:flex sm:flex-wrap sm:justify-center sm:items-center sm:gap-8 sm:gap-10">
-                {data.map((item) => (
-                    <CardFungsio key={item.id} img={item.img} />
-                ))}
-            </div>
-        );
-
+    if (pattern) {
         let currentIndex = 0;
         const rows = pattern.map((count) => {
             const rowData = data.slice(currentIndex, currentIndex + count);
@@ -135,7 +127,6 @@ function FungsioPage() {
         });
 
         return (
-            // Mobile: grid 2-kolom, Desktop: susunan baris per-pattern
             <>
                 {/* Mobile: tampil grid 2-kolom biasa */}
                 <div className="grid grid-cols-2 gap-3 sm:hidden">
@@ -155,7 +146,17 @@ function FungsioPage() {
                 </div>
             </>
         );
-    };
+    }
+
+    // Tanpa pattern: grid 2-kolom di mobile, flex-wrap di sm+
+    return (
+        <div className="grid grid-cols-2 gap-3 sm:flex sm:flex-wrap sm:justify-center sm:items-center sm:gap-8 sm:gap-10">
+            {data.map((item) => (
+                <CardFungsio key={item.id} img={item.img} />
+            ))}
+        </div>
+    );
+};
 
     return (
         <div className="relative min-h-screen text-slate-900 font-sans selection:bg-[#96C0FF] selection:text-[#0053FA]">
