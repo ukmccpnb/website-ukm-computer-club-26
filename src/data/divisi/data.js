@@ -366,6 +366,13 @@ const divisiData = [
                 judul: "Dokumentasi Divisi Game Development",
                 deskripsi: "Dokumentasi Pelatihan UKM Computer Club Divisi Game Development",
             },
+            {
+                id: 5,
+                gambar: imagesData.game_dokumen4,
+                altGambar: "Dokumentasi Divisi Game Development",
+                judul: "Dokumentasi Divisi Game Development",
+                deskripsi: "Dokumentasi Pelatihan UKM Computer Club Divisi Game Development",
+            },
         ],
         itemsMateri: [
             {
@@ -409,4 +416,4 @@ const divisiData = [
 ]
 
 
-export default divisiData;
+export default divisiData;
