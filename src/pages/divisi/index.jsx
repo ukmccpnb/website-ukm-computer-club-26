@@ -56,9 +56,9 @@ function DivisiPage() {
                     <p className="text-base md:text-xl text-gray-300 max-w-2xl mx-auto mb-10 leading-relaxed text-center">
                         {divisiDetail.deskripsi}
                     </p>
-                    <a
-                        href="#tentang"
-                        className="inline-flex flex-col items-center gap-2 text-white/60 hover:text-white transition-colors duration-300 group"
+                    <button
+                        onClick={() => document.getElementById('tentang')?.scrollIntoView({ behavior: 'smooth' })}
+                        className="inline-flex flex-col items-center gap-2 text-white/60 hover:text-white transition-colors duration-300 group bg-transparent border-none cursor-pointer"
                     >
                         <span className="text-sm font-medium tracking-widest uppercase">Jelajahi</span>
                         <FontAwesomeIcon
@@ -66,7 +66,7 @@ function DivisiPage() {
                             className="animate-bounce text-lg group-hover:text-white"
                             style={{ color: accent }}
                         />
-                    </a>
+                    </button>
                 </div>
             </section>
 
