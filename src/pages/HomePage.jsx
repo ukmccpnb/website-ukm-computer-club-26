@@ -138,64 +138,132 @@ function HomePage() {
             </section>
 
             <section className="md:pt-10 mt-10 relative" id="proker">
-                <div className="p-2 bg-hitam py-10">
-                    <div className="text-putih" data-aos="fade-up">
-                        <h1 className="text-center font-semibold text-xl md:text-4xl lg:text-6xl mb-2">Program Kerja</h1>
-                        <p className="text-center font-normal text-sm md:text-base mb-10 w-full md:mx-auto">Ada 3 program kerja di Unit Kegitan Mahasiswa Computer Club yang bergerak dalam bidang IT.</p>
+                <div className="p-2 py-10">
+                    <div className="text-hitam" data-aos="fade-up">
+                        <h1 className="text-center font-semibold text-xl md:text-4xl lg:text-6xl mb-5">Program Kerja</h1>
+                        <p className="text-center font-normal text-sm md:text-base mb-10 w-full md:mx-auto">Terdapat 3 program kerja di Unit Kegiatan Mahasiswa Computer Club</p>
                     </div>
 
                     <div className="w-full lg:w-konten mx-auto h-[400px] md:h-[500px] lg:h-[600px] rounded-2xl overflow-hidden shadow-2xl relative group" data-aos="zoom-in">
 
-                        {/* Carousel Track */}
-                        <div
-                            className="flex h-full w-full transition-transform duration-700 ease-in-out"
-                            style={{ transform: `translateX(-${currentProkerSlide * 100}%)` }}
-                        >
-                            {prokerData.map((Data) => (
-                                <div key={Data.id} className="min-w-full h-full relative flex flex-col items-center justify-center text-center p-6">
-                                    {/* Background Image & Overlay */}
-                                    <div
-                                        className="absolute inset-0 bg-cover bg-center scale-105 brightness-50"
-                                        style={{ backgroundImage: `url(${Data.img})` }}
-                                    ></div>
-                                    <div className="absolute inset-0 bg-gradient-to-t from-black/90 via-black/70 to-black/40"></div>
+{/* Carousel Track */}
+<div
+    className="flex h-full w-full transition-transform duration-700 ease-in-out"
+    style={{ transform: `translateX(-${currentProkerSlide * 100}%)` }}
+>
+    {prokerData.map((Data, index) => (
+        <div
+            key={Data.id}
+            className="min-w-full h-full bg-[#151722] flex flex-col rounded-2xl overflow-hidden"
+        >
+            {/* FOTO */}
+            <div className="relative h-[45%] md:h-[50%] shrink-0 overflow-hidden ">
+                <img
+                    src={Data.img}
+                    alt={Data.name}
+                    className="w-full h-full object-cover object-[center_60%]"
+                    loading="lazy"
+                    decoding="async"
+                />
 
-                                    {/* Content */}
-                                    <div className="relative z-10 flex flex-col items-center justify-center max-w-4xl mx-auto h-full">
-                                        <div className="h-20 w-20 sm:h-24 sm:w-24 md:h-32 md:w-32 bg-white rounded-full mb-4 md:mb-6 shadow-lg flex justify-center items-center overflow-hidden">
-                                            <img src={Data.logo} alt={Data.name} className="w-[75%] h-[75%] object-contain" loading="lazy" decoding="async" />
-                                        </div>
-                                        <h2 className="text-2xl sm:text-3xl md:text-5xl font-bold text-white mb-2 md:mb-4 drop-shadow-md">{Data.name}</h2>
-                                        <p className="text-sm md:text-lg text-gray-200 mb-6 md:mb-8 line-clamp-3 md:line-clamp-none leading-relaxed px-4 md:px-0">{Data.deskripsi}</p>
-                                        <Button href={Data.href} text="Baca Selengkapnya" />
-                                    </div>
-                                </div>
-                            ))}
-                        </div>
+                {/* Overlay kecil */}
+                <div className="absolute inset-0 bg-gradient-to-t from-[#151722]/70 via-transparent to-transparent"></div>
+            </div>
 
-                        {/* Navigation Controls */}
-                        <div className="absolute top-1/2 left-4 md:left-8 -translate-y-1/2 z-20">
-                            <button onClick={prevProkerSlide} className="flex h-10 w-10 md:h-12 md:w-12 items-center justify-center rounded-full bg-white/20 hover:bg-white/40 text-white backdrop-blur-sm transition-all duration-300 active:scale-75 shadow-lg outline-none">
-                                <svg className="w-6 h-6 md:w-8 md:h-8 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth="3" d="M15 19l-7-7 7-7"></path></svg>
-                            </button>
-                        </div>
-                        <div className="absolute top-1/2 right-4 md:right-8 -translate-y-1/2 z-20">
-                            <button onClick={nextProkerSlide} className="flex h-10 w-10 md:h-12 md:w-12 items-center justify-center rounded-full bg-white/20 hover:bg-white/40 text-white backdrop-blur-sm transition-all duration-300 active:scale-75 shadow-lg outline-none">
-                                <svg className="w-6 h-6 md:w-8 md:h-8 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth="3" d="M9 5l7 7-7 7"></path></svg>
-                            </button>
-                        </div>
+            {/* CONTENT */}
+            <div className="flex-1 px-6 md:px-8 py-6 md:py-7 text-left text-white flex flex-col">
+                
+                {/* Number + Line */}
+                <div className="flex items-center gap-4 mb-6">
+                    <span className="text-secondary font-mono font-medium text-sm md:text-base">
+                        {String(index + 1).padStart(2, "0")} / {String(prokerData.length).padStart(2, "0")}
+                    </span>
+
+                    <div className="flex-1 h-px bg-white/10"></div>
+
+                    <span className="w-2 h-2 rounded-full bg-secondary"></span>
+                </div>
+
+                {/* Title */}
+                <h2 className="text-2xl md:text-3xl lg:text-4xl font-bold mb-4">
+                    {Data.name}
+                </h2>
+
+                {/* Description */}
+                <p className="text-sm md:text-base lg:text-lg text-gray-400 leading-relaxed line-clamp-3 md:line-clamp-4">
+                    {Data.deskripsi}
+                </p>
+
+                {/* Button */}
+                <div className="pt-5 pb-16">
+    <Button
+        href={Data.href}
+        text="Baca Selengkapnya →"
+    />
+</div>
+            </div>
+        </div>
+    ))}
+</div>
+
+ {/* Navigation Controls */}
+<div className="absolute bottom-5 right-5 md:bottom-6 md:right-6 z-20 flex gap-3">
+    <button
+        onClick={prevProkerSlide}
+        className="flex h-11 w-11 md:h-12 md:w-12 items-center justify-center rounded-full bg-[#1b1e2a] border border-white/10 hover:bg-secondary text-white transition-all duration-300 active:scale-75 shadow-lg outline-none"
+        aria-label="Previous program kerja"
+    >
+        <svg
+            className="w-5 h-5 md:w-6 md:h-6"
+            fill="none"
+            stroke="currentColor"
+            viewBox="0 0 24 24"
+        >
+            <path
+                strokeLinecap="round"
+                strokeLinejoin="round"
+                strokeWidth="2"
+                d="M15 19l-7-7 7-7"
+            />
+        </svg>
+    </button>
+
+    <button
+        onClick={nextProkerSlide}
+        className="flex h-11 w-11 md:h-12 md:w-12 items-center justify-center rounded-full bg-[#1b1e2a] border border-white/10 hover:bg-secondary text-white transition-all duration-300 active:scale-75 shadow-lg outline-none"
+        aria-label="Next program kerja"
+    >
+        <svg
+            className="w-5 h-5 md:w-6 md:h-6"
+            fill="none"
+            stroke="currentColor"
+            viewBox="0 0 24 24"
+        >
+            <path
+                strokeLinecap="round"
+                strokeLinejoin="round"
+                strokeWidth="2"
+                d="M9 5l7 7-7 7"
+            />
+        </svg>
+    </button>
+</div>
 
                         {/* Indicators */}
-                        <div className="absolute bottom-6 left-1/2 -translate-x-1/2 z-20 flex gap-2">
-                            {prokerData.map((_, index) => (
-                                <button
-                                    key={index}
-                                    onClick={() => setCurrentProkerSlide(index)}
-                                    className={`w-3 h-3 rounded-full transition-all duration-300 ${currentProkerSlide === index ? 'bg-white scale-125' : 'bg-white/50 hover:bg-white/80'}`}
-                                    aria-label={`Go to slide ${index + 1}`}
-                                ></button>
-                            ))}
-                        </div>
+                        <div className="absolute bottom-7 left-6 md:left-8 z-20 flex gap-2">
+    {prokerData.map((_, index) => (
+        <button
+            key={index}
+            onClick={() => setCurrentProkerSlide(index)}
+            className={`h-2.5 rounded-full transition-all duration-300 ${
+                currentProkerSlide === index
+                    ? "w-8 bg-secondary"
+                    : "w-2.5 bg-white/10 hover:bg-white/30"
+            }`}
+            aria-label={`Go to slide ${index + 1}`}
+        />
+    ))}
+</div>
                     </div>
                 </div>
             </section>
@@ -270,7 +338,7 @@ function HomePage() {
                 <div className="px-4 mx-auto sm:px-6 lg:px-8 w-konten" data-aos="fade-up">
                     <div className="mx-auto text-center">
                         <h1 className="text-center font-semibold text-xl md:text-4xl lg:text-6xl mt-10 mb-5">Pertanyaan yang Sering Ditanyakan</h1>
-                        <p className="text-center font-normal text-sm md:text-base mb-10 w-full md:mx-auto">Yuk cek, siapa tau pertanyaan kamu ada disini 😊</p>
+                        <p className="text-center font-normal text-sm md:text-base mb-10 w-full md:mx-auto">Yuk cek, siapa tau pertanyaan kamu ada disini</p>
                     </div>
 
                     <div className="w-full max-w-2xl mx-auto">
@@ -279,7 +347,7 @@ function HomePage() {
                             <div key={Data.id} className="transition-all m-3 duration-200 bg-white border border-gray-200 shadow-lg cursor-pointer hover:bg-gray-50">
                                 <button type="button" className="flex items-center justify-between w-full px-4 py-5 sm:p-6" onClick={() => toggleAnswer(Data.id)}>
                                     <span className="flex text-sm lg:text-base font-semibold text-black text-left w-[28rem]">{Data.question}</span>
-                                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" className={`w-6 h-6 text-gray-400 transition-transform duration-200 ${openQuestion === Data.id ? 'rotate-0' : 'rotate-180'}`}>
+                                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" className={`w-6 h-6 text-gray-400 transition-transform duration-200 ${openQuestion === Data.id ? 'rotate-180' : 'rotate-0'}`}>
                                         <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M19 9l-7 7-7-7" />
                                     </svg>
                                 </button>

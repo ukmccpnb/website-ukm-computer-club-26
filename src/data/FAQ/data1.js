@@ -2,52 +2,42 @@ const data1 = [
     {
         id: 6,
         question: 'Apakah harus mengikuti 4 divisi yang ada di UKM Computer Club?',
-        answer: 'Tidak, cukup memilih dan mengikuti satu divisi yang paling sesuai dengan minat dan keahlian kalian.'
+        answer: 'Tidak. Kalian cukup memilih satu divisi yang sesuai dengan minat dan keahlian.'
     },
     {
         id: 7,
-        question: 'Apakah kita diperbolehkan untuk berpindah-pindah divisi?',
-        answer: 'Anggota tidak diperbolehkan untuk berpindah-pindah divisi. Oleh karena itu, penting untuk memilih divisi yang benar-benar sesuai dengan minat dan keinginan sejak awal bergabung.',
+        question: 'Apakah diperbolehkan untuk berpindah-pindah divisi?',
+        answer: 'Tidak diperbolehkan. Pastikan memilih divisi yang sesuai dengan minat kalian, atau gunakan fitur Find Your Division di website UKM Computer Club.',
     },
     {
         id: 8,
-        question: 'Bagaimana cara agar dapat bergabung dengan UKM Computer Club?',
-        answer: `Cukup mudah untuk bergabung dengan UKM Computer Club<br>
-        <ul>
-            <li><b>Tahap 1 =</b> Pastikan mengikuti panduan pendaftaran UKM yang akan diumumkan oleh panitia PKKMB
-            <li><b>Tahap 2 =</b> Penuhi ketentuan dan persyaratan sesuai dengan alur pendaftaran yang UKM Computer Club berikan, pastikan tidak ada ketentuan yang terlewati!<br>
-            <br>
-            Jika terdapat kendala atau pertanyaan terkait alur pendaftaran dapat menghubungi :
-            <ul>
-                <li>Ria : +62 881-4667-057
-                <li>Ayuhmi : +62 813-3941-5314
-            <ul>
-        </ul>`,
+        question: 'Bagaimana cara bergabung dengan UKM Computer Club?',
+        answer: 'Dapat dengan mengikuti panduan pendaftaran UKM dari panitia PKKMB, lalu penuhi syarat dan ketentuan yang diberikan UKM Computer Club.',
     },
     {
         id: 9,
-        question: 'Apa saja sarana pendukung untuk mengikuti UKM Computer Club?',
-        answer: 'Sarana pendukung yang digunakan saat UKM rutinan adalah laptop pribadi untuk keperluan pembelajaran, dan jika terdapat keperluan lain tentunya akan diinformasikan terlebih dahulu.',
+        question: 'Apa saja sarana pendukung yang diperlukan untuk mengikuti kegiatan UKM Computer Club?',
+        answer: 'Kalian perlu membawa laptop pribadi untuk mendukung kegiatan pembelajaran. Kebutuhan tambahan tentu akan diinformasikan sebelumnya.',
     },
     {
         id: 10,
-        question: 'Berapa lama kita harus tergabung sebagai anggota di UKM Computer Club?',
-        answer: 'UKM Computer Club cukup diikuti selama 1 tahun saja.',
+        question: 'Berapa lama kita tergabung sebagai anggota UKM Computer Club?',
+        answer: 'Masa keanggotaan UKM Computer Club berlangsung selama 1 tahun.',
     },
     {
         id: 11,
-        question: 'Apakah kita sebagai anggota harus ahli untuk bisa bergabung ke dalam UKM Computer Club?',
-        answer: 'Tidak, untuk bergabung di UKM Computer Club tidak harus sudah ahli atau memiliki pengalaman sebelumnya. Justru di sinilah tempat yang tepat untuk belajar bersama, mengembangkan keterampilan, serta menambah pengalaman. UKM ini terbuka bagi siapa saja, mulai dari pemula hingga yang sudah mahir.',
+        question: 'Apakah harus sudah ahli untuk bergabung dengan UKM Computer Club?',
+        answer: 'Tidak. Kalian dapat bergabung tanpa pengalaman sebelumnya dan akan belajar mulai dari dasar hingga mampu mengembangkan keterampilannya.',
     },
     {
         id: 13,
-        question: 'Apakah untuk mengikuti UKM Computer Club harus melewati sesi wawancara?',
-        answer: 'Untuk mengikuti UKM Computer Club tidak ada sesi wawancara. Cukup dengan melakukan pendaftaran sesuai syarat dan ketentuan yang berlaku.',
+        question: 'Apakah harus mengikuti sesi wawancara untuk bergabung dengan UKM Computer Club?',
+        answer: 'Tidak ada sesi wawancara. Cukup penuhi syarat dan ketentuan, lalu tunggu undangan untuk bergabung ke grup WhatsApp UKM Computer Club.',
     },
     {
         id: 14,
-        question: 'Bagaimana bentuk pelaksanaan UKM rutinan?',
-        answer: 'Pertemuan rutinan UKM Computer Club berbentuk pelatihan sesuai dengan divisi masing-masing, yang dilaksanakan secara offline di Gedung Lab Math DP Politeknik Negeri Bali pada hari Minggu.',
+        question: 'Bagaimana pelaksanaan pertemuan rutinan UKM Computer Club?',
+        answer: 'Pertemuan rutinan berupa pelatihan sesuai divisi masing-masing, yang dilaksanakan setiap hari Minggu secara offline di Gedung K (Lab Math Dp), Politeknik Negeri Bali.',
     },
 ];
 
