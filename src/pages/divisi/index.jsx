@@ -312,11 +312,11 @@ function DivisiPage() {
                             <p className="text-gray-400 mt-4 max-w-xl mx-auto">Keterampilan yang kamu pelajari di divisi ini membuka banyak peluang karir menarik di dunia digital.</p>
                         </div>
 
-                        <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
+                        <div className="flex flex-wrap justify-center gap-6">
                             {divisiDetail.prospekKarir.map((item, index) => (
                                 <div
                                     key={index}
-                                    className="p-8 rounded-3xl border border-white/10 bg-white/5 hover:bg-white/10 transition-all duration-300 group"
+                                    className="w-full md:w-[calc(33.333%-1rem)] p-8 rounded-3xl border border-white/10 bg-white/5 hover:bg-white/10 transition-all duration-300 group flex flex-col"
                                     data-aos="fade-up"
                                     data-aos-delay={index * 100}
                                 >
@@ -327,9 +327,9 @@ function DivisiPage() {
                                         <FontAwesomeIcon icon={item.icon} className="text-2xl" style={{ color: accent }} />
                                     </div>
                                     <h3 className="text-white font-bold text-xl mb-3">{item.judul}</h3>
-                                    <p className="text-gray-400 text-sm leading-relaxed text-justify">{item.deskripsi}</p>
+                                    <p className="text-gray-400 text-sm leading-relaxed text-justify mb-6">{item.deskripsi}</p>
                                     {/* Bottom accent line */}
-                                    <div className="mt-6 h-0.5 w-0 group-hover:w-full transition-all duration-500 rounded-full" style={{ backgroundColor: accent }} />
+                                    <div className="mt-auto h-0.5 w-0 group-hover:w-full transition-all duration-500 rounded-full" style={{ backgroundColor: accent }} />
                                 </div>
                             ))}
                         </div>
