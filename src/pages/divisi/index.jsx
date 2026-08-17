@@ -300,10 +300,7 @@ function DivisiPage() {
                         backgroundImage: `linear-gradient(${accent} 1px, transparent 1px), linear-gradient(90deg, ${accent} 1px, transparent 1px)`,
                         backgroundSize: '50px 50px'
                     }} />
-                    <div
-                        className="absolute bottom-0 left-1/2 -translate-x-1/2 w-[800px] h-[400px] rounded-full blur-3xl opacity-10 pointer-events-none"
-                        style={{ backgroundColor: accent }}
-                    />
+
 
                     <div className="relative max-w-6xl mx-auto px-6 md:px-10">
                         <div className="text-center mb-14" data-aos="fade-up">
@@ -316,20 +313,29 @@ function DivisiPage() {
                             {divisiDetail.prospekKarir.map((item, index) => (
                                 <div
                                     key={index}
-                                    className="w-full md:w-[calc(33.333%-1rem)] p-8 rounded-3xl border border-white/10 bg-white/5 hover:bg-white/10 transition-all duration-300 group flex flex-col"
+                                    className="relative w-full md:w-[calc(33.333%-1rem)] p-8 rounded-3xl border border-white/10 bg-white/5 hover:bg-white/10 transition-all duration-300 group flex flex-col overflow-hidden"
                                     data-aos="fade-up"
                                     data-aos-delay={index * 100}
                                 >
+                                    {/* Glow per card */}
                                     <div
-                                        className="w-14 h-14 rounded-2xl flex items-center justify-center mb-6 group-hover:scale-110 transition-transform duration-300"
+                                        className="absolute -top-10 -left-10 w-40 h-40 rounded-full blur-3xl opacity-0 group-hover:opacity-30 transition-opacity duration-500 pointer-events-none"
+                                        style={{ backgroundColor: accent }}
+                                    />
+                                    <div
+                                        className="absolute -top-10 -left-10 w-24 h-24 rounded-full blur-2xl opacity-10 pointer-events-none"
+                                        style={{ backgroundColor: accent }}
+                                    />
+                                    <div
+                                        className="w-14 h-14 rounded-2xl flex items-center justify-center mb-6 group-hover:scale-110 transition-transform duration-300 relative z-10"
                                         style={{ backgroundColor: `${accent}22`, border: `1px solid ${accent}44` }}
                                     >
                                         <FontAwesomeIcon icon={item.icon} className="text-2xl" style={{ color: accent }} />
                                     </div>
-                                    <h3 className="text-white font-bold text-xl mb-3">{item.judul}</h3>
-                                    <p className="text-gray-400 text-sm leading-relaxed text-justify mb-6">{item.deskripsi}</p>
+                                    <h3 className="text-white font-bold text-xl mb-3 relative z-10">{item.judul}</h3>
+                                    <p className="text-gray-400 text-sm leading-relaxed text-justify mb-6 relative z-10">{item.deskripsi}</p>
                                     {/* Bottom accent line */}
-                                    <div className="mt-auto h-0.5 w-0 group-hover:w-full transition-all duration-500 rounded-full" style={{ backgroundColor: accent }} />
+                                    <div className="mt-auto h-0.5 w-0 group-hover:w-full transition-all duration-500 rounded-full relative z-10" style={{ backgroundColor: accent }} />
                                 </div>
                             ))}
                         </div>
