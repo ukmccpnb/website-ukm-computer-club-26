@@ -299,21 +299,21 @@ const divisiData = [
         ],
         karya: [
             {
-                gambar: imagesData.web_dokumen1,
-                judul: "Website UKM Computer Club",
-                deskripsi: "Pengembangan website resmi UKM Computer Club menggunakan React.js dan Tailwind CSS yang responsif.",
-                tag: "React.js",
-            },
-            {
-                gambar: imagesData.web_dokumen2,
-                judul: "Landing Page Event",
-                deskripsi: "Pembuatan landing page untuk acara IntechFest dengan animasi modern dan desain yang menarik.",
+                gambar: imagesData.karya_web_1,
+                judul: "Latihan Dasar",
+                deskripsi: "Pengenalan dasar coding menggunakan VS Code, mulai dari struktur HTML, styling CSS, hingga pembuatan form sederhana sebagai bekal sebelum masuk ke materi lanjutan.",
                 tag: "HTML & CSS",
             },
             {
-                gambar: imagesData.web_dokumen3,
-                judul: "Portfolio Website",
-                deskripsi: "Pengembangan website portfolio anggota divisi sebagai hasil akhir pelatihan web development.",
+                gambar: imagesData.karya_web_2,
+                judul: "Landing Page",
+                deskripsi: "Pembuatan landing page sebagai hasil akhir rangkaian weekly training, dengan penerapan desain modern dan tampilan yang responsif.",
+                tag: "HTML & CSS",
+            },
+            {
+                gambar: imagesData.karya_web_3,
+                judul: "Project Akhir / Website Tematik",
+                deskripsi: "Pengembangan website utuh sesuai tema yang ditentukan panitia untuk masing-masing divisi, sebagai hasil akhir dari advanced training.",
                 tag: "HTML, CSS & Framework",
             },
         ],
@@ -351,7 +351,8 @@ const divisiData = [
         imgCover: imagesData.cover_divisi_game,
         accentColor: "#f59e0b",
         deskripsiKegiatan: "Divisi Game Development merupakan divisi yang berfokus pada pembuatan game platformer 3D menggunakan Roblox Studio serta menjadi wadah bagi anggota untuk mengembangkan minat dan keterampilan di bidang game development.",
-        deskripsiMateri: "Berfokus pada pembuatan dan pengembangan game menggunakan game engine untuk mengembangkan kemampuan dalam merancang dan membangun game.",
+        judulMateri: "Materi Ajar & Minggu Mabar",
+        deskripsiMateri: "Berfokus pada pengembangan game menggunakan game engine untuk mengasah kemampuan anggota, serta menghadirkan Minggu Mabar sebagai sarana rekreasi dan mempererat keakraban.",
         itemsKegiatan: [
             {
                 id: 1,
@@ -395,6 +396,11 @@ const divisiData = [
                 judul: "Roblox Studio",
                 deskripsi: "Mempelajari penggunaan Roblox Studio untuk membuat dan mengembangkan game 3D, mulai dari membangun environment, mengatur objek, hingga menerapkan berbagai mekanisme dan interaksi dalam game.",
             },
+            {
+                icon: faGamepad,
+                judul: "Minggu Mabar",
+                deskripsi: "Sesi untuk melepas penat sekaligus mempererat kebersamaan antaranggota melalui berbagai permainan seperti MLBB, PUBG, dan Roblox. Selain itu, sesi ini juga menjadi wadah mengembangkan potensi anggota di bidang E-Sports.",
+            },
         ],
         karya: [
             {
@@ -414,17 +420,27 @@ const divisiData = [
             {
                 icon: faGamepad,
                 judul: "Game Developer",
-                deskripsi: "Membuat dan mengembangkan game dari konsep hingga produk jadi menggunakan berbagai game engine.",
+                deskripsi: "Kemampuan dalam membuat gameplay, mengembangkan sistem permainan, dan menyusun keseluruhan game dapat menjadi dasar untuk berkarier sebagai Game Developer.",
             },
             {
-                icon: faRocket,
-                judul: "Indie Developer",
-                deskripsi: "Mengembangkan game secara mandiri atau dalam tim kecil dan memasarkannya ke platform distribusi game.",
+                icon: faGears,
+                judul: "Roblox Developer",
+                deskripsi: "Pengalaman menggunakan Roblox Studio dan scripting dapat membantu dalam membuat, mengembangkan, serta mengelola game dan berbagai fitur di platform Roblox.",
             },
             {
                 icon: faPalette,
                 judul: "Game Designer",
-                deskripsi: "Merancang mekanik gameplay, level, dan pengalaman bermain yang menarik dan menyenangkan.",
+                deskripsi: "Proses menentukan konsep game, gameplay, mekanik, hingga tantangan yang akan dimainkan dapat melatih kemampuan dalam merancang pengalaman bermain yang menarik.",
+            },
+            {
+                icon: faLayerGroup,
+                judul: "Level Designer",
+                deskripsi: "Pengalaman membuat map, menyusun area permainan, dan menempatkan berbagai obstacle dapat menjadi bekal untuk merancang level yang sesuai dengan konsep dan alur permainan.",
+            },
+            {
+                icon: faCode,
+                judul: "Gameplay Programmer",
+                deskripsi: "Pembelajaran scripting dan pembuatan berbagai fitur dalam game dapat menjadi dasar untuk mengembangkan mekanik, interaksi, serta sistem yang digunakan dalam sebuah permainan.",
             },
         ],
     },

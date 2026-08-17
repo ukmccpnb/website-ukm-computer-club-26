@@ -342,8 +342,8 @@ function DivisiPage() {
                 <div className="max-w-6xl mx-auto px-6 md:px-10">
                     <div className="text-center mb-14" data-aos="fade-up">
                         <span className="inline-block text-xs font-bold tracking-widest uppercase mb-3" style={{ color: accent }}>Kurikulum</span>
-                        <h2 className="text-3xl md:text-5xl font-bold text-gray-900">Materi Ajar</h2>
-                        <p className="text-gray-500 mt-4 max-w-xl mx-auto">{divisiDetail.deskripsiMateri}</p>
+                        <h2 className="text-3xl md:text-5xl font-bold text-gray-900">{divisiDetail.judulMateri || "Materi Ajar"}</h2>
+                        <p className="text-gray-500 mt-4 max-w-4xl mx-auto">{divisiDetail.deskripsiMateri}</p>
                     </div>
 
                     <div className="flex flex-wrap justify-center gap-6">
