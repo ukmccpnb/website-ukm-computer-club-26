@@ -6,6 +6,10 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import CountUp from "../../component/CountUp";
 import CarouselProker from "../../component/CarouselProker";
 import InstagramEmbed from "../../component/InstagramEmbed";
+import ct from "../../assets/img/logo lomba intech/ct.png";
+import ctf from "../../assets/img/logo lomba intech/ctf.png";
+import pnbdc from "../../assets/img/logo lomba intech/pnbdc.png";
+import pnbwdc from "../../assets/img/logo lomba intech/pnbwdc.png";
 
 function ProkerPage() {
     const { proker } = useParams();
@@ -105,19 +109,56 @@ function ProkerPage() {
                 </div>
             </div>
         </div>
+</div>
 
-        {/* Icon items */}
-        <div className="mt-16 mb-16 md:mb-24 flex flex-wrap justify-center gap-8 md:gap-12">
-            {prokerDetail.items.map((item, index) => (
-                <div key={index} className="flex flex-col items-center text-center gap-3 w-32 md:w-40">
-                    <div className="w-14 h-14 rounded-full bg-secondary/10 flex items-center justify-center">
-                        <FontAwesomeIcon className="w-6 h-6 text-secondary" icon={item.icon} />
-                    </div>
-                    <p className="text-sm md:text-base font-medium text-gray-700">{item.text}</p>
+       {/* Icon items */}
+<div className="mt-16 mb-16 md:mb-24 flex flex-wrap justify-center gap-8 md:gap-12">
+    {prokerDetail.items.map((item, index) => {
+        const isIntechItem =
+            item.text.includes("Web Design") ||
+            item.text.includes("Design Challenge") ||
+            item.text.includes("Capture The Flag") ||
+            item.text.includes("ChillTalks");
+
+        let logo = null;
+
+        if (item.text.includes("Web Design")) {
+            logo = pnbwdc;
+        } else if (item.text.includes("Design Challenge")) {
+            logo = pnbdc;
+        } else if (item.text.includes("Capture The Flag")) {
+            logo = ctf;
+        } else if (item.text.includes("ChillTalks")) {
+            logo = ct;
+        }
+
+        return (
+            <div
+                key={index}
+                className="flex flex-col items-center text-center gap-3 w-32 md:w-40"
+            >
+                <div className="w-14 h-14 rounded-full bg-secondary/10 flex items-center justify-center">
+                    {isIntechItem && logo ? (
+                        <img
+                            src={logo}
+                            alt={item.text}
+                            className="w-9 h-9 object-contain"
+                        />
+                    ) : (
+                        <FontAwesomeIcon
+                            className="w-6 h-6 text-secondary"
+                            icon={item.icon}
+                        />
+                    )}
                 </div>
-            ))}
-        </div>
-    </div>
+
+                <p className="text-sm md:text-base font-medium text-gray-700">
+                    {item.text}
+                </p>
+            </div>
+        );
+    })}
+</div>
 
                     <div className="w-4/5 mx-auto bg-secondary rounded-[3rem] py-8 md:py-10 px-6 flex flex-col gap-6 lg:flex-row lg:gap-0 justify-evenly items-center text-white shadow-xl" data-aos="fade-up">
     {
@@ -141,10 +182,10 @@ function ProkerPage() {
                         <YouTube videoId={prokerDetail.videoYoutube} className="aspect-video w-full" opts={opts} onReady={onPlayerReady} iframeClassName="w-konten mx-auto h-full lg:rounded-2xl"/>
                     </div>
                     <div className="pt-16 md:pt-20 pb-4 w-konten mx-auto" data-aos="fade-up">
-                        <h1 className="text-center font-semibold text-xl md:text-2xl text-secondary m-auto mt-10">Galeri</h1>
+                        <h1 className="text-center font-semibold text-xl md:text-2xl text-secondary m-auto mt-10">Dokumentasi</h1>
                     </div>
                     <div className="w-konten mx-auto" data-aos="fade-up">
-                        <h1 className="text-center font-bold text-xl md:text-6xl md:w-4/5 m-auto mb-6 leading-snug">Beberapa Dokumentasi {prokerDetail.name} {prokerDetail.periode}</h1>
+                        <h1 className="text-center font-bold text-xl md:text-6xl md:w-4/5 m-auto mb-6 leading-snug">Kegiatan {prokerDetail.name} {prokerDetail.periode}</h1>
                         <p className="text-center font-normal text-sm md:text-base w-full md:w-3/5 md:mx-auto">{prokerDetail.deskripsiDokumentasi}</p>
                     </div>
                     {/* <div className="p-2 w-konten mx-auto flex flex-wrap justify-center">

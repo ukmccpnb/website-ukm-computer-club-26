@@ -14,9 +14,9 @@ const prokerData = [
         periode: "Tahun 2026",
         videoYoutube: "-T9nG6NLFk8",  // id video youtube aja ex: https://youtu.be/{{{{{{aKnbYeBE6ug}}}}}}?si=aipoH73HByviFGUA
         deskripsiDetail: `
-        <b> Computer Club Digital Talent (CCDT) </b>merupakan program kerja internal UKM Computer Club yang dirancang khusus sebagai ruang pembinaan dan akselerasi kemampuan bagi seluruh anggota. Melalui pendekatan yang menggabungkan pelatihan dan kompetisi karya internal, program ini memfasilitasi setiap divisi mulai dari Office, Web Development, Visual Communication Design, hingga Game Development untuk mengasah keahlian serta memperlombakan hasil proyek terbaik mereka. <br>
+        <b> Computer Club Digital Talent (CCDT)</b> merupakan program kerja internal UKM Computer Club sebagai wadah pengembangan dan peningkatan kemampuan anggota melalui pelatihan serta kompetisi karya internal. Program ini mencakup seluruh divisi, yaitu Office, Web Development, Visual Communication Design, dan Game Development. <br>
         <br>
-        Dalam proses pembelajarannya, para anggota berkesempatan <b> menyerap ilmu langsung dari praktisi serta pemateri eksternal </b> yang berpengalaman di industri digital. CCDT menekankan pelatihan yang langsung mempraktikkan teori. Dengan ini anggota punya keahlian teknis yang matang dan lebih percaya diri saat berlaga di tingkat nasional.`,
+        <b>Melalui pelatihan bersama pemateri eksternal</b>, Computer Club Digital Talent (CCDT) mengutamakan pembelajaran berbasis praktik agar anggota mampu menerapkan teori secara langsung. Program ini diharapkan dapat meningkatkan keterampilan, kualitas karya, serta kesiapan anggota untuk mengikuti kompetisi di tingkat nasional.`,
         items: [
             {
                 icon: faBookmark, // fontawesomeicon
@@ -99,9 +99,9 @@ const prokerData = [
         periode: "Tahun 2025",
         videoYoutube: "CFSmF8iFQTY",  // id video youtube aja ex: https://youtu.be/{{{{{{aKnbYeBE6ug}}}}}}?si=aipoH73HByviFGUA
         deskripsiDetail: `
-        <b> Information and Technology Festival (IntechFest)</b> merupakan program kerja utama UKM Computer Club yang diselenggarakan sebagai wujud dedikasi dalam mendorong kemajuan dan literasi teknologi informasi di tingkat nasional. Dikemas secara hybrid, IntechFest dirancang sebagai wadah yang edukatif, kompetitif, dan adaptif bagi pelajar serta mahasiswa untuk mengeksplorasi gagasan inovatif dan menguji kemampuan teknis mereka. <br>
+        <b> Information and Technology Festival (IntechFest)</b> merupakan program kerja utama UKM Computer Club yang menjadi wadah pengembangan dan apresiasi teknologi informasi di tingkat nasional. Diselenggarakan secara hybrid, IntechFest menghadirkan tiga kompetisi nasional, yaitu <b>PNB Design Challenge (PNBDC)</b> di bidang desain UI/UX, <b>PNB Web Design Competition (PNBWDC)</b> di bidang pengembangan website, dan <b>PNB Capture The Flag (PNBCTF)</b> di bidang keamanan siber. Ketiganya menjadi ruang bagi peserta untuk mengasah kreativitas dan kemampuan teknis sesuai bidangnya. <br>
         <br>
-        IntechFest menghadirkan <b> tiga cabang kompetisi tingkat nasional </b>, mulai dari PNB Design Challenge (PNBDC) yang menguji kreativitas visual desainer UI/UX, PNB Web Development Competition (PNBWDC) bagi para pengembang situs web modern, hingga PNB Capture The Flag (PNBCTF) yang menantang bagi para penggiat keamanan siber. Tak hanya kompetisi, rangkaian acara ini dilengkapi dengan <b> hadirnya Seminar Nasional "ChillTalks” </b> yaitu sebuah ruang diskusi interaktif bersama para pakar teknologi untuk mengupas isu-isu terkini sekaligus memantik ide-ide baru di dunia TI.`,
+        Selain kompetisi, IntechFest juga menghadirkan <b>Seminar Nasional “ChillTalks”</b> sebagai ruang diskusi bersama praktisi dan pakar teknologi untuk membahas perkembangan serta isu terkini di dunia Teknologi Informasi.`,
         items: [
             {
                 icon: faBookmark, // fontawesomeicon
@@ -184,10 +184,9 @@ const prokerData = [
         periode: "Tahun 2026",
         videoYoutube: "bIX4rUrmlMQ",  // id video youtube aja ex: https://youtu.be/{{{{{{aKnbYeBE6ug}}}}}}?si=aipoH73HByviFGUA
         deskripsiDetail: `
-        Melihat pesatnya perkembangan industri game dan e-sports di kalangan generasi muda, <b> PNB E-Sport Arena Gaming League Series (EAGLES) </b> hadir sebagai program kerja unggulan UKM Computer Club yang berfokus memfasilitasi potensi serta minat mahasiswa di bidang e-sports. Program ini menyediakan panggung kompetitif yang sportif bagi para atlet muda untuk menguji ketangkasan dan strategi mereka <b> melalui berbagai cabang game populer </b>, seperti Mobile Legends, PUBG Mobile, hingga eFootball. <br>
+        <b>PNB E-Sport Arena Gaming League Series (EAGLES)</b> merupakan program kerja unggulan UKM Computer Club yang mewadahi minat dan potensi mahasiswa di bidang e-sports melalui kompetisi tingkat regional. Menghadirkan berbagai cabang game populer seperti <b>Mobile Legends, PUBG Mobile, hingga eFootball dan Tekken 8</b>. PNB EAGLES menjadi ruang bagi peserta untuk mengasah kemampuan, strategi, dan sportivitas. <br>
         <br>
-        Tidak sekadar menggelar kejuaraan game, EAGLES juga menghadirkan dimensi edukatif melalui <b> Seminar Nasional "Beyond Limits" </b>. Ajang seminar nasional ini dirancang untuk mengupas secara mendalam dinamika industri e-sports, trend teknologi game, serta peluang karir di era digital, sehingga para peserta tidak hanya mahir bertanding tetapi juga memiliki pemahaman industri yang luas.
-`,
+        Selain kompetisi regional, PNB EAGLES juga menghadirkan <b>Seminar Nasional “Beyond Limits”</b> yang membahas perkembangan industri e-sports, tren teknologi game, serta peluang karier di era digital. Dengan demikian, EAGLES tidak hanya menjadi ajang kompetisi, tetapi juga sarana untuk memperluas wawasan peserta mengenai industri e-sports.`,
         items: [
             {
                 icon: faBookmark, // fontawesomeicon
