@@ -255,11 +255,11 @@ function DivisiPage() {
                             <p className="text-gray-500 mt-4 max-w-xl mx-auto">Beberapa karya dan hasil nyata yang telah dibuat oleh anggota divisi {divisiDetail.divisi}.</p>
                         </div>
 
-                        <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
+                        <div className="flex flex-wrap justify-center gap-8">
                             {divisiDetail.karya.map((item, index) => (
                                 <div
                                     key={index}
-                                    className="group rounded-3xl overflow-hidden shadow-lg hover:shadow-2xl transition-all duration-500 border border-gray-100"
+                                    className="flex-1 min-w-[300px] max-w-[360px] w-full group rounded-3xl overflow-hidden shadow-lg hover:shadow-2xl transition-all duration-500 border border-gray-100 flex flex-col"
                                     data-aos="fade-up"
                                     data-aos-delay={index * 100}
                                 >
@@ -281,7 +281,7 @@ function DivisiPage() {
                                         </span>
                                     </div>
                                     {/* Content */}
-                                    <div className="p-6 bg-white">
+                                    <div className="p-6 bg-white flex-1 flex flex-col">
                                         <h3 className="font-bold text-gray-900 text-xl mb-2">{item.judul}</h3>
                                         <p className="text-gray-500 text-sm leading-relaxed text-justify">{item.deskripsi}</p>
                                     </div>

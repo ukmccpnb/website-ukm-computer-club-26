@@ -23,6 +23,8 @@ import _web_dokumen1 from '../assets/img/divisi/web/dokumen1.png'
 import _web_dokumen2 from '../assets/img/divisi/web/dokumen2.png'
 import _web_dokumen3 from '../assets/img/divisi/web/dokumen3.png'
 import _web_dokumen4 from '../assets/img/divisi/web/dokumen4.png'
+import _karya_office_dashboard from '../assets/img/karya/office/Dashboard.jpeg'
+import _karya_office_access from '../assets/img/karya/office/Access.png'
 import _bersama from '../assets/img/hero/bersama.jpg'
 import _bersama2 from '../assets/img/hero/bersama2.jpg'
 import _foto_bersama from '../assets/img/hero/foto_bersama_fix.jpeg'
@@ -139,6 +141,8 @@ const imagesData =
     "web_dokumen2": _web_dokumen2,
     "web_dokumen3": _web_dokumen3,
     "web_dokumen4": _web_dokumen4,
+    "karya_office_dashboard": _karya_office_dashboard,
+    "karya_office_access": _karya_office_access,
     "bersama": _bersama,
     "bersama2": _bersama2,
     "foto_bersama": _foto_bersama,
