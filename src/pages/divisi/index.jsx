@@ -93,13 +93,13 @@ function DivisiPage() {
                         </div>
 
                         {/* Right: Group photo */}
-                        <div data-aos="fade-left">
+                        <div data-aos="fade-left" className="hidden lg:block">
                             {divisiDetail.itemsKegiatan[0] && (
-                                <div className="rounded-3xl overflow-hidden shadow-2xl relative group mx-auto max-w-sm">
+                                <div className="rounded-3xl overflow-hidden shadow-2xl relative group mx-auto max-w-sm aspect-[3/4]">
                                     <img
                                         src={divisiDetail.itemsKegiatan[0].gambar}
                                         alt={divisiDetail.itemsKegiatan[0].altGambar}
-                                        className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105 aspect-[3/4]"
+                                        className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105 lg:rotate-0 -rotate-90 lg:scale-100 scale-[1.34]"
                                         loading="lazy"
                                     />
                                     {/* Overlay glow */}
