@@ -30,6 +30,8 @@ import _karya_vcd_photoshop from '../assets/img/karya/vcd/Photoshop.png'
 import _karya_web_1 from '../assets/img/karya/web/1.png'
 import _karya_web_2 from '../assets/img/karya/web/2.jpeg'
 import _karya_web_3 from '../assets/img/karya/web/3.png'
+import _karya_game_roblox from '../assets/img/karya/game/roblox.jpeg'
+import _karya_game_scripting from '../assets/img/karya/game/scripting.png'
 import _bersama from '../assets/img/hero/bersama.jpg'
 import _bersama2 from '../assets/img/hero/bersama2.jpg'
 import _foto_bersama from '../assets/img/hero/foto_bersama_fix.jpeg'
@@ -153,6 +155,8 @@ const imagesData =
     "karya_web_1": _karya_web_1,
     "karya_web_2": _karya_web_2,
     "karya_web_3": _karya_web_3,
+    "karya_game_roblox": _karya_game_roblox,
+    "karya_game_scripting": _karya_game_scripting,
     "bersama": _bersama,
     "bersama2": _bersama2,
     "foto_bersama": _foto_bersama,

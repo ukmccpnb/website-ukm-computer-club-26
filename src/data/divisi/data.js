@@ -404,16 +404,16 @@ const divisiData = [
         ],
         karya: [
             {
-                gambar: imagesData.game_dokumen2,
-                judul: "Game 3D di Roblox",
-                deskripsi: "Pembuatan world dan game interaktif di platform Roblox Studio dengan scripting Lua dasar.",
+                gambar: imagesData.karya_game_roblox,
+                judul: "McDonald's & Kendaraan Obby",
+                deskripsi: "Pembuatan game obby 3D interaktif bertema McDonald's menggunakan Roblox Studio, dilengkapi obstacle course berlevel, sistem checkpoint, GUI selamat datang, dan timer untuk melacak waktu penyelesaian.",
                 tag: "Roblox Studio",
             },
             {
-                gambar: imagesData.game_dokumen3,
-                judul: "Desain Level & Assets",
-                deskripsi: "Perancangan level game dan pembuatan assets visual untuk mendukung pengembangan game.",
-                tag: "Game Design",
+                gambar: imagesData.karya_game_scripting,
+                judul: "Lua Scripting – TimerModule",
+                deskripsi: "Penerapan scripting menggunakan bahasa Lua di Roblox Studio untuk membangun sistem timer berbasis module script, mencakup logika start, stop, dan event handler yang digunakan dalam mekanisme gameplay.",
+                tag: "Lua Scripting",
             },
         ],
         prospekKarir: [
