@@ -9,6 +9,7 @@ import YouTube from "react-youtube";
 import { useState } from 'react';
 import imagesData from "../data/imgImports";
 import { Link } from "react-router-dom";
+import benderaukm from '../assets/img/hero/benderaukm.png'
 
 function HomePage() {
     const [openQuestion, setOpenQuestion] = useState(null);
@@ -36,7 +37,7 @@ function HomePage() {
             showinfo: 0,
             mute: 0,
             loop: 1,
-            playlist: "kWpNlGmop0c",
+            playlist: "kLi-hF7cmW4",
         },
     };
 
@@ -44,48 +45,41 @@ function HomePage() {
         <div>
             <div className="absolute inset-0 bg-cover scale-105 brightness-50" />
 
-            <section className="relative" id="beranda">
-                <div className="py-8 mt-16 md:mt-0 w-full md:w-screen h-full xl:h-screen bg-[position:55%_center] justify-center items-center overflow-hidden bg-[length:200%] md:bg-[length:180%] lg:bg-[length:150%] bg-no-repeat" style={{ backgroundImage: `linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url(${imagesData.foto_bersama})`, backgroundAttachment: 'scroll', backgroundSize: 'cover', }}>
-                    <div className="h-full xl:h-screen flex text-white justify-center items-center">
-
-                        {/* <div className="w-full md:w-3/4 mx-auto lg:hidden" data-aos="fade-down">
-                                <div className="w-full mb-5">
-                                    <img src={imagesData.bersama2} className="w-full rounded-md" alt="Foto 2" loading="lazy" decoding="async"></img>
-                                </div>
-                            </div> */}
-
-                        {/* <div className="w-full lg:w-[60%] flex-col items-center" data-aos="fade-up">
-                                <h1 className="uppercase text-center text-xl md:text-4xl lg:text-left lg:text-6xl font-semibold mb-">unit kegiatan mahasiswa computer club</h1>
-                                <div className="mb-2 lg:mb-5 md:text-lg"> 
-                                    <h3 className="lg:text-justify text-center">Selamat Datang di dunia penuh inovasi dan kerjasama:</h3> 
-                                    <h3 className="lg:text-justify text-center">{`${"Inspirasi Mahasiswa di Politeknik Negeri Bali"}`}</h3> 
-                                </div>
-                                <h2 className="text-primary font-semibold italic text-lg lg:text-left text-center mt-2 lg:mt-5">#MakeItHappen</h2>
-                            </div> */}
-                        <div className="flex flex-col w-full lg:w-[70%] justify-center items-center text-center">
-                            <h1 className="uppercase text-sm md:text-4xl lg:text-6xl font-semibold" data-aos="fade-up" data-aos-delay="300">unit kegiatan mahasiswa</h1>
-                            <h1 className="uppercase text-sm md:text-4xl lg:text-6xl font-semibold pb-5" data-aos="fade-up" data-aos-delay="300">computer club</h1>
-                            <div className="mb-2 lg:mb-5 text-xs md:text-lg" data-aos="fade-up" data-aos-delay="400">
-                                <h3>Temukan divisi yang sesuai dengan minatmu</h3>
-                                <h3>dan kembangkan potensimu bersama UKM Computer Club</h3>
-                            </div>
-                            <Link to="/quiz" className="font-medium bg-secondary hover:bg-primary text-sm md:text-lg py-2 px-3 rounded-lg text-white ease-in-out transition-all" data-aos="fade-up" data-aos-delay="600">Find Your Division</Link>
-                            <h2 className="text-white font-semibold italic text-sm md:text-2xl mt-2 lg:mt-5" data-aos="fade-up" data-aos-duration="2000" data-aos-easing="linear" data-aos-delay="600">
-                                #MakeItHappen
-                            </h2>
-                        </div>
-
-                        {/* <div className="w-[35%] hidden lg:block" data-aos="zoom-in">
-                                <div className="w-full my-5 ml-5">
-                                    <img src={imagesData.bersama} className="w-full rounded-md -rotate-3" alt="Foto 1" loading="lazy" decoding="async"></img>
-                                </div>
-                                <div className="w-full relative -left-12 top-3 mb-5">
-                                    <img src={imagesData.bersama2} className="w-full rounded-md rotate-3" alt="Foto 2" loading="lazy" decoding="async"></img>
-                                </div>
-                            </div> */}
-                    </div>
-                </div>
-            </section>
+<section 
+    className="relative min-h-screen pt-40 md:pt-40 pb-16 md:pb-24 overflow-hidden bg-cover bg-bottom flex items-center"
+    style={{ 
+        backgroundImage: `url(${benderaukm})`,
+        backgroundPosition: 'center 50%'
+    }}
+    id="beranda"
+>
+    <div className="absolute inset-0 bg-black/60"></div>
+    <div className="w-konten mx-auto px-4 relative z-10">
+        <div className="flex flex-col items-start text-left">
+            <h1 className="uppercase text-3xl md:text-5xl lg:text-6xl font-bold text-white leading-tight mb-5">
+                Unit Kegiatan <br />Mahasiswa <span className="text-secondary"> <br />Computer Club</span>
+            </h1>
+            <p className="text-gray-300 text-sm md:text-base mb-8 max-w-lg">
+                Temukan divisi yang sesuai dengan minatmu dan kembangkan potensimu bersama UKM Computer Club.
+            </p>
+            <div className="flex flex-col sm:flex-row gap-4 justify-start">
+                <Link to="/quiz" className="bg-secondary hover:bg-primary text-white font-semibold text-sm md:text-base py-3 px-6 rounded-full transition-all">
+                    Find Your Division
+                </Link>
+                <a 
+    href="#tentang" 
+    onClick={(e) => {
+        e.preventDefault();
+        document.getElementById("tentang")?.scrollIntoView({ behavior: "smooth" });
+    }}
+    className="bg-white/10 hover:bg-white text-white hover:text-hitam font-semibold text-sm md:text-base py-3 px-6 rounded-full border border-white/20 hover:border-white transition-all duration-300"
+>
+    Pelajari Lebih Lanjut
+</a>
+            </div>
+        </div>
+    </div>
+</section>
 
             <section className="px-5 py-16 md:pt-40 relative" id="tentang" data-aos="md:fade-up">
                 <div className="flex flex-col lg:flex-row justify-between items-center gap-8">
@@ -99,7 +93,7 @@ function HomePage() {
                     </div> */}
                     <div className="w-full lg:w-[55%]" data-aos="zoom-in">
                         <div className="px-4 lg:px-0 lg:pl-10 w-full flex aspect-video justify-center">
-                            <YouTube videoId={homepage.videoYoutube} className="w-full aspect-video" opts={opts} onReady={onPlayerReady} iframeClassName="w-full h-full rounded-lg lg:rounded-2xl" />
+                            <YouTube key={homepage.videoYoutube} videoId={homepage.videoYoutube} className="w-full aspect-video" opts={opts}  iframeClassName="w-full h-full rounded-lg lg:rounded-2xl" />
                             {/* <img src={imagesData.LOGO_UKM_BERWARNA} className="w-full" alt="Foto 1" loading="lazy" decoding="async"></img> */}
                         </div>
                     </div>
@@ -229,7 +223,7 @@ function HomePage() {
 
             <div className="w-full lg:w-1/2" data-aos="zoom-in">
     <div className="rounded-2xl overflow-hidden shadow-xl">
-        <img src={imagesData.bersama} className="w-full aspect-[4/3] object-cover" alt="Fungsionaris UKM Computer Club" loading="lazy" decoding="async" />
+        <img src={imagesData.bersama} className="w-full aspect-[4/3] object-cover object-[60%_center]" alt="Fungsionaris UKM Computer Club" loading="lazy" decoding="async" />
     </div>
     <div className="flex flex-wrap gap-2 mt-4 justify-center lg:justify-start">
 <span className="bg-secondary text-white text-xs md:text-sm font-semibold px-3 py-1.5 rounded-full">Inti</span>
@@ -261,8 +255,8 @@ function HomePage() {
                         <p className="text-xs md:text-sm text-gray-600">Fungsionaris</p>
                     </div>
                     <div className="text-center lg:text-left">
-                        <h2 className="text-2xl md:text-3xl font-extrabold text-secondary">1990</h2>
-                        <p className="text-xs md:text-sm text-gray-600">Periode Aktif</p>
+                        <h2 className="text-2xl md:text-3xl font-extrabold text-secondary">3</h2>
+                        <p className="text-xs md:text-sm text-gray-600">Program Kerja</p>
                     </div>
                 </div>
 
