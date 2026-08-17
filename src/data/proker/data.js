@@ -7,7 +7,7 @@ const prokerData = [
         logo: imagesData.Logo_ccdt, 
         img: imagesData.ccdt_foto, 
         imgPosition: "center 30%",
-        name: "Computer Club Digital Talent",
+        name: "CCDT",
         deskripsi: "Computer Club Digital Talent (CCDT) merupakan program kerja internal UKM Computer Club yang mengkolaborasikan pelatihan dan perlombaan untuk membekali anggota divisi dengan keterampilan aplikatif agar siap bersaing di dunia digital.",
         href: "/programkerja/ccdt",
         singkatan: "ccdt",

@@ -19,7 +19,7 @@ function Footer() {
                         </div>
 
                         <div className="text-justify mt-3 text-white">
-                            <p>Unit Kegiatan Mahasiswa (UKM) Computer Club KBM PNB adalah wadah bagi mahasiswa Politeknik Negeri Bali yang memiliki minat dan bakat dalam bidang teknologi informasi dan komputer.</p>
+                            <p>Unit Kegiatan Mahasiswa (UKM) Computer Club KBM PNB adalah wadah bagi mahasiswa Politeknik Negeri Bali yang memiliki minat dan bakat dalam bidang teknologi informasi.</p>
                         </div>
                     </div>
 

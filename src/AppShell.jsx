@@ -4,7 +4,7 @@ import 'aos/dist/aos.css';
 import Navbar from './component/Navbar';
 import { Outlet } from 'react-router-dom';
 import Footer from './component/Footer';
-import Fab from './component/Fab';
+// import Fab from './component/Fab';
 import bg_rectangle from './assets/img/ornamen/Rectangle.png';
 
 function AppShell() {
@@ -27,7 +27,7 @@ function AppShell() {
         >
             <Navbar/>
             <Outlet/>
-            <Fab/>
+            {/* <Fab/> */}
             <Footer/>
         </div>
     );
