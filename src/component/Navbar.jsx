@@ -49,7 +49,7 @@ function Navbar(){
     //tampilan
     return (
 <nav className={`fixed w-full z-50 text-white transition-all duration-300 ${scrolled ? "bg-hitam/70 backdrop-blur-md shadow-md" : "bg-transparent"}`}>
-    <div className="w-navfot flex flex-wrap items-center justify-between mx-auto p-3">
+    <div className="w-navfot flex flex-wrap items-center justify-between mx-auto p-7">
         <a href="/">    
             <div className="flex items-center space-x-3 rtl:space-x-reverse">
                 <img src={imagesDatas.LOGO_UKM_PUTIH} className="md:h-10 h-8" alt="Logo UKM" loading="lazy" decoding="async" />
@@ -151,7 +151,7 @@ function Navbar(){
 
         {/* Tombol CTA - selalu tampil di kanan */}
         <div className="hidden md:block">
-            <a href="https://docs.google.com/forms/d/e/1FAIpQLSfoupO5ST_r2kXdSq9W7658ZO8XkFGbw1WnLydVOieJLlKiGA/viewform" target="_blank" rel="noopener noreferrer" className="bg-secondary hover:bg-primary py-2 px-5 rounded-full text-white text-sm font-semibold ease-in-out transition-all">
+            <a href="https://docs.google.com/forms/d/e/1FAIpQLSe6nm4j9pOFA_agi2tHWJoE15lSt1CmpH9JXPEF5uVsgkRM8g/viewform" target="_blank" rel="noopener noreferrer" className="bg-secondary hover:bg-primary py-2 px-5 rounded-full text-white text-sm font-semibold ease-in-out transition-all">
                 Daftar Sekarang
             </a>
         </div>
