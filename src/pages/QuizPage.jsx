@@ -65,7 +65,7 @@ export default function QuizPage() {
   const getRecommendedDivision = () => {
     let maxScore = -1;
     let recommended = '';
-    
+
     // In case of tie, the first one encountered will be picked, or we could handle ties.
     // For simplicity, we just pick the first max.
     for (const [division, score] of Object.entries(scores)) {
@@ -79,12 +79,12 @@ export default function QuizPage() {
 
   return (
     <div className="min-h-screen pt-20 pb-10 px-4 bg-hitam text-putih flex flex-col items-center justify-center font-sans">
-      
+
       {!showResult ? (
         <div className="w-full max-w-4xl w-navfot">
           {/* Progress Bar */}
           <div className="mb-8 w-full bg-gray-700 rounded-full h-4 overflow-hidden shadow-inner">
-            <motion.div 
+            <motion.div
               className="bg-secondary h-4"
               initial={{ width: 0 }}
               animate={{ width: `${((currentQuestion + 1) / quizQuestions.length) * 100}%` }}
@@ -133,18 +133,18 @@ export default function QuizPage() {
           </div>
         </div>
       ) : (
-        <motion.div 
+        <motion.div
           initial={{ opacity: 0, scale: 0.8 }}
           animate={{ opacity: 1, scale: 1 }}
           transition={{ duration: 0.5 }}
           className="w-full max-w-2xl bg-gray-900 rounded-3xl p-8 md:p-12 text-center shadow-2xl border border-gray-800"
         >
           <h2 className="text-2xl md:text-3xl font-semibold mb-2 text-gray-300">Berdasarkan jawabanmu, kamu cocok masuk divisi:</h2>
-          
+
           {(() => {
             const recommended = getRecommendedDivision();
             const divData = divisionDetails[recommended];
-            
+
             return (
               <>
                 <motion.div
@@ -158,7 +158,7 @@ export default function QuizPage() {
                     {divData.name}
                   </h1>
                 </motion.div>
-                
+
                 <p className="text-lg md:text-xl text-gray-400 mb-10 px-4">
                   {divData.desc}
                 </p>
@@ -169,15 +169,15 @@ export default function QuizPage() {
           <motion.a
             whileHover={{ scale: 1.05 }}
             whileTap={{ scale: 0.95 }}
-            href="https://docs.google.com/forms/d/e/1FAIpQLSfoupO5ST_r2kXdSq9W7658ZO8XkFGbw1WnLydVOieJLlKiGA/viewform"
+            href="https://docs.google.com/forms/d/e/1FAIpQLSe6nm4j9pOFA_agi2tHWJoE15lSt1CmpH9JXPEF5uVsgkRM8g/viewform"
             target="_blank"
             rel="noopener noreferrer"
             className="inline-block w-full md:w-auto bg-secondary hover:bg-primary text-white font-bold text-xl py-4 px-12 rounded-full shadow-[0_0_20px_rgba(102,126,234,0.5)] transition-all"
           >
             Daftar Sekarang
           </motion.a>
-          
-          <button 
+
+          <button
             onClick={() => {
               setCurrentQuestion(0);
               setScores({ office: 0, web: 0, vcd: 0, game: 0 });
