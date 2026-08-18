@@ -139,22 +139,22 @@ function Navbar() {
                         <li className='m-1 p-1'>
                             <a href="/#faq" className="NavbarLink md:px-4 md:py-2 md:rounded-full md:hover:bg-white/15 transition-colors">FAQ</a>
                         </li>
+
+                        {/* Tombol CTA versi mobile */}
+                        <li className="m-1 p-1 md:hidden mt-4">
+                            <a href="https://docs.google.com/forms/d/e/1FAIpQLSe6nm4j9pOFA_agi2tHWJoE15lSt1CmpH9JXPEF5uVsgkRM8g/viewform" target="_blank" rel="noopener noreferrer" className="block text-center bg-secondary hover:bg-primary py-2 px-5 rounded-full text-white text-sm font-semibold ease-in-out transition-all">
+                                Daftar Sekarang
+                            </a>
+                        </li>
                     </ul>
                 </div>
 
                 {/* Tombol CTA - selalu tampil di kanan */}
                 <div className="hidden md:block">
-                    <a href="https://docs.google.com/forms/d/e/1FAIpQLSe6nm4j9pOFA_agi2tHWJoE15lSt1CmpH9JXPEF5uVsgkRM8g/viewformhjsgjfhguyevnc" target="_blank" rel="noopener noreferrer" className="bg-secondary hover:bg-primary py-2 px-5 rounded-full text-white text-sm font-semibold ease-in-out transition-all">
+                    <a href="https://docs.google.com/forms/d/e/1FAIpQLSe6nm4j9pOFA_agi2tHWJoE15lSt1CmpH9JXPEF5uVsgkRM8g/viewform" target="_blank" rel="noopener noreferrer" className="bg-secondary hover:bg-primary py-2 px-5 rounded-full text-white text-sm font-semibold ease-in-out transition-all">
                         Daftar Sekarang
                     </a>
                 </div>
-            </div>
-
-            {/* Tombol CTA versi mobile, di dalam menu dropdown */}
-            <div className="menu hidden md:hidden px-4 pb-4">
-                <a href="https://docs.google.com/forms/d/e/1FAIpQLSfoupO5ST_r2kXdSq9W7658ZO8XkFGbw1WnLydVOieJLlKiGA/viewform" target="_blank" rel="noopener noreferrer" className="block text-center bg-secondary hover:bg-primary py-2 px-5 rounded-full text-white text-sm font-semibold ease-in-out transition-all">
-                    Daftar Sekarang
-                </a>
             </div>
         </nav>
     )
