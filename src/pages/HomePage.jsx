@@ -46,24 +46,25 @@ function HomePage() {
             <div className="absolute inset-0 bg-cover scale-105 brightness-50" />
 
 <section 
-    className="relative min-h-screen pt-40 md:pt-40 pb-16 md:pb-24 overflow-hidden bg-cover bg-bottom flex items-center"
+    className="relative min-h-screen pt-40 md:pt-40 pb-16 md:pb-24 overflow-hidden bg-cover bg-[65%_center] md:bg-center flex items-center"
     style={{ 
-        backgroundImage: `url(${benderaukm})`,
-        backgroundPosition: 'center 50%'
+        backgroundImage: `url(${benderaukm})`
     }}
     id="beranda"
 >
-    <div className="absolute inset-0 bg-black/60"></div>
+    {/* Gradient overlay: Lebih gelap di area teks mobile agar grafis putih bendera tidak menabrak teks, tetap mulus di desktop */}
+    <div className="absolute inset-0 bg-gradient-to-r from-black/95 via-black/85 to-black/60 md:from-black/70 md:via-black/40 md:to-black/10"></div>
+    
     <div className="w-konten mx-auto px-4 relative z-10">
-        <div className="flex flex-col items-start text-left">
-            <h1 className="uppercase text-3xl md:text-5xl lg:text-6xl font-bold text-white leading-tight mb-5">
-                Unit Kegiatan <br />Mahasiswa <span className="text-secondary"> <br />Computer Club</span>
+        <div className="flex flex-col items-start text-left max-w-xl">
+            <h1 className="uppercase text-3xl md:text-5xl lg:text-6xl font-bold text-white leading-tight mb-5 [text-shadow:_0_2px_6px_rgba(0,0,0,1),_0_4px_20px_rgba(0,0,0,1),_0_0_30px_rgba(0,0,0,0.9)]">
+                Unit Kegiatan <br />Mahasiswa <span className="text-secondary [text-shadow:_0_2px_6px_rgba(0,0,0,1),_0_4px_20px_rgba(0,0,0,1)]"> <br />Computer Club</span>
             </h1>
-            <p className="text-gray-300 text-sm md:text-base mb-8 max-w-lg">
+            <p className="text-white md:text-gray-300 text-sm md:text-base mb-8 max-w-lg font-medium leading-relaxed [text-shadow:_0_1px_4px_rgba(0,0,0,1),_0_2px_12px_rgba(0,0,0,1)]">
                 Temukan divisi yang sesuai dengan minatmu dan kembangkan potensimu bersama UKM Computer Club.
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-start">
-                <Link to="/quiz" className="bg-secondary hover:bg-primary text-white font-semibold text-sm md:text-base py-3 px-6 rounded-full transition-all">
+                <Link to="/quiz" className="bg-secondary hover:bg-primary text-white font-semibold text-sm md:text-base py-3 px-6 rounded-full transition-all shadow-lg shadow-black/50">
                     Find Your Division
                 </Link>
                 <a 
@@ -72,7 +73,7 @@ function HomePage() {
         e.preventDefault();
         document.getElementById("tentang")?.scrollIntoView({ behavior: "smooth" });
     }}
-    className="bg-white/10 hover:bg-white text-white hover:text-hitam font-semibold text-sm md:text-base py-3 px-6 rounded-full border border-white/20 hover:border-white transition-all duration-300"
+    className="bg-white/10 hover:bg-white text-white hover:text-hitam font-semibold text-sm md:text-base py-3 px-6 rounded-full border border-white/20 hover:border-white transition-all duration-300 backdrop-blur-sm shadow-lg shadow-black/30"
 >
     Pelajari Lebih Lanjut
 </a>
