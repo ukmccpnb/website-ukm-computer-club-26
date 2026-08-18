@@ -340,7 +340,7 @@ const divisiData = [
         img: imagesData.cover_divisi_game,
         singkatan: "game",
         divisi: "Game Development",
-        deskripsi: "Mempelajari pembuatan game platformer 3D menggunakan Roblox Studio.",
+        deskripsi: "Divisi Game Development merupakan divisi yang berfokus mempelajari pembuatan game platformer 3D menggunakan Roblox Studio",
         rekomendasi: `<b>
             Rekomendasi :</b><br>
             • Pecinta E-Sports <br>
