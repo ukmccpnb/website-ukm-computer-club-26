@@ -26,7 +26,7 @@ import _web_dokumen4 from '../assets/img/divisi/web/dokumen4.png'
 import _karya_office_dashboard from '../assets/img/karya/office/Dashboard.jpeg'
 import _karya_office_access from '../assets/img/karya/office/Access.png'
 import _karya_vcd_netstay from '../assets/img/karya/vcd/NETSTAY.png'
-import _karya_vcd_photoshop from '../assets/img/karya/vcd/Photoshop.png'
+import _karya_vcd_photoshop from '../assets/img/karya/vcd/Affinity.png'
 import _karya_web_1 from '../assets/img/karya/web/1.png'
 import _karya_web_2 from '../assets/img/karya/web/2.jpeg'
 import _karya_web_3 from '../assets/img/karya/web/3.png'
@@ -121,7 +121,7 @@ import _arya from "../assets/img/fungsionaris/perorang/web/ARYA.png"
 import _danendra from "../assets/img/fungsionaris/perorang/web/DANENDRA.png"
 import _tio from "../assets/img/fungsionaris/perorang/web/SEAN.png"
 
-const imagesData = 
+const imagesData =
 {
     "cover_divisi_web": _cover_divisi_web,
     "cover_divisi_office": _cover_divisi_office,
@@ -209,42 +209,42 @@ const imagesData =
     "intech_foto_dokum9": _intech_foto_dokum9,
 
     //fungsio
-    "ria":_ria,
-    "efanie":_efanie,
-    "ajus":_ajus,
-    "citra":_citra,
-    "tasya":_tasya,
-    "ayuhmi":_ayuhmi,
+    "ria": _ria,
+    "efanie": _efanie,
+    "ajus": _ajus,
+    "citra": _citra,
+    "tasya": _tasya,
+    "ayuhmi": _ayuhmi,
 
-    "bima":_bima,
-    "galuh":_galuh,
-    "darma":_darma,
-    "agik":_agik,
+    "bima": _bima,
+    "galuh": _galuh,
+    "darma": _darma,
+    "agik": _agik,
 
-    "mitasari":_mitasari,
-    "mangsri":_mangsri,
-    "erin":_erin,
-    "puji":_puji,
-    "dewi":_dewi,
-    "devita":_devita,
-    "diva":_diva,
-    "subawa":_subawa,
-    "tika":_tika,
-    "widnyana":_widnyana,
+    "mitasari": _mitasari,
+    "mangsri": _mangsri,
+    "erin": _erin,
+    "puji": _puji,
+    "dewi": _dewi,
+    "devita": _devita,
+    "diva": _diva,
+    "subawa": _subawa,
+    "tika": _tika,
+    "widnyana": _widnyana,
 
-    "nadwitya":_nadwitya,
-    "sinta":_sinta,
-    "lia":_lia,
-    "kaifa":_kaifa,
-    "pradnya":_pradnya,
-    "dipta":_dipta,
+    "nadwitya": _nadwitya,
+    "sinta": _sinta,
+    "lia": _lia,
+    "kaifa": _kaifa,
+    "pradnya": _pradnya,
+    "dipta": _dipta,
 
-    "ayu":_ayu,
-    "santika":_santika,
-    "pebrian":_pebrian,
-    "arya":_arya,
-    "danendra":_danendra,
-    "tio":_tio,
+    "ayu": _ayu,
+    "santika": _santika,
+    "pebrian": _pebrian,
+    "arya": _arya,
+    "danendra": _danendra,
+    "tio": _tio,
 }
 
 export default imagesData;

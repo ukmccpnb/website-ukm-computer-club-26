@@ -1,5 +1,5 @@
 import { faGears, faGamepad, faFontAwesome, faScrewdriverWrench, faChartBar, faDatabase, faPenNib, faFilm, faLayerGroup, faCode, faBriefcase, faPalette, faRocket } from "@fortawesome/free-solid-svg-icons";
-import { faFigma, faCss,  faHtml5, faMicrosoft, faGoogle } from '@fortawesome/free-brands-svg-icons';
+import { faFigma, faCss, faHtml5, faMicrosoft, faGoogle } from '@fortawesome/free-brands-svg-icons';
 import imagesData from "../imgImports";
 
 const divisiData = [
@@ -118,7 +118,7 @@ const divisiData = [
     },
     {
         id: 2,
-        img: imagesData.cover_divisi_vcd, 
+        img: imagesData.cover_divisi_vcd,
         singkatan: "vcd",
         divisi: "Visual Communication Design",
         deskripsi: "Divisi Visual Communication Design (VCD)  merupakan divisi yang berfokus  mempelajari design, editing foto dan membuat desain tampilan antarmuka aplikasi website yang menarik.",
@@ -179,7 +179,7 @@ const divisiData = [
             {
                 icon: faFigma,
                 judul: "Figma",
-                deskripsi: "FMempelajari penggunaan Figma untuk membuat desain antarmuka aplikasi, serta berkolaborasi dalam proses perancangan desain.",
+                deskripsi: "Mempelajari penggunaan Figma untuk membuat desain antarmuka aplikasi, serta berkolaborasi dalam proses perancangan desain.",
             },
         ],
         karya: [
@@ -228,7 +228,7 @@ const divisiData = [
     },
     {
         id: 3,
-        img: imagesData.cover_divisi_web, 
+        img: imagesData.cover_divisi_web,
         singkatan: "web",
         divisi: "Web Development",
         deskripsi: "Divisi Web Development merupakan divisi yang berfokus mempelajari cara membuat atau mengembangkan tampilan suatu website dengan mark-up language.",
@@ -337,7 +337,7 @@ const divisiData = [
     },
     {
         id: 4,
-        img: imagesData.cover_divisi_game, 
+        img: imagesData.cover_divisi_game,
         singkatan: "game",
         divisi: "Game Development",
         deskripsi: "Mempelajari pembuatan game platformer 3D menggunakan Roblox Studio.",
