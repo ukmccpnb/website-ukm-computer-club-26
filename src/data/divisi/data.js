@@ -229,7 +229,7 @@ const divisiData = [
     {
         id: 3,
         img: imagesData.cover_divisi_web,
-        singkatan: "web",
+        singkatan: "web dev",
         divisi: "Web Development",
         deskripsi: "Divisi Web Development merupakan divisi yang berfokus mempelajari cara membuat atau mengembangkan tampilan suatu website dengan mark-up language.",
         rekomendasi: `<b>
@@ -338,7 +338,7 @@ const divisiData = [
     {
         id: 4,
         img: imagesData.cover_divisi_game,
-        singkatan: "game",
+        singkatan: "game dev",
         divisi: "Game Development",
         deskripsi: "Divisi Game Development berfokus pada pembuatan game 3D menggunakan Roblox Studio, sekaligus mewadahi minat anggota di bidang e-sports.",
         rekomendasi: `<b>
