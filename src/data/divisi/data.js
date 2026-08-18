@@ -73,13 +73,13 @@ const divisiData = [
             {
                 gambar: imagesData.karya_office_dashboard,
                 judul: "Project Dashboard Excel",
-                deskripsi: "Membuat dashboard interaktif menggunakan Microsoft Excel untuk mengolah, memvisualisasikan, dan menyajikan data secara informatif. Project ini mencakup dashboard Inventory, Sales, dan Production yang membantu pengguna memahami data dan memantau informasi secara lebih efektif.",
+                deskripsi: "Membuat dashboard interaktif menggunakan Microsoft Excel untuk mengolah dan memvisualisasikan data Inventory, Sales, dan Production agar lebih mudah dipahami dan dipantau.",
                 tag: "Microsoft Excel",
             },
             {
                 gambar: imagesData.karya_office_access,
                 judul: "Project Access: Report Data Kursus",
-                deskripsi: "Project berupa pembuatan report data kursus menggunakan Microsoft Access untuk mengelola dan menyajikan informasi data kursus secara terstruktur, sehingga data dapat lebih mudah diakses, dipantau, dan digunakan untuk kebutuhan pelaporan.",
+                deskripsi: "Membuat laporan data kursus menggunakan Microsoft Access untuk mengelola, menyajikan, dan memantau data secara terstruktur dan mudah diakses.",
                 tag: "Microsoft Access",
             },
         ],
@@ -131,7 +131,7 @@ const divisiData = [
         href: "/divisi/vcd",
         imgCover: imagesData.cover_divisi_vcd,
         accentColor: "#a855f7",
-        deskripsiKegiatan: "Divisi ini berfokus pada pengembangan keterampilan desain visual menggunakan software desain populer, baik untuk kebutuhan kreatif maupun profesional. Di sini, anggota akan belajar mengolah gambar, mengatur komposisi, hingga membuat desain UI/UX yang siap digunakan untuk website atau aplikasi.",
+        deskripsiKegiatan: "Divisi ini berfokus pada pengembangan keterampilan desain visual menggunakan software desain populer, baik untuk kebutuhan kreatif maupun profesional. Di sini, anggota akan belajar mengolah gambar, mengatur komposisi, hingga membuat desain UI/UX yang siap digunakan untuk aplikasi.",
         deskripsiMateri: "Berfokus pada editing foto dan pembuatan desain tampilan antarmuka aplikasi untuk mengembangkan kemampuan dalam menyampaikan ide melalui media visual.",
         itemsKegiatan: [
             {
@@ -186,14 +186,14 @@ const divisiData = [
             {
                 gambar: imagesData.karya_vcd_netstay,
                 judul: "Project UI/UX",
-                deskripsi: "Membuat desain UI/UX mobile apps menggunakan Figma untuk menghasilkan tampilan dan pengalaman pengguna yang intuitif. Project ini mencakup perancangan user interface, user flow, wireframe, dan prototype interaktif, dengan memperhatikan kebutuhan pengguna, struktur informasi, serta kemudahan dalam berinteraksi dengan aplikasi.",
+                deskripsi: "Membuat desain UI/UX mobile apps menggunakan Figma, mencakup user flow, wireframe, dan prototype interaktif dengan memperhatikan kebutuhan dan kemudahan pengguna.",
                 tag: "Figma",
                 link: "https://www.figma.com/design/Ij9r5mHqjmquESVLV5msIy/Nestay?node-id=50-171&p=f&t=vb63oFzawwvU7Wlu-0",
             },
             {
                 gambar: imagesData.karya_vcd_photoshop,
                 judul: "Project Graphic Design",
-                deskripsi: "Membuat desain grafis untuk kebutuhan komunikasi visual menggunakan berbagai prinsip desain. Project ini mencakup pembuatan poster dengan memperhatikan layout, typography, komposisi, warna, dan elemen visual, sehingga menghasilkan desain yang menarik, informatif, dan sesuai dengan tujuan komunikasi.",
+                deskripsi: "Membuat desain grafis untuk komunikasi visual menggunakan Affinity, termasuk poster dengan menerapkan prinsip layout, typography, komposisi, warna, dan elemen visual.",
                 tag: "Graphic Design",
                 link: "https://drive.google.com/drive/folders/1kldigBDGyQ2gTMnnduFBs9Usl5zxlweB?usp=drive_link",
             },
@@ -340,7 +340,7 @@ const divisiData = [
         img: imagesData.cover_divisi_game,
         singkatan: "game",
         divisi: "Game Development",
-        deskripsi: "Divisi Game Development merupakan divisi yang berfokus mempelajari pembuatan game platformer 3D menggunakan Roblox Studio",
+        deskripsi: "Divisi Game Development berfokus pada pembuatan game 3D menggunakan Roblox Studio, sekaligus mewadahi minat anggota di bidang e-sports.",
         rekomendasi: `<b>
             Rekomendasi :</b><br>
             • Pecinta E-Sports <br>
@@ -350,7 +350,7 @@ const divisiData = [
         href: "/divisi/game",
         imgCover: imagesData.cover_divisi_game,
         accentColor: "#f59e0b",
-        deskripsiKegiatan: "Divisi Game Development merupakan divisi yang berfokus pada pembuatan game platformer 3D menggunakan Roblox Studio serta menjadi wadah bagi anggota untuk mengembangkan minat dan keterampilan di bidang game development.",
+        deskripsiKegiatan: "Divisi Game Development berfokus pada pembelajaran dan pengembangan keterampilan dalam membuat game 3D menggunakan Roblox Studio. Anggota akan belajar mengembangkan game sekaligus mengasah kreativitas dalam menciptakan pengalaman bermain yang menarik. Divisi ini juga menjadi wadah untuk mengembangkan minat di bidang e-sports melalui kegiatan Minggu Mabar. ",
         judulMateri: "Materi Ajar & Minggu Mabar",
         deskripsiMateri: "Berfokus pada pengembangan game menggunakan game engine untuk mengasah kemampuan anggota, serta menghadirkan Minggu Mabar sebagai sarana rekreasi dan mempererat keakraban.",
         itemsKegiatan: [
