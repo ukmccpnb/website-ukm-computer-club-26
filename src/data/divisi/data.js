@@ -5,6 +5,7 @@ import imagesData from "../imgImports";
 const divisiData = [
     {
         id: 1,
+        slug: "office",
         img: imagesData.cover_divisi_office,
         singkatan: "office",
         divisi: "Office",
@@ -118,6 +119,7 @@ const divisiData = [
     },
     {
         id: 2,
+        slug: "vcd",
         img: imagesData.cover_divisi_vcd,
         singkatan: "vcd",
         divisi: "Visual Communication Design",
@@ -228,6 +230,7 @@ const divisiData = [
     },
     {
         id: 3,
+        slug: "web",
         img: imagesData.cover_divisi_web,
         singkatan: "web dev",
         divisi: "Web Development",
@@ -337,6 +340,7 @@ const divisiData = [
     },
     {
         id: 4,
+        slug: "game",
         img: imagesData.cover_divisi_game,
         singkatan: "game dev",
         divisi: "Game Development",

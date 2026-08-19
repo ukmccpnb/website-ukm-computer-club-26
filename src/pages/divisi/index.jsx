@@ -7,12 +7,20 @@ import { faArrowDown, faChevronLeft, faChevronRight } from "@fortawesome/free-so
 function DivisiPage() {
     const {divisi} = useParams();
     const navigate = useNavigate();
-    const divisiDetail = divisiData.find((data) => data.singkatan === divisi);
+    const divisiDetail = divisiData.find((data) => data.slug === divisi || data.singkatan === divisi || data.href === `/divisi/${divisi}`);
     const [lightboxImg, setLightboxImg] = useState(null);
     const [activeSlide, setActiveSlide] = useState(0);
     const autoRef = useRef(null);
 
-    if (!divisiDetail) { navigate("/error"); return null; }
+    useEffect(() => {
+        if (!divisiDetail) {
+            navigate("/error");
+        } else {
+            window.scrollTo({ top: 0, behavior: 'instant' });
+        }
+    }, [divisiDetail, navigate]);
+
+    if (!divisiDetail) return null;
 
     const accent = "#1576FF"; // Menggunakan warna biru Divisi Office untuk semua halaman
 
