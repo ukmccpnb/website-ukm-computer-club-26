@@ -56,30 +56,36 @@ function HomePage() {
     <div className="absolute inset-0 bg-gradient-to-r from-black/95 via-black/85 to-black/60 md:from-black/70 md:via-black/40 md:to-black/10"></div>
     
     <div className="w-konten mx-auto px-4 relative z-10">
-        <div className="flex flex-col items-start text-left max-w-xl">
-            <h1 className="uppercase text-3xl md:text-5xl lg:text-6xl font-bold text-white leading-tight mb-5 [text-shadow:_0_2px_6px_rgba(0,0,0,1),_0_4px_20px_rgba(0,0,0,1),_0_0_30px_rgba(0,0,0,0.9)]">
-                Unit Kegiatan <br />Mahasiswa <span className="text-secondary [text-shadow:_0_2px_6px_rgba(0,0,0,1),_0_4px_20px_rgba(0,0,0,1)]"> <br />Computer Club</span>
-            </h1>
-            <p className="text-white md:text-gray-300 text-sm md:text-base mb-8 max-w-lg font-medium leading-relaxed [text-shadow:_0_1px_4px_rgba(0,0,0,1),_0_2px_12px_rgba(0,0,0,1)]">
-                Temukan divisi yang sesuai dengan minatmu dan kembangkan potensimu bersama UKM Computer Club.
-            </p>
-            <div className="flex flex-col sm:flex-row gap-4 justify-start">
-                <Link to="/quiz" className="bg-secondary hover:bg-primary text-white font-semibold text-sm md:text-base py-3 px-6 rounded-full transition-all shadow-lg shadow-black/50">
-                    Find Your Division
-                </Link>
-                <a 
-    href="#tentang" 
-    onClick={(e) => {
-        e.preventDefault();
-        document.getElementById("tentang")?.scrollIntoView({ behavior: "smooth" });
-    }}
-    className="bg-white/10 hover:bg-white text-white hover:text-hitam font-semibold text-sm md:text-base py-3 px-6 rounded-full border border-white/20 hover:border-white transition-all duration-300 backdrop-blur-sm shadow-lg shadow-black/30"
->
-    Pelajari Lebih Lanjut
-</a>
-            </div>
+    <div className="flex flex-col items-center text-center md:items-start md:text-left">
+        <h1 className="uppercase text-3xl md:text-5xl lg:text-6xl font-bold text-white leading-tight mb-5">
+            Unit Kegiatan <br />Mahasiswa <span className="text-secondary"> <br />Computer Club</span>
+        </h1>
+
+        <p className="text-gray-300 text-sm md:text-base mb-8 max-w-lg">
+            Temukan divisi yang sesuai dengan minatmu dan kembangkan potensimu bersama UKM Computer Club.
+        </p>
+
+        <div className="flex flex-col sm:flex-row gap-4 justify-center md:justify-start">
+            <Link
+                to="/quiz"
+                className="bg-secondary hover:bg-primary text-white font-semibold text-sm md:text-base py-3 px-6 rounded-full transition-all"
+            >
+                Find Your Division
+            </Link>
+
+            <a
+                href="#tentang"
+                onClick={(e) => {
+                    e.preventDefault();
+                    document.getElementById("tentang")?.scrollIntoView({ behavior: "smooth" });
+                }}
+                className="bg-white/10 hover:bg-white text-white hover:text-hitam font-semibold text-sm md:text-base py-3 px-6 rounded-full border border-white/20 hover:border-white transition-all duration-300"
+            >
+                Pelajari Lebih Lanjut
+            </a>
         </div>
     </div>
+</div>
 </section>
 
             <section className="px-5 py-16 md:pt-40 relative" id="tentang" data-aos="md:fade-up">
@@ -138,14 +144,14 @@ function HomePage() {
                 </div>
             </section>
 
-            <section className="md:pt-10 mt-10 relative" id="proker">
+            <section className="md:pt-10 mt-10 relative scroll-mt-24 md:scroll-mt-28" id="proker">
                 <div className="p-2 py-10">
                     <div className="text-hitam" data-aos="fade-up">
                         <h1 className="text-center font-semibold text-xl md:text-4xl lg:text-6xl mb-5">Program Kerja</h1>
                         <p className="text-center font-normal text-sm md:text-base mb-10 w-full md:mx-auto">Terdapat 3 program kerja di Unit Kegiatan Mahasiswa Computer Club</p>
                     </div>
 
-                    <div className="w-full lg:w-konten mx-auto h-[400px] md:h-[500px] lg:h-[600px] rounded-2xl overflow-hidden shadow-2xl relative group" data-aos="zoom-in">
+                    <div className="w-full lg:w-konten mx-auto h-[500px] md:h-[500px] lg:h-[600px] rounded-2xl overflow-hidden shadow-2xl relative group" data-aos="zoom-in">
 
 {/* Carousel Track */}
 <div
@@ -172,7 +178,7 @@ function HomePage() {
             </div>
 
             {/* CONTENT */}
-            <div className="flex-1 px-6 md:px-8 py-6 md:py-7 text-left text-white flex flex-col">
+<div className="flex-1 px-6 md:px-8 py-6 md:py-7 text-left text-white flex flex-col">
                 
                 {/* Number + Line */}
                 <div className="flex items-center gap-4 mb-6">
@@ -191,12 +197,13 @@ function HomePage() {
                 </h2>
 
                 {/* Description */}
-                <p className="text-sm md:text-base lg:text-lg text-gray-400 leading-relaxed line-clamp-3 md:line-clamp-4">
-                    {Data.deskripsi}
-                </p>
+                <p className="text-sm md:text-base lg:text-lg text-gray-400 leading-relaxed line-clamp-3 md:line-clamp-4 max-w-[85%] md:max-w-lg">
+    {Data.deskripsi}
+</p>
 
                 {/* Button */}
-                <div className="pt-5 pb-16">
+{/* Button */}
+<div className="pt-5 pb-6 md:pb-16">
     <Button
         href={Data.href}
         text="Baca Selengkapnya →"
@@ -208,14 +215,14 @@ function HomePage() {
 </div>
 
  {/* Navigation Controls */}
-<div className="absolute bottom-5 right-5 md:bottom-6 md:right-6 z-20 flex gap-3">
+<div className="absolute bottom-10 right-5 md:bottom-6 md:right-6 z-20 flex gap-2 md:gap-3">
     <button
         onClick={prevProkerSlide}
-        className="flex h-11 w-11 md:h-12 md:w-12 items-center justify-center rounded-full bg-[#1b1e2a] border border-white/10 hover:bg-secondary text-white transition-all duration-300 active:scale-75 shadow-lg outline-none"
+        className="flex h-9 w-9 md:h-12 md:w-12 items-center justify-center rounded-full bg-[#1b1e2a] border border-white/10 hover:bg-secondary text-white transition-all duration-300 active:scale-75 shadow-lg outline-none"
         aria-label="Previous program kerja"
     >
         <svg
-            className="w-5 h-5 md:w-6 md:h-6"
+            className="w-4 h-4 md:w-6 md:h-6"
             fill="none"
             stroke="currentColor"
             viewBox="0 0 24 24"
@@ -231,11 +238,11 @@ function HomePage() {
 
     <button
         onClick={nextProkerSlide}
-        className="flex h-11 w-11 md:h-12 md:w-12 items-center justify-center rounded-full bg-[#1b1e2a] border border-white/10 hover:bg-secondary text-white transition-all duration-300 active:scale-75 shadow-lg outline-none"
+        className="flex h-9 w-9 md:h-12 md:w-12 items-center justify-center rounded-full bg-[#1b1e2a] border border-white/10 hover:bg-secondary text-white transition-all duration-300 active:scale-75 shadow-lg outline-none"
         aria-label="Next program kerja"
     >
         <svg
-            className="w-5 h-5 md:w-6 md:h-6"
+            className="w-4 h-4 md:w-6 md:h-6"
             fill="none"
             stroke="currentColor"
             viewBox="0 0 24 24"
@@ -250,8 +257,8 @@ function HomePage() {
     </button>
 </div>
 
-                        {/* Indicators */}
-                        <div className="absolute bottom-7 left-6 md:left-8 z-20 flex gap-2">
+                     {/* Indicators */}
+<div className="hidden md:flex absolute top-6 left-8 z-20 gap-2">
     {prokerData.map((_, index) => (
         <button
             key={index}
