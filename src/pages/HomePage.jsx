@@ -46,7 +46,7 @@ function HomePage() {
             <div className="absolute inset-0 bg-cover scale-105 brightness-50" />
 
 <section 
-    className="relative min-h-screen pt-40 md:pt-40 pb-16 md:pb-24 overflow-hidden bg-cover bg-[20%_center] md:bg-center flex items-center"
+    className="relative min-h-screen pt-40 md:pt-40 pb-16 md:pb-24 overflow-hidden bg-cover bg-[30%_center] md:bg-center flex items-center"
     style={{ 
         backgroundImage: `url(${benderaukm})`
     }}
