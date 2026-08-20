@@ -28,7 +28,6 @@ function Navbar() {
         }
     }, [hash]);
 
-    //native
     useEffect(() => {
         const toggleButton = document.querySelector('.toggle-btn');
         const navbarLinks = document.querySelector('.menu');
@@ -40,39 +39,37 @@ function Navbar() {
 
         toggleButton.addEventListener('click', handleToggle);
 
-        // Cleanup listener saat komponen di-unmount
         return () => {
             toggleButton.removeEventListener('click', handleToggle);
         };
     }, []);
 
-    //tampilan
     return (
         <nav className={`fixed w-full z-50 text-white transition-all duration-300 ${scrolled ? "bg-hitam/70 backdrop-blur-md shadow-md" : "bg-transparent"}`}>
             <div className="w-navfot flex flex-wrap items-center justify-between mx-auto p-7">
                 <a href="/">
                     <div className="flex items-center space-x-3 rtl:space-x-reverse">
-                        <img src={imagesDatas.LOGO_UKM_PUTIH} className="md:h-10 h-8" alt="Logo UKM" loading="lazy" decoding="async" />
-                        <span className="self-center md:text-xl text-lg font-semibold whitespace-nowrap">Computer Club</span>
+                        <img src={imagesDatas.LOGO_UKM_PUTIH} className="lg:h-10 h-8" alt="Logo UKM" loading="lazy" decoding="async" />
+                        <span className="self-center lg:text-xl text-lg font-semibold whitespace-nowrap">Computer Club</span>
                     </div>
                 </a>
 
-                <button type="button" className="toggle-btn inline-flex items-center p-2 w-10 h-10 justify-center text-sm text-gray-500 rounded-lg md:hidden hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200 dark:text-gray-400 dark:hover:bg-gray-700 dark:focus:ring-gray-600" aria-controls="navbar-default" aria-expanded="false">
+                <button type="button" className="toggle-btn inline-flex items-center p-2 w-10 h-10 justify-center text-sm text-gray-500 rounded-lg lg:hidden hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200 dark:text-gray-400 dark:hover:bg-gray-700 dark:focus:ring-gray-600" aria-controls="navbar-default" aria-expanded="false">
                     <span className="sr-only">Open main menu</span>
                     <i className="fa-solid fa-bars"></i>
                 </button>
 
                 {/* Pill menu - desktop */}
-                <div className="menu hidden w-full md:block md:w-auto" id="menu">
-                    <ul className="font-medium flex flex-col p-4 md:p-0 mt-4 md:mt-0 md:flex-row md:items-center bg-hitam md:bg-white/10 md:backdrop-blur-sm rounded-lg md:rounded-full md:px-1.5 md:py-1 border border-gray-100 md:border-white/10 text-sm">
-                        <li className='m-1 p-1'>
-                            <a href="/#beranda" className="NavbarLink md:px-3 md:py-1.5 md:rounded-full md:hover:bg-white/15 transition-colors md:text-sm" aria-current="page">Beranda</a>
+                <div className="menu hidden w-full lg:block lg:w-auto" id="menu">
+                    <ul className="font-medium flex flex-col p-4 lg:p-0 mt-4 lg:mt-0 lg:flex-row lg:items-center bg-hitam lg:bg-white/10 lg:backdrop-blur-sm rounded-lg lg:rounded-full lg:px-1.5 lg:py-1 border border-gray-100 lg:border-white/10 text-sm">
+                        <li className="m-1 p-1">
+                            <a href="/#beranda" className="NavbarLink lg:px-4 lg:py-2 lg:rounded-full lg:hover:bg-white/15 transition-colors" aria-current="page">Beranda</a>
                         </li>
-                        <li className='m-1 p-1'>
-                            <a href="/#tentang" className="NavbarLink md:px-4 md:py-2 md:rounded-full md:hover:bg-white/15 transition-colors">Tentang Kami</a>
+                        <li className="m-1 p-1">
+                            <a href="/#tentang" className="NavbarLink lg:px-4 lg:py-2 lg:rounded-full lg:hover:bg-white/15 transition-colors">Tentang Kami</a>
                         </li>
                         <li className="m-1 p-1 relative group">
-                            <a href="/#divisi" className="NavbarLink md:px-4 md:py-2 md:rounded-full md:hover:bg-white/15 transition-colors">
+                            <a href="/#divisi" className="NavbarLink lg:px-4 lg:py-2 lg:rounded-full lg:hover:bg-white/15 transition-colors">
                                 Divisi
                                 <i className="ml-1 fa-solid fa-angle-down transition-transform duration-300 group-hover:-rotate-180"></i>
                             </a>
@@ -101,7 +98,7 @@ function Navbar() {
                             </ul>
                         </li>
                         <li className="m-1 p-1 relative group">
-                            <a href="/#proker" className="NavbarLink md:px-4 md:py-2 md:rounded-full md:hover:bg-white/15 transition-colors">
+                            <a href="/#proker" className="NavbarLink lg:px-4 lg:py-2 lg:rounded-full lg:hover:bg-white/15 transition-colors">
                                 Program Kerja
                                 <i className="ml-1 fa-solid fa-angle-down transition-transform duration-300 group-hover:-rotate-180"></i>
                             </a>
@@ -134,14 +131,14 @@ function Navbar() {
                             </ul>
                         </li>
                         <li className='m-1 p-1'>
-                            <a href="/#fungsio" className="NavbarLink md:px-4 md:py-2 md:rounded-full md:hover:bg-white/15 transition-colors">Fungsionaris</a>
+                            <a href="/#fungsio" className="NavbarLink lg:px-4 lg:py-2 lg:rounded-full lg:hover:bg-white/15 transition-colors">Fungsionaris</a>
                         </li>
                         <li className='m-1 p-1'>
-                            <a href="/#faq" className="NavbarLink md:px-4 md:py-2 md:rounded-full md:hover:bg-white/15 transition-colors">FAQ</a>
+                            <a href="/#faq" className="NavbarLink lg:px-4 lg:py-2 lg:rounded-full lg:hover:bg-white/15 transition-colors">FAQ</a>
                         </li>
 
-                        {/* Tombol CTA versi mobile */}
-                        <li className="m-1 p-1 md:hidden mt-4">
+                        {/* Tombol CTA versi mobile/tablet */}
+                        <li className="m-1 p-1 lg:hidden mt-4">
                             <a href="https://docs.google.com/forms/d/e/1FAIpQLSe6nm4j9pOFA_agi2tHWJoE15lSt1CmpH9JXPEF5uVsgkRM8g/viewform" target="_blank" rel="noopener noreferrer" className="block text-center bg-secondary hover:bg-primary py-2 px-5 rounded-full text-white text-sm font-semibold ease-in-out transition-all">
                                 Daftar Sekarang
                             </a>
@@ -149,8 +146,8 @@ function Navbar() {
                     </ul>
                 </div>
 
-                {/* Tombol CTA - selalu tampil di kanan */}
-                <div className="hidden md:block">
+                {/* Tombol CTA - tampil di kanan hanya desktop */}
+                <div className="hidden lg:block">
                     <a href="https://docs.google.com/forms/d/e/1FAIpQLSe6nm4j9pOFA_agi2tHWJoE15lSt1CmpH9JXPEF5uVsgkRM8g/viewform" target="_blank" rel="noopener noreferrer" className="bg-secondary hover:bg-primary py-2 px-5 rounded-full text-white text-sm font-semibold ease-in-out transition-all">
                         Daftar Sekarang
                     </a>

@@ -46,17 +46,17 @@ function HomePage() {
             <div className="absolute inset-0 bg-cover scale-105 brightness-50" />
 
 <section 
-    className="relative min-h-screen pt-40 md:pt-40 pb-16 md:pb-24 overflow-hidden bg-cover bg-[65%_center] md:bg-center flex items-center"
+    className="relative min-h-screen pt-40 md:pt-40 pb-16 md:pb-24 overflow-hidden bg-cover bg-[20%_center] md:bg-center flex items-center"
     style={{ 
         backgroundImage: `url(${benderaukm})`
     }}
     id="beranda"
 >
     {/* Gradient overlay: Lebih gelap di area teks mobile agar grafis putih bendera tidak menabrak teks, tetap mulus di desktop */}
-    <div className="absolute inset-0 bg-gradient-to-r from-black/95 via-black/85 to-black/60 md:from-black/70 md:via-black/40 md:to-black/10"></div>
+    <div className="absolute inset-0 bg-black/70 md:bg-gradient-to-r md:from-black/70 md:via-black/40 md:to-black/10"></div>
     
     <div className="w-konten mx-auto px-4 relative z-10">
-    <div className="flex flex-col items-center text-center md:items-start md:text-left">
+    <div className="flex flex-col items-start text-left">
         <h1 className="uppercase text-3xl md:text-5xl lg:text-6xl font-bold text-white leading-tight mb-5">
             Unit Kegiatan <br />Mahasiswa <span className="text-secondary"> <br />Computer Club</span>
         </h1>
@@ -68,7 +68,7 @@ function HomePage() {
         <div className="flex flex-col sm:flex-row gap-4 justify-center md:justify-start">
             <Link
                 to="/quiz"
-                className="bg-secondary hover:bg-primary text-white font-semibold text-sm md:text-base py-3 px-6 rounded-full transition-all"
+                className="bg-secondary hover:bg-primary text-white font-semibold text-sm md:text-base py-3 px-6 rounded-full transition-all text-center"
             >
                 Find Your Division
             </Link>
@@ -79,7 +79,7 @@ function HomePage() {
                     e.preventDefault();
                     document.getElementById("tentang")?.scrollIntoView({ behavior: "smooth" });
                 }}
-                className="bg-white/10 hover:bg-white text-white hover:text-hitam font-semibold text-sm md:text-base py-3 px-6 rounded-full border border-white/20 hover:border-white transition-all duration-300"
+                className="bg-white/10 hover:bg-white text-white hover:text-hitam font-semibold text-sm md:text-base py-3 px-6 rounded-full border border-white/20 hover:border-white transition-all duration-300 text-center"
             >
                 Pelajari Lebih Lanjut
             </a>
@@ -151,7 +151,7 @@ function HomePage() {
                         <p className="text-center font-normal text-sm md:text-base mb-10 w-full md:mx-auto">Terdapat 3 program kerja di Unit Kegiatan Mahasiswa Computer Club</p>
                     </div>
 
-                    <div className="w-full lg:w-konten mx-auto h-[420px] md:h-[500px] lg:h-[600px] rounded-2xl overflow-hidden shadow-2xl relative group" data-aos="zoom-in">
+                    <div className="w-full lg:w-konten mx-auto h-[420px] md:h-[580px] lg:h-[600px] rounded-2xl overflow-hidden shadow-2xl relative group" data-aos="zoom-in">
 
                         {/* Carousel Track */}
                         <div
@@ -238,7 +238,7 @@ function HomePage() {
                 </div>
             </section>
 
-<section className="py-16 md:py-32" id="fungsio">
+<section className="py-16 md:py-20 lg:py-24" id="fungsio">
     <div className="w-konten mx-auto relative z-10">
         <div className="flex flex-col lg:flex-row items-center gap-12 lg:gap-16">
 
@@ -274,7 +274,7 @@ function HomePage() {
 
             {/* Teks kanan */}
             <div className="w-full lg:w-1/2" data-aos="fade-up">
-                <p className="text-secondary font-semibold text-xs md:text-sm uppercase tracking-widest mb-2">Tentang Kami</p>
+                <p className="text-secondary font-semibold text-xs md:text-sm uppercase tracking-widest mb-2 text-center lg:text-left">Tentang Kami</p>
                 <h1 className="text-2xl md:text-4xl font-bold mb-4 text-center lg:text-left">
                     Kenalan dengan <span className="text-secondary">Fungsionaris</span> Kami
                 </h1>
@@ -284,19 +284,19 @@ function HomePage() {
 
                 {/* Statistik */}
                 <div className="flex justify-center lg:justify-start gap-8 md:gap-12 mb-8">
-                    <div className="text-center lg:text-left">
-                        <h2 className="text-2xl md:text-3xl font-extrabold text-secondary">4</h2>
-                        <p className="text-xs md:text-sm text-gray-600">Divisi</p>
-                    </div>
-                    <div className="text-center lg:text-left">
-                        <h2 className="text-2xl md:text-3xl font-extrabold text-secondary">30+</h2>
-                        <p className="text-xs md:text-sm text-gray-600">Fungsionaris</p>
-                    </div>
-                    <div className="text-center lg:text-left">
-                        <h2 className="text-2xl md:text-3xl font-extrabold text-secondary">3</h2>
-                        <p className="text-xs md:text-sm text-gray-600">Program Kerja</p>
-                    </div>
-                </div>
+    <div className="inline-flex flex-col items-center">
+        <h2 className="text-2xl md:text-3xl font-extrabold text-secondary">4</h2>
+        <p className="text-xs md:text-sm text-gray-600 whitespace-nowrap">Divisi</p>
+    </div>
+    <div className="inline-flex flex-col items-center">
+        <h2 className="text-2xl md:text-3xl font-extrabold text-secondary">30+</h2>
+        <p className="text-xs md:text-sm text-gray-600 whitespace-nowrap">Fungsionaris</p>
+    </div>
+    <div className="inline-flex flex-col items-center">
+        <h2 className="text-2xl md:text-3xl font-extrabold text-secondary">3</h2>
+        <p className="text-xs md:text-sm text-gray-600 whitespace-nowrap">Program Kerja</p>
+    </div>
+</div>
 
                 <Button divClass="flex justify-center lg:inline" href="/fungsionaris" text="Lihat Selengkapnya"></Button>
             </div>
@@ -304,7 +304,7 @@ function HomePage() {
     </div>
 </section>
 
-            <section className="py-20 md:pt-32 md:pb-20" id="faq">
+            <section className="py-16 md:pt-16 md:pb-20" id="faq">
                 <div className="px-4 mx-auto sm:px-6 lg:px-8 w-konten" data-aos="fade-up">
                     <div className="mx-auto text-center">
                         <h1 className="text-center font-semibold text-xl md:text-4xl lg:text-6xl mt-10 mb-5">Pertanyaan yang Sering Ditanyakan</h1>

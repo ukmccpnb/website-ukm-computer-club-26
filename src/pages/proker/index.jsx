@@ -43,10 +43,13 @@ function ProkerPage() {
 
                 <section className="relative h-screen min-h-[600px] flex items-center overflow-hidden" data-aos="fade-down">
     {/* Background gelap */}
-    <div
-        className="absolute inset-0 bg-cover bg-end scale-105 brightness-[0.35]"
-        style={{ backgroundImage: `url(${prokerDetail.img})` }}
-    ></div>
+<div
+    className="absolute inset-0 bg-cover brightness-[0.35] scale-105"
+    style={{
+        backgroundImage: `url(${prokerDetail.img})`,
+        backgroundPosition: "center 30%",
+    }}
+></div>
     <div className="absolute inset-0 bg-gradient-to-b from-black/60 via-black/40 to-black/80"></div>
 
     {/* Konten */}
@@ -75,15 +78,21 @@ function ProkerPage() {
     </div>
 
     {/* Indikator scroll */}
-    <div className="absolute bottom-8 left-1/2 -translate-x-1/2 z-10 flex flex-col items-center text-white/70 text-xs font-medium tracking-widest">
-        <span className="mb-2 text-white">JELAJAHI</span>
-        <svg className="w-5 h-5 animate-bounce " fill="none" stroke="white " viewBox="0 0 24 24">
-            <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M19 14l-7 7m0 0l-7-7m7 7V3" />
-        </svg>
-    </div>
+<button
+    onClick={() => {
+        document.getElementById("proker-tentang")?.scrollIntoView({ behavior: "smooth" });
+    }}
+    className="absolute bottom-8 left-1/2 -translate-x-1/2 z-10 flex flex-col items-center text-white/70 text-xs font-medium tracking-widest cursor-pointer hover:text-white transition-colors"
+    aria-label="Scroll ke bawah"
+>
+    <span className="mb-2 text-white">JELAJAHI</span>
+    <svg className="w-5 h-5 animate-bounce" fill="none" stroke="white" viewBox="0 0 24 24">
+        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M19 14l-7 7m0 0l-7-7m7 7V3" />
+    </svg>
+</button>
 </section>
 
-<section className="py-16 md:py-24 relative bg-white">
+<section className="py-16 md:py-24 relative bg-white" id="proker-tentang">
     <div className="w-konten mx-auto px-4" data-aos="fade-up">
         <div className="flex flex-col lg:flex-row items-start gap-10 lg:gap-16">
             {/* Teks kiri */}

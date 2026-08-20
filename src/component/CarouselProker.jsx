@@ -8,7 +8,7 @@ function CarouselProker({ images }) {
     const prev = () => setCurrent((prev) => (prev === 0 ? images.length - 1 : prev - 1));
 
     return (
-        <div className="w-full">
+        <div className="w-full px-4 md:px-6">
             {/* Slide utama */}
             <div className="relative w-full aspect-video rounded-2xl overflow-hidden shadow-xl">
                 <img

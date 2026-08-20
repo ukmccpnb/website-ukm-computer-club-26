@@ -87,6 +87,89 @@ const prokerData = [
                 alt: "Dokumentasi",
             },
     },
+    
+    {
+        id: 3,
+        logo: imagesData.Logo_Eagles_warna,
+        img: imagesData.eagles_foto, 
+        imgPosition: "center end",
+        name: "EAGLES",
+        deskripsi: "PNB E-Sport Arena Gaming League Series (EAGLES) merupakan program kerja UKM Computer Club yang mewadahi minat dan bakat mahasiswa di bidang E-Sport melalui turnamen dan seminar nasional bertema E-Sport.",
+        href: "/programkerja/eagles",
+        singkatan: "eagles",
+        periode: "Tahun 2026",
+        videoYoutube: "bIX4rUrmlMQ",  // id video youtube aja ex: https://youtu.be/{{{{{{aKnbYeBE6ug}}}}}}?si=aipoH73HByviFGUA
+        deskripsiDetail: `
+        <b>PNB E-Sport Arena Gaming League Series (EAGLES)</b> merupakan program kerja unggulan UKM Computer Club yang mewadahi minat dan potensi mahasiswa di bidang e-sports melalui kompetisi tingkat regional. Menghadirkan berbagai cabang game populer seperti <b>Mobile Legends, PUBG Mobile, hingga eFootball dan Tekken 8</b>. PNB EAGLES menjadi ruang bagi peserta untuk mengasah kemampuan, strategi, dan sportivitas. <br>
+        <br>
+        Selain kompetisi regional, PNB EAGLES juga menghadirkan <b>Seminar Nasional “Beyond Limits”</b> yang membahas perkembangan industri e-sports, tren teknologi game, serta peluang karier di era digital. Dengan demikian, EAGLES tidak hanya menjadi ajang kompetisi, tetapi juga sarana untuk memperluas wawasan peserta mengenai industri e-sports.`,
+        items: [
+            {
+                icon: faBookmark, // fontawesomeicon
+                text: "E-Sport Mobile (Mobile Legend dan PUBGM)",
+            },
+            {
+                icon: faBookmark, // fontawesomeicon
+                text: "E-Sport Console (Tekken 8 dan eFootball)",
+            },
+            {
+                icon: faBookmark,
+                text: "Seminar Game (Beyond Limits)",
+            },
+        ],
+        facts: [
+            {
+                head: "738+",
+                text: "Total Participants",
+            },
+            {
+                head: "61+",
+                text: "Total Committee",
+            },
+            {
+                head: "14+",
+                text: "Total Partners",
+            },
+        ],
+        deskripsiDokumentasi: "Berikut merupakan beberapa dokumentasi baik dari POV panitia maupun peserta.",
+        dokumentasi1: {
+                path: imagesData.eagles_foto_dokum1,
+                alt: "Dokumentasi",
+            },
+        dokumentasi2: {
+                path: imagesData.eagles_foto_dokum2,
+                alt: "Dokumentasi",
+            },
+        dokumentasi3: {
+                path: imagesData.eagles_foto_dokum3,
+                alt: "Dokumentasi",
+            },
+        dokumentasi4: {
+                path: imagesData.eagles_foto_dokum4,
+                alt: "Dokumentasi",
+            },
+        dokumentasi5: {
+                path: imagesData.eagles_foto_dokum5,
+                alt: "Dokumentasi",
+            },
+        dokumentasi6: {
+                path: imagesData.eagles_foto_dokum6,
+                alt: "Dokumentasi",
+            },
+        dokumentasi7: {
+                path: imagesData.eagles_foto_dokum7,
+                alt: "Dokumentasi",
+            },
+        dokumentasi8: {
+                path: imagesData.eagles_foto_dokum8,
+                alt: "Dokumentasi",
+            },
+        dokumentasi9: {
+                path: imagesData.eagles_foto_dokum9,
+                alt: "Dokumentasi",
+            },
+    },
+
     {
         id: 2,
         logo: imagesData.logo_intech, 
@@ -169,87 +252,6 @@ const prokerData = [
             },
         dokumentasi9: {
                 path: imagesData.intech_foto_dokum9,
-                alt: "Dokumentasi",
-            },
-    },
-    {
-        id: 3,
-        logo: imagesData.Logo_Eagles_warna,
-        img: imagesData.eagles_foto, 
-        imgPosition: "center end",
-        name: "EAGLES",
-        deskripsi: "PNB E-Sport Arena Gaming League Series (EAGLES) merupakan program kerja UKM Computer Club yang mewadahi minat dan bakat mahasiswa di bidang E-Sport melalui turnamen dan seminar nasional bertema E-Sport.",
-        href: "/programkerja/eagles",
-        singkatan: "eagles",
-        periode: "Tahun 2026",
-        videoYoutube: "bIX4rUrmlMQ",  // id video youtube aja ex: https://youtu.be/{{{{{{aKnbYeBE6ug}}}}}}?si=aipoH73HByviFGUA
-        deskripsiDetail: `
-        <b>PNB E-Sport Arena Gaming League Series (EAGLES)</b> merupakan program kerja unggulan UKM Computer Club yang mewadahi minat dan potensi mahasiswa di bidang e-sports melalui kompetisi tingkat regional. Menghadirkan berbagai cabang game populer seperti <b>Mobile Legends, PUBG Mobile, hingga eFootball dan Tekken 8</b>. PNB EAGLES menjadi ruang bagi peserta untuk mengasah kemampuan, strategi, dan sportivitas. <br>
-        <br>
-        Selain kompetisi regional, PNB EAGLES juga menghadirkan <b>Seminar Nasional “Beyond Limits”</b> yang membahas perkembangan industri e-sports, tren teknologi game, serta peluang karier di era digital. Dengan demikian, EAGLES tidak hanya menjadi ajang kompetisi, tetapi juga sarana untuk memperluas wawasan peserta mengenai industri e-sports.`,
-        items: [
-            {
-                icon: faBookmark, // fontawesomeicon
-                text: "E-Sport Mobile (Mobile Legend dan PUBGM)",
-            },
-            {
-                icon: faBookmark, // fontawesomeicon
-                text: "E-Sport Console (Tekken 8 dan eFootball)",
-            },
-            {
-                icon: faBookmark,
-                text: "Seminar Game (Beyond Limits)",
-            },
-        ],
-        facts: [
-            {
-                head: "738+",
-                text: "Total Participants",
-            },
-            {
-                head: "61+",
-                text: "Total Committee",
-            },
-            {
-                head: "14+",
-                text: "Total Partners",
-            },
-        ],
-        deskripsiDokumentasi: "Berikut merupakan beberapa dokumentasi baik dari POV panitia maupun peserta.",
-        dokumentasi1: {
-                path: imagesData.eagles_foto_dokum1,
-                alt: "Dokumentasi",
-            },
-        dokumentasi2: {
-                path: imagesData.eagles_foto_dokum2,
-                alt: "Dokumentasi",
-            },
-        dokumentasi3: {
-                path: imagesData.eagles_foto_dokum3,
-                alt: "Dokumentasi",
-            },
-        dokumentasi4: {
-                path: imagesData.eagles_foto_dokum4,
-                alt: "Dokumentasi",
-            },
-        dokumentasi5: {
-                path: imagesData.eagles_foto_dokum5,
-                alt: "Dokumentasi",
-            },
-        dokumentasi6: {
-                path: imagesData.eagles_foto_dokum6,
-                alt: "Dokumentasi",
-            },
-        dokumentasi7: {
-                path: imagesData.eagles_foto_dokum7,
-                alt: "Dokumentasi",
-            },
-        dokumentasi8: {
-                path: imagesData.eagles_foto_dokum8,
-                alt: "Dokumentasi",
-            },
-        dokumentasi9: {
-                path: imagesData.eagles_foto_dokum9,
                 alt: "Dokumentasi",
             },
     },
