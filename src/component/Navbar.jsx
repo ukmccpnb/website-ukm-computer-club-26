@@ -128,7 +128,7 @@ function Navbar() {
                                         <div className="bg-putih rounded-full z-30 w-6 h-6 mr-2 flex justify-center items-center overflow-hidden">
                                             <img src={`${logo_intech}`} className="w-[70%] mx-auto" loading="lazy" decoding="async"></img>
                                         </div>
-                                        IntechFest
+                                        INTECHFEST
                                     </NavLink>
                                 </li>
                             </ul>

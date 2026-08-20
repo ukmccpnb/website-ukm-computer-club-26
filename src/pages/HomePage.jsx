@@ -151,127 +151,89 @@ function HomePage() {
                         <p className="text-center font-normal text-sm md:text-base mb-10 w-full md:mx-auto">Terdapat 3 program kerja di Unit Kegiatan Mahasiswa Computer Club</p>
                     </div>
 
-                    <div className="w-full lg:w-konten mx-auto h-[500px] md:h-[500px] lg:h-[600px] rounded-2xl overflow-hidden shadow-2xl relative group" data-aos="zoom-in">
+                    <div className="w-full lg:w-konten mx-auto h-[420px] md:h-[500px] lg:h-[600px] rounded-2xl overflow-hidden shadow-2xl relative group" data-aos="zoom-in">
 
-{/* Carousel Track */}
-<div
-    className="flex h-full w-full transition-transform duration-700 ease-in-out"
-    style={{ transform: `translateX(-${currentProkerSlide * 100}%)` }}
+                        {/* Carousel Track */}
+                        <div
+                            className="flex h-full w-full transition-transform duration-700 ease-in-out"
+                            style={{ transform: `translateX(-${currentProkerSlide * 100}%)` }}
+                        >
+                            {prokerData.map((Data, index) => (
+                                <div
+                                    key={Data.id}
+                                    className="min-w-full h-full bg-[#151722] flex flex-col rounded-2xl overflow-hidden"
+                                >
+                                    {/* FOTO */}
+                                    <div className="relative h-[45%] md:h-[50%] shrink-0 overflow-hidden">
+                                        <img
+                                            src={Data.img}
+                                            alt={Data.name}
+                                            className="w-full h-full object-cover object-[center_60%]"
+                                            loading="lazy"
+                                            decoding="async"
+                                        />
+                                        <div className="absolute inset-0 bg-gradient-to-t from-[#151722]/70 via-transparent to-transparent"></div>
+                                    </div>
+
+                                    {/* CONTENT */}
+                                    <div 
+    className="flex-1 text-left text-white flex flex-col"
+    style={{ padding: '24px 40px' }}
 >
-    {prokerData.map((Data, index) => (
-        <div
-            key={Data.id}
-            className="min-w-full h-full bg-[#151722] flex flex-col rounded-2xl overflow-hidden"
-        >
-            {/* FOTO */}
-            <div className="relative h-[45%] md:h-[50%] shrink-0 overflow-hidden ">
-                <img
-                    src={Data.img}
-                    alt={Data.name}
-                    className="w-full h-full object-cover object-[center_60%]"
-                    loading="lazy"
-                    decoding="async"
-                />
 
-                {/* Overlay kecil */}
-                <div className="absolute inset-0 bg-gradient-to-t from-[#151722]/70 via-transparent to-transparent"></div>
-            </div>
+                                        {/* Number + Line */}
+                                        <div className="flex items-center gap-4 mb-4 md:mb-6">
+                                            <span className="text-secondary font-mono font-medium text-sm md:text-base">
+                                                {String(index + 1).padStart(2, "0")} / {String(prokerData.length).padStart(2, "0")}
+                                            </span>
+                                            <div className="flex-1 h-px bg-white/10"></div>
+                                        </div>
 
-            {/* CONTENT */}
-<div className="flex-1 px-6 md:px-8 py-6 md:py-7 text-left text-white flex flex-col">
-                
-                {/* Number + Line */}
-                <div className="flex items-center gap-4 mb-6">
-                    <span className="text-secondary font-mono font-medium text-sm md:text-base">
-                        {String(index + 1).padStart(2, "0")} / {String(prokerData.length).padStart(2, "0")}
-                    </span>
+                                        {/* Title */}
+                                        <h2 className="text-xl md:text-3xl lg:text-4xl font-bold mb-3 md:mb-4">
+                                            {Data.name}
+                                        </h2>
 
-                    <div className="flex-1 h-px bg-white/10"></div>
+                                        {/* Description */}
+                                        <p className="text-sm md:text-base lg:text-lg text-gray-400 leading-relaxed line-clamp-2 md:line-clamp-3 max-w-full md:max-w-2xl mb-4 md:mb-6">
+                                            {Data.deskripsi}
+                                        </p>
 
-                    <span className="w-2 h-2 rounded-full bg-secondary"></span>
-                </div>
+                                        {/* Footer: Button + Indicator + Nav, sejajar */}
+    <div className="mt-auto flex items-center justify-between gap-3">
+    <Button href={Data.href} text="Baca Selengkapnya →" />
 
-                {/* Title */}
-                <h2 className="text-2xl md:text-3xl lg:text-4xl font-bold mb-4">
-                    {Data.name}
-                </h2>
-
-                {/* Description */}
-                <p className="text-sm md:text-base lg:text-lg text-gray-400 leading-relaxed line-clamp-3 md:line-clamp-4 max-w-[85%] md:max-w-lg">
-    {Data.deskripsi}
-</p>
-
-                {/* Button */}
-{/* Button */}
-<div className="pt-5 pb-6 md:pb-16">
-    <Button
-        href={Data.href}
-        text="Baca Selengkapnya →"
-    />
-</div>
-            </div>
-        </div>
-    ))}
-</div>
-
- {/* Navigation Controls */}
-<div className="absolute bottom-10 right-5 md:bottom-6 md:right-6 z-20 flex gap-2 md:gap-3">
-    <button
-        onClick={prevProkerSlide}
-        className="flex h-9 w-9 md:h-12 md:w-12 items-center justify-center rounded-full bg-[#1b1e2a] border border-white/10 hover:bg-secondary text-white transition-all duration-300 active:scale-75 shadow-lg outline-none"
-        aria-label="Previous program kerja"
-    >
-        <svg
-            className="w-4 h-4 md:w-6 md:h-6"
-            fill="none"
-            stroke="currentColor"
-            viewBox="0 0 24 24"
-        >
-            <path
-                strokeLinecap="round"
-                strokeLinejoin="round"
-                strokeWidth="2"
-                d="M15 19l-7-7 7-7"
-            />
-        </svg>
-    </button>
-
-    <button
-        onClick={nextProkerSlide}
-        className="flex h-9 w-9 md:h-12 md:w-12 items-center justify-center rounded-full bg-[#1b1e2a] border border-white/10 hover:bg-secondary text-white transition-all duration-300 active:scale-75 shadow-lg outline-none"
-        aria-label="Next program kerja"
-    >
-        <svg
-            className="w-4 h-4 md:w-6 md:h-6"
-            fill="none"
-            stroke="currentColor"
-            viewBox="0 0 24 24"
-        >
-            <path
-                strokeLinecap="round"
-                strokeLinejoin="round"
-                strokeWidth="2"
-                d="M9 5l7 7-7 7"
-            />
-        </svg>
-    </button>
-</div>
-
-                     {/* Indicators */}
-<div className="hidden md:flex absolute top-6 left-8 z-20 gap-2">
-    {prokerData.map((_, index) => (
+                                            <div className="flex items-center gap-3 md:gap-4">
+                                    
+                                                {/* Navigator */}
+    <div className="flex gap-2">
         <button
-            key={index}
-            onClick={() => setCurrentProkerSlide(index)}
-            className={`h-2.5 rounded-full transition-all duration-300 ${
-                currentProkerSlide === index
-                    ? "w-8 bg-secondary"
-                    : "w-2.5 bg-white/10 hover:bg-white/30"
-            }`}
-            aria-label={`Go to slide ${index + 1}`}
-        />
-    ))}
+            onClick={prevProkerSlide}
+            className="flex h-8 w-8 md:h-11 md:w-11 items-center justify-center rounded-full bg-[#1b1e2a] border border-white/10 hover:bg-secondary text-white transition-all duration-300 active:scale-75 shadow-lg outline-none"
+            aria-label="Previous program kerja"
+        >
+            <svg className="w-3.5 h-3.5 md:w-5 md:h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M15 19l-7-7 7-7" />
+            </svg>
+        </button>
+        <button
+            onClick={nextProkerSlide}
+            className="flex h-8 w-8 md:h-11 md:w-11 items-center justify-center rounded-full bg-[#1b1e2a] border border-white/10 hover:bg-secondary text-white transition-all duration-300 active:scale-75 shadow-lg outline-none"
+            aria-label="Next program kerja"
+        >
+            <svg className="w-3.5 h-3.5 md:w-5 md:h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M9 5l7 7-7 7" />
+            </svg>
+        </button>
+    </div>
 </div>
+
+                                        </div>
+                                    </div>
+                                </div>
+                            ))}
+                        </div>
+
                     </div>
                 </div>
             </section>

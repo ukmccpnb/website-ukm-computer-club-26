@@ -7,7 +7,7 @@ const data1 = [
     {
         id: 7,
         question: 'Apakah diperbolehkan untuk berpindah-pindah divisi?',
-        answer: 'Tidak diperbolehkan. Pastikan memilih divisi yang sesuai dengan minat kalian, atau gunakan fitur Find Your Division di website UKM Computer Club.',
+        answer: 'Tidak diperbolehkan. Pastikan memilih divisi yang sesuai dengan minat kalian, atau gunakan fitur Find Your Division di website UKM Computer Club untuk mendapatkan rekomendasi divisi sesuai dengan minat kalian.',
     },
     {
         id: 8,

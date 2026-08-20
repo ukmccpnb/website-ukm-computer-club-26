@@ -99,7 +99,6 @@
 // export default FungsioPage
 
 // KODE BARU
-import Navbar from "../../component/Navbar";
 import CardFungsio from "../../component/CardFungsio";
 import intiData from '../../data/fungsio/inti';
 import WebData from '../../data/fungsio/web';
@@ -160,12 +159,10 @@ function FungsioPage() {
 
     return (
         <div className="relative min-h-screen text-slate-900 font-sans selection:bg-[#96C0FF] selection:text-[#0053FA]">
-            {/* Background Ornamen Asli */}
-            <div className="absolute inset-0 -z-10 bg-ornamen bg-fixed bg-bottom bg-cover opacity-80 pointer-events-none" />
+    {/* Background Ornamen Asli */}
+    <div className="absolute inset-0 -z-10 bg-ornamen bg-fixed bg-bottom bg-cover opacity-80 pointer-events-none" />
 
-            <Navbar />
-
-            <main className="pt-32 pb-24 px-3 sm:px-6 max-w-7xl mx-auto">
+    <main className="pt-32 pb-24 px-3 sm:px-6 max-w-7xl mx-auto">
                 
                 {/* HERO HEADER */}
                 <header className="mb-20 flex flex-col items-center justify-center text-center" data-aos="fade-up">
