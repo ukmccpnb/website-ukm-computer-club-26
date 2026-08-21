@@ -44,7 +44,7 @@ function ProkerPage() {
                 <section className="relative h-screen min-h-[600px] flex items-center overflow-hidden" data-aos="fade-down">
     {/* Background gelap */}
 <div
-    className="absolute inset-0 bg-cover brightness-[0.35] scale-105"
+    className="absolute inset-0 bg-cover brightness-[0.25] scale-105"
     style={{
         backgroundImage: `url(${prokerDetail.img})`,
         backgroundPosition: "center 30%",

@@ -46,24 +46,32 @@ function HomePage() {
             <div className="absolute inset-0 bg-cover scale-105 brightness-50" />
 
 <section 
-    className="relative min-h-screen pt-40 md:pt-40 pb-16 md:pb-24 overflow-hidden bg-cover bg-[30%_center] md:bg-center flex items-center"
-    style={{ 
-        backgroundImage: `url(${benderaukm})`
-    }}
+    className="relative min-h-screen pt-40 md:pt-40 pb-16 md:pb-24 overflow-hidden flex items-center"
     id="beranda"
 >
-    {/* Gradient overlay: Lebih gelap di area teks mobile agar grafis putih bendera tidak menabrak teks, tetap mulus di desktop */}
+    {/* Layer foto bendera - blur khusus mobile */}
+    <div 
+        className="absolute inset-0 bg-cover bg-[70%_center] md:bg-center blur-sm md:blur-0"
+        style={{ 
+            backgroundImage: `url(${benderaukm})`
+        }}
+    ></div>
+
+    {/* Gradient overlay */}
     <div className="absolute inset-0 bg-black/70 md:bg-gradient-to-r md:from-black/70 md:via-black/40 md:to-black/10"></div>
     
     <div className="w-konten mx-auto px-4 relative z-10">
     <div className="flex flex-col items-start text-left">
-        <h1 className="uppercase text-3xl md:text-5xl lg:text-6xl font-bold text-white leading-tight mb-5">
+        <h1 className="uppercase text-3xl md:text-5xl lg:text-6xl font-bold text-white leading-tight mb-5 drop-shadow-[0_4px_16px_rgba(0,0,0,1)]">
             Unit Kegiatan <br />Mahasiswa <span className="text-secondary"> <br />Computer Club</span>
         </h1>
 
-        <p className="text-gray-300 text-sm md:text-base mb-8 max-w-lg">
-            Temukan divisi yang sesuai dengan minatmu dan kembangkan potensimu bersama UKM Computer Club.
-        </p>
+        <p 
+    className="text-gray-200 text-sm md:text-base mb-8 max-w-lg font-bold md:font-normal"
+    style={{ textShadow: '0 2px 6px rgba(0,0,0,1), 0 2px 6px rgba(0,0,0,1)' }}
+>
+    Temukan divisi yang sesuai dengan minatmu dan kembangkan potensimu bersama UKM Computer Club.
+</p>
 
         <div className="flex flex-col sm:flex-row gap-4 justify-center md:justify-start">
             <Link
