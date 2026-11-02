@@ -112,7 +112,6 @@ import _sinta from "../assets/img/fungsionaris/perorang/vcd/SINTA.png"
 import _lia from "../assets/img/fungsionaris/perorang/vcd/LIA.png"
 import _kaifa from "../assets/img/fungsionaris/perorang/vcd/KAIFA.png"
 import _pradnya from "../assets/img/fungsionaris/perorang/vcd/PRADNYA.png"
-import _dipta from "../assets/img/fungsionaris/perorang/vcd/DIPTA.png"
 
 import _ayu from "../assets/img/fungsionaris/perorang/web/AYU.png"
 import _santika from "../assets/img/fungsionaris/perorang/web/SANTIKA.png"
@@ -237,7 +236,6 @@ const imagesData =
     "lia": _lia,
     "kaifa": _kaifa,
     "pradnya": _pradnya,
-    "dipta": _dipta,
 
     "ayu": _ayu,
     "santika": _santika,

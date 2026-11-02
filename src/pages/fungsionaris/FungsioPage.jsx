@@ -149,7 +149,7 @@ function FungsioPage() {
 
     // Tanpa pattern: grid 2-kolom di mobile, flex-wrap di sm+
     return (
-        <div className="grid grid-cols-2 gap-3 sm:flex sm:flex-wrap sm:justify-center sm:items-center sm:gap-8 sm:gap-10">
+        <div className="grid grid-cols-2 gap-3 sm:flex sm:flex-wrap sm:justify-center sm:items-center sm:gap-8 lg:gap-10">
             {data.map((item) => (
                 <CardFungsio key={item.id} img={item.img} />
             ))}

@@ -19,10 +19,6 @@ const VcdData = [
     },
     {
         id: 5,  
-        img: imagesData.dipta, 
-    },
-    {
-        id: 6,  
         img: imagesData.pradnya, 
     },
 ]
