@@ -12,7 +12,7 @@ const prokerData = [
         href: "/programkerja/ccdt",
         singkatan: "ccdt",
         periode: "Tahun 2026",
-        videoYoutube: "-T9nG6NLFk8",  // id video youtube aja ex: https://youtu.be/{{{{{{aKnbYeBE6ug}}}}}}?si=aipoH73HByviFGUA
+        videoYoutube: "nWQexcPTT7A",  // id video youtube aja ex: https://youtu.be/{{{{{{aKnbYeBE6ug}}}}}}?si=aipoH73HByviFGUA
         deskripsiDetail: `
         <b> Computer Club Digital Talent (CCDT)</b> merupakan program kerja internal UKM Computer Club sebagai wadah pengembangan dan peningkatan kemampuan anggota melalui pelatihan serta kompetisi karya internal. Program ini mencakup seluruh divisi, yaitu Office, Web Development, Visual Communication Design, dan Game Development. <br>
         <br>
@@ -173,14 +173,14 @@ const prokerData = [
     {
         id: 2,
         logo: imagesData.logo_intech, 
-        img: imagesData.intech_foto_dokum7, 
+        img: imagesData.intech_foto, 
         imgPosition: "center 30%",
         name: "INTECHFEST",
         deskripsi: "Information and Technology Festival (IntechFest) merupakan program kerja utama UKM Computer Club yang menghadirkan lomba dan seminar nasional sebagai wadah edukatif dan kompetitif di bidang teknologi informasi.",
         href: "/programkerja/intechfest",
         singkatan: "intechfest",
-        periode: "Tahun 2025",
-        videoYoutube: "CFSmF8iFQTY",  // id video youtube aja ex: https://youtu.be/{{{{{{aKnbYeBE6ug}}}}}}?si=aipoH73HByviFGUA
+        periode: "Tahun 2026",
+        videoYoutube: "ANhljEisWo8",  // id video youtube aja ex: https://youtu.be/{{{{{{aKnbYeBE6ug}}}}}}?si=aipoH73HByviFGUA
         deskripsiDetail: `
         <b> Information and Technology Festival (IntechFest)</b> merupakan program kerja utama UKM Computer Club yang menjadi wadah pengembangan dan apresiasi teknologi informasi di tingkat nasional. Diselenggarakan secara hybrid, IntechFest menghadirkan tiga kompetisi nasional, yaitu <b>PNB Design Challenge (PNBDC)</b> di bidang desain UI/UX, <b>PNB Web Design Competition (PNBWDC)</b> di bidang pengembangan website, dan <b>PNB Capture The Flag (PNBCTF)</b> di bidang keamanan siber. Ketiganya menjadi ruang bagi peserta untuk mengasah kreativitas dan kemampuan teknis sesuai bidangnya. <br>
         <br>
@@ -205,7 +205,7 @@ const prokerData = [
         ],
         facts: [
             {
-                head: "1.292+",
+                head: "897+",
                 text: "Total Participants",
             },
             {
@@ -213,7 +213,7 @@ const prokerData = [
                 text: "Total Committee",
             },
             {
-                head: "24+",
+                head: "20+",
                 text: "Total Partners",
             },
         ],

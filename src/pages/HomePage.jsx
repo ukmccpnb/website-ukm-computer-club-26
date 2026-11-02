@@ -8,7 +8,7 @@ import homepage from '../data/homepage/data';
 import YouTube from "react-youtube";
 import { useState } from 'react';
 import imagesData from "../data/imgImports";
-import { Link } from "react-router-dom";
+// import { Link } from "react-router-dom";
 import benderaukm from '../assets/img/hero/benderaukm.png'
 
 function HomePage() {
@@ -70,16 +70,24 @@ function HomePage() {
     className="text-gray-200 text-sm md:text-base mb-8 max-w-lg font-bold md:font-normal"
     style={{ textShadow: '0 2px 6px rgba(0,0,0,1), 0 2px 6px rgba(0,0,0,1)' }}
 >
-    Temukan divisi yang sesuai dengan minatmu dan kembangkan potensimu bersama UKM Computer Club.
+    Temukan informasi seputar sesi dan ruangan, aturan anggota, serta kebutuhan UKM Computer Club lainnya di satu tempat.
 </p>
 
         <div className="flex flex-col sm:flex-row gap-4 justify-center md:justify-start">
-            <Link
+            {/* <Link
                 to="/quiz"
                 className="bg-secondary hover:bg-primary text-white font-semibold text-sm md:text-base py-3 px-6 rounded-full transition-all text-center"
             >
                 Find Your Division
-            </Link>
+            </Link> */}
+
+            <a
+            href="https://linktr.ee/ukm_computerclub"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="bg-secondary hover:bg-primary text-white font-semibold text-sm md:text-base py-3 px-6 rounded-full transition-all text-center"
+            > For More Information
+            </a>
 
             <a
                 href="#tentang"
